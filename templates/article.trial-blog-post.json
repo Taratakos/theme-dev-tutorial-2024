@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-trial-blog-post",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content"
+      ],
+      "settings": {
+      }
+    },
+    "social_media_yh7irT": {
+      "type": "social-media",
+      "blocks": {
+        "socila_network_MQaRXy": {
+          "type": "socila-network",
+          "settings": {
+            "social-url": "",
+            "social-name": "Instagram"
+          }
+        },
+        "socila_network_j9ibHX": {
+          "type": "socila-network",
+          "settings": {
+            "social-url": "",
+            "social-name": "facebook"
+          }
+        },
+        "socila_network_FpVyU6": {
+          "type": "socila-network",
+          "settings": {
+            "social-url": "",
+            "social-name": "twitter"
+          }
+        }
+      },
+      "block_order": [
+        "socila_network_MQaRXy",
+        "socila_network_j9ibHX",
+        "socila_network_FpVyU6"
+      ],
+      "settings": {
+        "social-nav": "Follow Us On Social Media"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "social_media_yh7irT"
+  ]
+}

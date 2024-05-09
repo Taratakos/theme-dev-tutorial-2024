@@ -42,7 +42,8 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
-    // this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+    this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+    return 
     event.preventDefault()
     console.log(event.target);
     let quantity = event.target.value
@@ -50,7 +51,7 @@ class CartItems extends HTMLElement {
     const variantKey = event.target.dataset.key
     console.log(quantity);
     // console.log(variantId);
-    // console.log(variantKey);
+    console.log(variantKey);
 
     fetch('/cart/change.js', {
       method: 'POST',
@@ -75,7 +76,8 @@ class CartItems extends HTMLElement {
 
         const updatedSection = response.sections['cart-drawer']
         // console.log(updatedSection);
-        const updatedHtml = document.getElementById('CartDrawer');
+        // const updatedHtml = document.getElementById('CartDrawer');
+        const updatedHtml = document.querySelector('.drawer__inner');
         // console.log(updatedHtml);
         updatedHtml.innerHTML = updatedSection
       })

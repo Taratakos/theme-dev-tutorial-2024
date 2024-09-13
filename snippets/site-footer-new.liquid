@@ -1,0 +1,285 @@
+<footer class="site-footer-new">
+  <div class="site-footer-new-container">
+  <div class="footer-new-top">
+    <div class="footer-new-top-wrapper">
+      <div class="footer-new-top-wrapper__mail">
+        <div class="footer-social__label">EMAIL</div>
+        <a class="footer-social__link" href="mailto:sup@offfield.com">SUP@OFFFIELD.COM</a>
+      </div>
+      <div class="footer-new-top-wrapper__inst">
+        <div class="footer-social__label">INSTAGRAM</div>
+        <a class="footer-social__link" href="https://www.instagram.com/offfield">@OFFFIELD</a>
+      </div>
+    </div>
+    <div class="footer-new-top-wrapper__logo"> {% render 'logo-footer' %}</div>
+  </div>
+  <div class="footer-new-middle">
+    <div class="footer-new-middle__subscribe">
+      <div class="footer-new-middle__subscribe--title">Stay in touch</div>
+      <div class="klaviyo-form-Rt78Nk"></div>
+    </div>
+    <div class="footer-new-middle__info">
+      <div class="footer-new-middle__location">
+        <div class="footer-new-middle__title">Our Location</div>
+        <div class="footer-new-middle__content">
+          <div>Off Field, Inc.</div>
+          <div>8200 Wilshire Blvd, Suite 402</div>
+          <div>Beverly Hills, CA 90211</div>
+          <div>(424) 210-5852</div>
+        </div>
+      </div>
+      <div class="footer-new-middle__popular">
+        <div class="footer-new-middle__title">Popular Links</div>
+          {% assign popular__links = linklists['popular-links'] %}
+          <ul class="footer-new-middle-nav">
+            {% for link in popular__links.links %}
+              <li class="footer-new-middle__links">
+                <a class="footer-new-middle__item" href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-new-bottom">
+    <div class="footer-new-bottom__rights">©2024, OFF FIELD, INC., All Rights Reserved</div>
+    <div class="footer-new-bottom__rule">Our CBD products are not for use by or sale to persons under the age of 21. Offfield products available for shipping (in select states and for select products) through this site contain less than 0.3% Delta-9 Tetrahydrocannabinol (THC) that is derived from industrial hemp, per the Controlled Substances Act. These products should be used only as directed on the label. They should not be used if you are pregnant or nursing. A Doctor's advice should be sought before using these and any supplemental dietary products. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease.</div>
+    <div class="footer-new-bottom__pay">
+      {% render 'footer-pay' %}
+    </div>
+    <div class="footer-new-bottom__price">All prices are in US $</div>
+  </div>
+  <div class="footer-new-links">
+    {% assign footer_bottom__links = linklists['footer-bottom-links'] %}
+    <ul class="footer-new-links-nav">
+      {% for link in footer_bottom__links.links %}
+        <li class="footer-new-links__links">
+          <a class="footer-new-links__item" href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  </div>
+</footer>
+
+
+<style>
+  .site-footer-new {
+    padding: 82px 0 38px 0;
+    background-color: black;
+    font-family: 'Avenir' ,sans-serif;;
+  }
+
+  .site-footer-new-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-new-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-new-top-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+  }
+
+  .footer-social__label {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 13px;
+  }
+
+  .footer-social__link {
+    font-size: 25px;
+    color: #E6AE6D;
+  }
+
+  .footer-new-middle {
+    display: flex;
+    gap: 110px;
+    margin: 50px 0 30px 0;
+  }
+
+  .footer-new-middle__info {
+    display: flex;
+    gap: 83px;
+  }
+
+  .footer-new-middle__subscribe--title {
+    font-size: 15px;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .footer-new-middle__title {
+    font-size: 15px;
+    font-style: normal;
+    color: #E6AE6D;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .footer-new-middle__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .footer-new-middle-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .footer-new-middle__links {
+    list-style-type: none;
+  }
+
+  .footer-new-middle__item {
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .footer-new-middle__item:hover {
+    color: #4e84b5;
+  }
+
+  .footer-new-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-new-bottom__rights {
+    font-size: 15px;
+    font-style: normal;
+    color: #E6AE6D;
+    text-transform: uppercase;
+  }
+
+  .footer-new-bottom__rule {
+    margin: 17px 0 18px 0;
+    font-size: 13px;
+    font-style: normal;
+    color: #FFFFFF;
+  }
+
+  .footer-new-bottom__price {
+    margin-top: 10px;
+    font-size: 13px;
+    font-style: normal;
+    color: #FFFFFF;
+  }
+
+  .footer-new-links {
+    margin-top: 55px;
+  }
+
+  .footer-new-links-nav {
+    display: flex;
+    padding: 0;
+
+  }
+
+  .footer-new-links__links{
+    list-style-type: none;
+  }
+
+  .footer-new-links__item {
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+    border-right: 1px solid #fff;
+  }
+
+  .footer-new-links-nav .footer-new-links__links:first-child .footer-new-links__item {
+    padding-left: 0;
+  }
+
+  .footer-new-links-nav .footer-new-links__links:last-child .footer-new-links__item {
+    border: none;
+  }
+
+  .footer-new-links__item:hover {
+    color: #4e84b5;
+  }
+
+
+  @media (max-width: 1024px) {
+    .site-footer-new {
+      padding: 82px 20px 38px 20px;
+    }  
+  }
+
+  @media (max-width: 768px) {
+    .site-footer-new {
+
+    }
+
+    .footer-new-top,
+    .footer-new-top-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-new-top-wrapper {
+      gap: 40px;
+    }
+
+    .footer-new-top-wrapper {
+      order: 2;
+      margin-top: 50px;
+    }
+
+    .footer-new-middle {
+      flex-direction: column;
+      text-align: center;
+      gap: 50px;
+      margin: 50px 0 50px 0;
+    }
+
+    .footer-new-middle__content,
+    .footer-new-middle-nav {
+      gap: 8px;
+    }
+
+    .footer-new-middle__location {
+      order: 2;
+    }
+
+    .footer-new-middle__info {
+      flex-direction: column;
+    }
+
+    .footer-new-middle__subscribe {
+      margin: 0 auto;
+    }
+
+    .klaviyo-form-Rt78Nk.klaviyo-form.form-version-cid-1 {
+      display: inline-block !important;
+    }
+
+    .footer-new-middle__info {
+      gap: 50px;
+    }
+
+    .footer-new-bottom {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .footer-new-links-nav {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+</style>

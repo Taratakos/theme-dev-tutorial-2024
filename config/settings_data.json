@@ -1,288 +1,3391 @@
 {
   "current": {
-    "logo_width": 50,
-    "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
-    "gradient_accent_1": "",
-    "colors_accent_2": "#45c0b6",
-    "gradient_accent_2": "",
-    "colors_text": "#000000",
-    "colors_outline_button_labels": "#121212",
-    "colors_background_1": "#fafaf9",
-    "gradient_background_1": "",
-    "colors_background_2": "#6b6b6b",
-    "gradient_background_2": "",
-    "type_header_font": "helvetica_n7",
-    "heading_scale": 100,
-    "type_body_font": "helvetica_n4",
-    "body_scale": 100,
-    "page_width": 1600,
-    "spacing_sections": 0,
-    "spacing_grid_horizontal": 16,
-    "spacing_grid_vertical": 8,
-    "buttons_border_thickness": 1,
-    "buttons_border_opacity": 100,
-    "buttons_radius": 2,
-    "buttons_shadow_opacity": 0,
-    "buttons_shadow_horizontal_offset": 0,
-    "buttons_shadow_vertical_offset": 4,
-    "buttons_shadow_blur": 5,
-    "variant_pills_border_thickness": 0,
-    "variant_pills_border_opacity": 0,
-    "variant_pills_radius": 4,
-    "variant_pills_shadow_opacity": 0,
-    "variant_pills_shadow_horizontal_offset": 0,
-    "variant_pills_shadow_vertical_offset": 4,
-    "variant_pills_shadow_blur": 5,
-    "inputs_border_thickness": 1,
-    "inputs_border_opacity": 10,
-    "inputs_radius": 2,
-    "inputs_shadow_opacity": 0,
-    "inputs_shadow_horizontal_offset": 0,
-    "inputs_shadow_vertical_offset": -12,
-    "inputs_shadow_blur": 5,
-    "card_style": "standard",
-    "card_image_padding": 0,
-    "card_text_alignment": "left",
-    "card_color_scheme": "background-2",
-    "card_border_thickness": 0,
-    "card_border_opacity": 10,
-    "card_corner_radius": 4,
-    "card_shadow_opacity": 0,
-    "card_shadow_horizontal_offset": 0,
-    "card_shadow_vertical_offset": 0,
-    "card_shadow_blur": 10,
-    "collection_card_style": "standard",
-    "collection_card_image_padding": 0,
-    "collection_card_text_alignment": "left",
-    "collection_card_color_scheme": "background-2",
-    "collection_card_border_thickness": 0,
-    "collection_card_border_opacity": 10,
-    "collection_card_corner_radius": 4,
-    "collection_card_shadow_opacity": 0,
-    "collection_card_shadow_horizontal_offset": 0,
-    "collection_card_shadow_vertical_offset": 4,
-    "collection_card_shadow_blur": 5,
-    "blog_card_style": "standard",
-    "blog_card_image_padding": 0,
-    "blog_card_text_alignment": "left",
-    "blog_card_color_scheme": "background-2",
-    "blog_card_border_thickness": 0,
-    "blog_card_border_opacity": 10,
-    "blog_card_corner_radius": 0,
-    "blog_card_shadow_opacity": 0,
-    "blog_card_shadow_horizontal_offset": 0,
-    "blog_card_shadow_vertical_offset": 4,
-    "blog_card_shadow_blur": 5,
-    "text_boxes_border_thickness": 0,
-    "text_boxes_border_opacity": 10,
-    "text_boxes_radius": 4,
-    "text_boxes_shadow_opacity": 0,
-    "text_boxes_shadow_horizontal_offset": 0,
-    "text_boxes_shadow_vertical_offset": 4,
-    "text_boxes_shadow_blur": 5,
-    "media_border_thickness": 0,
-    "media_border_opacity": 5,
-    "media_radius": 4,
-    "media_shadow_opacity": 0,
-    "media_shadow_horizontal_offset": 0,
-    "media_shadow_vertical_offset": 4,
-    "media_shadow_blur": 5,
-    "popup_border_thickness": 0,
-    "popup_border_opacity": 10,
-    "popup_corner_radius": 0,
-    "popup_shadow_opacity": 0,
-    "popup_shadow_horizontal_offset": 0,
-    "popup_shadow_vertical_offset": 4,
-    "popup_shadow_blur": 5,
-    "drawer_border_thickness": 0,
-    "drawer_border_opacity": 10,
-    "drawer_shadow_opacity": 0,
-    "drawer_shadow_horizontal_offset": 0,
-    "drawer_shadow_vertical_offset": 4,
-    "drawer_shadow_blur": 5,
-    "badge_position": "bottom left",
-    "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "accent-2",
-    "sold_out_badge_color_scheme": "inverse",
-    "accent_icons": "text",
-    "brand_headline": "© 2023 \/ Shopify, Inc.",
-    "brand_description": "<p>©2023\/ Shopify, Inc.<\/p>",
-    "brand_image_width": 100,
-    "social_facebook_link": "",
-    "social_instagram_link": "",
-    "social_youtube_link": "",
-    "social_tiktok_link": "",
+    "include_preheader": true,
+    "preheader_background": "#c5ff88",
+    "preheader_color": "#000000",
+    "preheader_text": "NOW SHIPPING ALL ACROSS THE US 🥦🚀",
     "social_twitter_link": "",
-    "social_snapchat_link": "",
+    "social_facebook_link": "",
     "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/offfield",
+    "social_tiktok_link": "",
+    "social_snapchat_link": "",
     "social_tumblr_link": "",
+    "social_youtube_link": "",
     "social_vimeo_link": "",
-    "predictive_search_enabled": true,
-    "predictive_search_show_vendor": false,
-    "predictive_search_show_price": false,
-    "currency_code_enabled": false,
-    "cart_type": "drawer",
-    "show_vendor": false,
-    "show_cart_note": false,
-    "cart_drawer_collection": "hydrogen",
+    "product_limit": "10",
+    "favicon": "shopify:\/\/shop_images\/smiley_wink.gif",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/OFFFIELD_Logo.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#4e84b5",
+    "checkout_button_color": "#e6af6e",
+    "checkout_error_color": "#e32c2b",
+    "cart_notes_enable": true,
     "sections": {
-      "main-password-header": {
-        "type": "main-password-header",
+      "1589918136898": {
+        "type": "homepage-hero",
+        "disabled": true,
         "settings": {
-          "color_scheme": "background-1"
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/Stick_Packs_Blue_Mobile.jpg",
+          "image": "shopify:\/\/shop_images\/Stick_Packs_Blue_Desktop2.jpg",
+          "content_x": "center",
+          "content_y": "middle",
+          "text": "<span class=\"fc--white\"> Highly <br>Recommended <br>Hydration. <br> \n\n<p style=\"color:white; font-size: 16px; line-height: 25px;  font-weight: normal ;font-family: avenir;\"> The most popular CBD & CBG enhanced sports drink, for a reason.\n<\/p><\/span>",
+          "include_stars": false,
+          "star_text": "<p style=\"color:white;font-size: 14px; line-height: 0px; font-weight: normal;font-family: avenir; \"> &nbsp4.9 average<\/p> <br>",
+          "text_alignment": "center",
+          "url": "shopify:\/\/products\/one-enhanced-hydration-12-pack",
+          "cta": "TRY OFFFIELD"
         }
       },
-      "main-password-footer": {
-        "type": "main-password-footer",
+      "1590012692432": {
+        "type": "homepage-movement",
+        "blocks": {
+          "1590012692432-2": {
+            "type": "card",
+            "disabled": true,
+            "settings": {
+              "url": "shopify:\/\/products\/athletic-gummies",
+              "image": "shopify:\/\/shop_images\/Gummies_Cycling2.png",
+              "background_color": "#4e84b5",
+              "kicker": "",
+              "kicker_color": "#ffffff",
+              "title": "Athletic Gummies",
+              "title_color": "#ffffff"
+            }
+          },
+          "1590012692432-1": {
+            "type": "card",
+            "disabled": true,
+            "settings": {
+              "url": "shopify:\/\/products\/one-enhanced-hydration-12-pack",
+              "image": "shopify:\/\/shop_images\/Hydration_Sweating2.png",
+              "background_color": "#9c9f8c",
+              "kicker": "",
+              "kicker_color": "#e6af6e",
+              "title": "Enhanced Hydration",
+              "title_color": "#ffffff"
+            }
+          },
+          "1590012692432-0": {
+            "type": "card",
+            "disabled": true,
+            "settings": {
+              "url": "shopify:\/\/products\/best-of-both-trial-bundle",
+              "image": "shopify:\/\/shop_images\/Trial_Duo2.png",
+              "background_color": "#b75c61",
+              "kicker": "",
+              "kicker_color": "#ffffff",
+              "title": "Combo <br>Bundles",
+              "title_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1590012692432-2",
+          "1590012692432-1",
+          "1590012692432-0"
+        ],
+        "disabled": true,
         "settings": {
-          "color_scheme": "background-1"
+          "smiley": "shopify:\/\/shop_images\/smiley_wink.gif"
+        }
+      },
+      "1590087315667": {
+        "type": "homepage-articles",
+        "disabled": true,
+        "settings": {
+          "title": "<span class=\"fc--black\"> expand your mind<\/span>",
+          "blog": "news",
+          "cta": "MORE MIND EXPANSION"
+        }
+      },
+      "1590169154689": {
+        "type": "homepage-guarantee",
+        "blocks": {
+          "1590170389153": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shipping_icon_2df314ec-3692-4362-8b40-3208a34f2d9a.png",
+              "title": "free shipping",
+              "description": "All orders over $65 or subscriptions."
+            }
+          },
+          "1590170347271": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/gaurantee_icon_5af5ea62-bd49-4074-8ff0-9ebbfa6d0755.png",
+              "title": "third party tested",
+              "description": "High quality paperwork."
+            }
+          },
+          "1590170372021": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lastprisoner_icon_5c3f88aa-1d21-4f6c-8a3f-c1b20fa4cd87.png",
+              "title": "last prisoner project",
+              "description": "1% of revenue goes towards reform."
+            }
+          },
+          "1590170407131": {
+            "type": "detail",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/flag_icon_45b263ba-a9ea-4364-be31-663a3682782b.png",
+              "title": "Made in California.",
+              "description": "Grown & tested in the United States."
+            }
+          }
+        },
+        "block_order": [
+          "1590170389153",
+          "1590170347271",
+          "1590170372021",
+          "1590170407131"
+        ],
+        "settings": {
+          "background_color": "#8772c2",
+          "background_image": "shopify:\/\/shop_images\/court-bg.png",
+          "figure_image": "shopify:\/\/shop_images\/Throwing_Gummies.gif",
+          "title": "",
+          "url": "shopify:\/\/pages\/about",
+          "cta": "OUR GOALS",
+          "cta_style": "default"
+        }
+      },
+      "1590534555964": {
+        "type": "homepage-social",
+        "blocks": {
+          "1590606498846": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CxVwOCrxUK_\/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+              "image": "shopify:\/\/shop_images\/Post1_shorts.jpg",
+              "text": "The Run High Collection 👾",
+              "handle": ""
+            }
+          },
+          "5809c33d-fbcf-415f-836e-531f9f0fcfda": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CwiJQnVR_Fx\/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+              "image": "shopify:\/\/shop_images\/Post3_event.jpg",
+              "text": "SUNBAKED SUNDAY 🌞",
+              "handle": ""
+            }
+          },
+          "1590606459223": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/Cvp9L7MS24e\/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+              "image": "shopify:\/\/shop_images\/Post5_study.jpg",
+              "text": "New Study Alert 🚨",
+              "handle": ""
+            }
+          },
+          "1590597838650": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/Cw0Ok9aLV31\/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+              "image": "shopify:\/\/shop_images\/Post6_shirt.jpg",
+              "text": "Movement Made Happy 😇",
+              "handle": ""
+            }
+          },
+          "021a95d8-21e8-46ec-b75b-c28a47e8569d": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CZe0kWdpG0T\/",
+              "image": "shopify:\/\/shop_images\/social_aquatic.jpg",
+              "text": "When ball is life aquatic 🚣‍♂️",
+              "handle": ""
+            }
+          },
+          "1590598559439": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CXuBvaPPbx6\/",
+              "image": "shopify:\/\/shop_images\/social_dump.jpg",
+              "text": "Not a dump photo dump 🏞",
+              "handle": ""
+            }
+          },
+          "1594936530715": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CXMf7jPhjFA\/",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2022-02-15_at_9.47.47_PM.png",
+              "text": "Friendly Reminder 😇",
+              "handle": ""
+            }
+          },
+          "1590606536770": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CNDckaNHA3a\/",
+              "image": "shopify:\/\/shop_images\/social_dog.jpg",
+              "text": "Good boy",
+              "handle": ""
+            }
+          },
+          "1595975561435": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CvxU0oEx7hY\/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+              "image": "shopify:\/\/shop_images\/Post4_hat.jpg",
+              "text": "The Run High Collection 🍁",
+              "handle": ""
+            }
+          },
+          "a2a64ad4-1d0c-491a-b2a7-145c91eec28a": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CxECOqyPxPA\/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+              "image": "shopify:\/\/shop_images\/Post2_can.jpg",
+              "text": "High Performance Sports Drink",
+              "handle": ""
+            }
+          },
+          "6ce8c935-2821-4ae6-80b2-a715d2576d7a": {
+            "type": "card",
+            "disabled": true,
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/chloe_sweater.jpg",
+              "text": "",
+              "handle": "@chloemchugh"
+            }
+          }
+        },
+        "block_order": [
+          "1590606498846",
+          "5809c33d-fbcf-415f-836e-531f9f0fcfda",
+          "1590606459223",
+          "1590597838650",
+          "021a95d8-21e8-46ec-b75b-c28a47e8569d",
+          "1590598559439",
+          "1594936530715",
+          "1590606536770",
+          "1595975561435",
+          "a2a64ad4-1d0c-491a-b2a7-145c91eec28a",
+          "6ce8c935-2821-4ae6-80b2-a715d2576d7a"
+        ],
+        "settings": {
+          "title_color": "#e6af6e",
+          "title": "social occasion",
+          "url": "https:\/\/www.instagram.com\/offfield\/",
+          "cta": "@OFFFIELD"
+        }
+      },
+      "1592513823827": {
+        "type": "homepage-sms",
+        "disabled": true,
+        "settings": {
+          "background_color": "#4e84b5",
+          "title_color": "#e6af6e",
+          "title": "ask us anything",
+          "subtitle_color": "#ffffff",
+          "subtitle": "Hi, I'm Courtney."
+        }
+      },
+      "1592607534506": {
+        "type": "homepage-email",
+        "disabled": true,
+        "settings": {
+          "background_color": "#4e84b5",
+          "background_image": "shopify:\/\/shop_images\/Yellow_Diagnol_Lines.png",
+          "figure_image": "shopify:\/\/shop_images\/OFFFIELD_Fauci_Running_a3f21816-2a60-4966-924d-71d898759fa2.png",
+          "title": "stay strong. stay safe.",
+          "title_color": "#e6af6e",
+          "text": "These are trying times for every single person on our planet.  This is an opportunity for us to enact the change we seek in ourselves and help others to live a healthier and happier life.  Learn more about Movement Made Happy.",
+          "text_color": "#e6af6e"
+        }
+      },
+      "product": {
+        "type": "product",
+        "settings": {
+          "show_share_buttons": false
+        }
+      },
+      "product-hero": {
+        "type": "product-hero",
+        "settings": {
+          "enable__section": true,
+          "image": "shopify:\/\/shop_images\/Bianca_Testimonial_ProductPage.jpg",
+          "content_x": "left",
+          "content_y": "middle",
+          "text": "<p style=\"color:white;font-size: 20px; line-height: 25px; max-width: 500px; font-weight: bol;font-family: avenir;\">“I felt unmistakably calm but present, like this route I’d completed a hundred times before was somehow more beautiful than ever.”<br><br><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/vice-logo-transparent.png?v=1616189186\" width=\"100\"><\/p>",
+          "sub": "",
+          "text_alignment": "center"
+        }
+      },
+      "product-media": {
+        "type": "product-media",
+        "settings": {
+          "video": "",
+          "text": "It has never been safer, cleaner, and more fun for people to find something that works for them.  Here are a few tips for those trying to stay active with the help of a few magical cannabinoids.",
+          "url": "shopify:\/\/blogs\/news\/youre-not-a-pro-dope",
+          "cta": "READ MORE"
+        }
+      },
+      "product-icons": {
+        "type": "product-icons",
+        "settings": {
+        }
+      },
+      "blog-carousel": {
+        "type": "blog-carousel",
+        "blocks": {
+          "a3714038-328d-48e3-b41e-410c44f0f225": {
+            "type": "slide",
+            "settings": {
+              "url": "shopify:\/\/blogs\/news\/i-ran-my-first-marathon-high",
+              "image": "shopify:\/\/shop_images\/marathon_post.jpg",
+              "content_x": "center",
+              "content_y": "middle",
+              "text": "<span class=\"fc--white\">I Ran My First Marathon High<\/span>",
+              "sub": "<span class=\"fc--white\">For over three months, I trained six days a week in preparation for the Los Angeles Marathon. It didn’t prepare me.<\/span>",
+              "text_alignment": "center"
+            }
+          },
+          "b1407178-0842-4943-ade1-8f2dc9e62f1b": {
+            "type": "slide",
+            "settings": {
+              "url": "shopify:\/\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank",
+              "image": "shopify:\/\/shop_images\/dark_RunHigh_Cover_OFFFIELD_2200x1400_f07daab1-a60d-44c7-aba2-9203dc449bad.jpg",
+              "content_x": "center",
+              "content_y": "middle",
+              "text": "<span class=\"fc--white\"> The Runner's High<\/span>",
+              "sub": "<span class=\"fc--white\"> Advancements in research point to the endocannabinoid system as the cause for giving endurance athletes that euphoric feeling.<\/span>",
+              "text_alignment": "center"
+            }
+          },
+          "1595877262924": {
+            "type": "slide",
+            "settings": {
+              "url": "shopify:\/\/blogs\/news\/youre-not-a-pro-dope",
+              "image": "shopify:\/\/shop_images\/Blog_Post_DontOverthink_091220_copy.jpg",
+              "content_x": "center",
+              "content_y": "middle",
+              "text": "<span class=\"fc--white\">\nA cannabis guide for everyday athletes.<\/span>",
+              "sub": "<span class=\"fc--white\">Tips to get you moving happy.<\/span>",
+              "text_alignment": "center"
+            }
+          },
+          "42d46ee2-eae9-4ae1-9e26-9b645950888a": {
+            "type": "slide",
+            "settings": {
+              "url": "shopify:\/\/blogs\/news\/how-can-cbd-improve-my-running",
+              "image": "shopify:\/\/shop_images\/Green_Trail.jpg",
+              "content_x": "center",
+              "content_y": "middle",
+              "text": "<span class=\"fc--white\">How can CBD improve my running?<\/span>",
+              "sub": "<span class=\"fc--white\">Getting over the hump with hemp.<\/span>",
+              "text_alignment": "center"
+            }
+          },
+          "7edf5230-73f6-4358-a9f7-19a2b103d542": {
+            "type": "slide",
+            "settings": {
+              "url": "shopify:\/\/blogs\/news\/chasing-the-high",
+              "image": "shopify:\/\/shop_images\/Running_Streets.jpg",
+              "content_x": "center",
+              "content_y": "middle",
+              "text": "<span class=\"fc--white\">Chasing the High<\/span>",
+              "sub": "<span class=\"fc--white\">A personal recount of running for people that hate running.<\/span>",
+              "text_alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "a3714038-328d-48e3-b41e-410c44f0f225",
+          "b1407178-0842-4943-ade1-8f2dc9e62f1b",
+          "1595877262924",
+          "42d46ee2-eae9-4ae1-9e26-9b645950888a",
+          "7edf5230-73f6-4358-a9f7-19a2b103d542"
+        ],
+        "settings": {
+        }
+      },
+      "blog-recommendations": {
+        "type": "blog-recommendations",
+        "blocks": {
+          "cf6953e4-0259-47bd-a771-167da11a0551": {
+            "type": "recommendation",
+            "settings": {
+              "article": "news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank"
+            }
+          },
+          "02525211-f4e6-4f14-9169-c2d717a65c24": {
+            "type": "recommendation",
+            "settings": {
+              "article": "news\/i-ran-my-first-marathon-high"
+            }
+          },
+          "1595966530225": {
+            "type": "recommendation",
+            "settings": {
+              "article": "news\/youre-not-a-pro-dope"
+            }
+          },
+          "1600464220896": {
+            "type": "recommendation",
+            "settings": {
+              "article": "news\/more-science-less-rhetoric"
+            }
+          },
+          "1600652221071": {
+            "type": "recommendation",
+            "settings": {
+              "article": "news\/the-spirit-of-sport"
+            }
+          }
+        },
+        "block_order": [
+          "cf6953e4-0259-47bd-a771-167da11a0551",
+          "02525211-f4e6-4f14-9169-c2d717a65c24",
+          "1595966530225",
+          "1600464220896",
+          "1600652221071"
+        ],
+        "settings": {
+          "show": true,
+          "image": "shopify:\/\/shop_images\/Favorite-Reads-Image.jpg"
+        }
+      },
+      "page--about": {
+        "type": "page--about",
+        "blocks": {
+          "1596668555327": {
+            "type": "content",
+            "settings": {
+              "background_color": "#4e84b5",
+              "kicker": "Goal #1: PEOPLE",
+              "title": "Self-care is a right, not a privilege.",
+              "image": "shopify:\/\/shop_images\/People_image_1.jpg",
+              "alt": "people hugging",
+              "text": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n            <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\" class=\"max-width\">\n            <tbody>\n<tr>\n            <\/tr>\n            <tr>\n              <td valign=\"bottom\" align=\"center\" style=\"padding: 0px 20px 0px 0px;\">\n              <p class=\"center\" style=\"color:#white;font-size: 15px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: left;\">   \t\nWe want to create a world where everyone has the access and ability to enjoy the benefits of an open mind and active life. Yet the inequities that permeate our society are deeply present in our ability to care for ourselves. From access to the great outdoors to feeling safe where we exercise. The problems are vast. Our aim is simple. More movement. More happiness. More often. For all.\n                <\/p>\n<\/td>\n            <\/tr>\n<\/tbody>\n<\/table>\n<\/div>"
+            }
+          },
+          "1596737139970": {
+            "type": "content",
+            "settings": {
+              "background_color": "#b75c61",
+              "kicker": "GOAL # 2: PLACES",
+              "title": "Every community is a happy community.",
+              "image": "shopify:\/\/shop_images\/ferdi-nusaputra-KLc5GBMNywQ-unsplash.jpg",
+              "alt": "basketball hoop",
+              "text": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n            <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\" class=\"max-width\">\n            <tbody>\n<tr>\n            <\/tr>\n            <tr>\n              <td valign=\"bottom\" align=\"center\" style=\"padding: 0px 20px 0px 0px;\">\n              <p class=\"center\" style=\"color:#white;font-size: 15px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: left;\">   \t\nIt’s our obligation to champion healthy communities starting by repairing the damage caused by the war on drugs. Too many have been destroyed and by non-violent cannabis incarceration. We simply can’t move on and forget. The consequences caused by these criminal records have included barriers to employment, housing, voting rights, public benefits, and other vital services that contribute to systemic community burnout. We support The Last Prisoner Project, currently with 1% of revenue, to free the incarcerated and expunge criminal records.  Equally, we encourage state and federal regulations, like the MORE act, that legalize cannabis while creating reform and repair for the damage the war on drugs has reaped. So that all of us may enjoy active and healthy lives.                <\/p>\n<\/td>\n            <\/tr>\n<\/tbody>\n<\/table>\n<\/div>"
+            }
+          },
+          "1596737183848": {
+            "type": "content",
+            "settings": {
+              "background_color": "#9c9f8c",
+              "kicker": "Goal # 3: PLANET",
+              "title": "Our world is powered by sustainable innovation, not synthetic exploitation.",
+              "image": "shopify:\/\/shop_images\/Planet_image_1.jpg",
+              "alt": "open field",
+              "text": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n            <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\" class=\"max-width\">\n            <tbody>\n<tr>\n            <\/tr>\n            <tr>\n              <td valign=\"bottom\" align=\"center\" style=\"padding: 0px 20px 0px 0px;\">\n              <p class=\"center\" style=\"color:#white;font-size: 15px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: left;\">   \t\n              Our planet is on the verge of burnout. The ravages of climate change, pollution, and waste are taking away our home field. To ensure a future where everyday athletes have a place to play, we are committed to sustainability from farm-to-fitness and the preservation of open spaces, parks, and land. We’ve sourced our cannabis sustainability, minimized our packing using sustainable materials, and are exploring new ways of minimizing our impact like the use of closed-loop shipping.\n            <\/p>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "1596668555327",
+          "1596737139970",
+          "1596737183848"
+        ],
+        "settings": {
+          "hero_bg_image": "shopify:\/\/shop_images\/tennis_court.jpg",
+          "hero_image": "shopify:\/\/shop_images\/Color_Fill_2_copy.png",
+          "hero_alt": "Movement Made Happy.",
+          "hero_text": "We believe an open mind and an active life is a better prescription for self-care.",
+          "split_bg_color": "#ffffff",
+          "split_color": "#000000",
+          "split_title": "peace of mind",
+          "split_text": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n      <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:800px;\" class=\"max-width\">\n      <tbody>\n<tr>\n      <\/tr>\n      <tr>\n        <td valign=\"bottom\" align=\"center\" style=\"padding: 0px 20px 0px 0px;\">\n        <p class=\"center\" style=\"color:#black;font-size: 14px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: left;\">   \t\nWe believe that honesty, compassion and empathy is good business. We’ve laid out a holistic vision for OFFFIELD that ensures that as we grow we create meaningful impact. Goals that will take a lifetime to accomplish but worth the journey.  We fund these goals by allocating 1% of revenue into initiatives for People, Places and Planet, and by growing our company in their service.\n          <\/p>\n<\/td>\n      <\/tr>\n<\/tbody>\n<\/table>\n<\/div>",
+          "split_image": "shopify:\/\/shop_images\/venn_diagrem.jpg",
+          "split_alt": "Peace of Mind Venn Diagram",
+          "blm_bg_color": "#ffffff",
+          "blm_color": "#000000",
+          "blm_text": "For too long, the war on drugs led to the dismantling of communities of color. While cannabis dispensaries have been deemed essential in many states, tens of thousands of people remain in prison for their participation in  cannabis culture. OFFFIELD is committed to change. Throughout 2022, we are allocating 1% of revenue to advance cannabis reform, so every stick we sell sticks it to injustice.",
+          "blm_image": "shopify:\/\/shop_images\/CannPlant_OFFFIELD2.jpg",
+          "blm_alt": "",
+          "movement_background_color": "#e6af6e",
+          "movement_title": "join the team",
+          "movement_text": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n          <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\" class=\"max-width\">\n          <tbody>\n<tr>\n          <\/tr>\n          <tr>\n            <td valign=\"bottom\" align=\"center\" style=\"padding: 0px 20px 0px 0px;\">\n            <p class=\"center\" style=\"color:#black;font-size: 15px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: left;\">   \t\n            Based in Los Angeles, California, OFFFIELD is committed to providing organic solutions for self-care through cannabis research and products. <br><br>\n\n            If you’re interested in joining our team, shoot us an email to <a href=\"mailto:work@offfield.com\" target=\"_blank\">work@offfield.com<\/a> for full-time, part time or freelance opportunities. \n          <\/p>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>"
+        }
+      },
+      "product-ingredients": {
+        "type": "product-ingredients",
+        "blocks": {
+          "1598039682745": {
+            "type": "tab",
+            "settings": {
+              "title": "cbd & cbg",
+              "image_mobile": "shopify:\/\/shop_images\/CannPlant_OFFFIELD1_MOBILE.jpg",
+              "image": "shopify:\/\/shop_images\/CannPlant_OFFFIELD1.jpg",
+              "content": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n  <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:800px;\" class=\"max-width\">\n  <tbody>\n<tr>\n  <\/tr>\n  <tr>\n    <td valign=\"bottom\" align=\"center\" style=\"padding: 10px 30px 0px 20px;\">\n    <p class=\"center\" style=\"color:#black;font-size: 14px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: center;\">   \t\nThis non-psychoactive blend of broad spectrum CBD and CBG, selected for quality and effect, works together to help you keep moving and feeling awesome. This is the good stuff. The cheeba. Formulated to be easy to dissolve in water with a subtle hint of lime.\n      <\/p>\n<\/td>\n  <\/tr>\n<\/tbody>\n<\/table>\n<\/div>"
+            }
+          },
+          "1598040074024": {
+            "type": "tab",
+            "settings": {
+              "title": "l-theanine",
+              "image_mobile": "shopify:\/\/shop_images\/L_Theanine_OFFFIELD5_MOBILE.jpg",
+              "image": "shopify:\/\/shop_images\/L_Theanine_OFFFIELD6.jpg",
+              "content": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n  <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:800px;\" class=\"max-width\">\n  <tbody>\n<tr>\n  <\/tr>\n  <tr>\n    <td valign=\"bottom\" align=\"center\" style=\"padding: 10px 30px 20px 20px;\">\n    <p class=\"center\" style=\"color:#black;font-size: 14px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: center;\">   \t\nL-Theanine is an incredible tea leaf derived energy boost without the jitteriness of caffeine. It’s the thrill of winning, without the pressure of competing.    \n      <\/p>\n<\/td>\n  <\/tr>\n<\/tbody>\n<\/table>\n<\/div>"
+            }
+          },
+          "1598040096107": {
+            "type": "tab",
+            "settings": {
+              "title": "vitamin b12",
+              "image_mobile": "shopify:\/\/shop_images\/B12_OFFFIELD1_MOBILE.jpg",
+              "image": "shopify:\/\/shop_images\/B12_OFFFIELD2.jpg",
+              "content": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n  <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:800px;\" class=\"max-width\">\n  <tbody>\n<tr>\n  <\/tr>\n  <tr>\n    <td valign=\"bottom\" align=\"center\" style=\"padding: 10px 30px 20px 20px;\">\n    <p class=\"center\" style=\"color:#black;font-size: 14px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: center;\">   \t\n      B12 is an essential vitamin that your body needs but can’t produce. Vital to creating red blood cells, B12 enhances oxygen delivery, energy production, and fights fatigue.    \n      <\/p>\n<\/td>\n  <\/tr>\n<\/tbody>\n<\/table>\n<\/div>"
+            }
+          },
+          "1600797511054": {
+            "type": "tab",
+            "settings": {
+              "title": "low sugar",
+              "image_mobile": "shopify:\/\/shop_images\/CaneSugar_OFFFIELD1_MOBILE.jpg",
+              "content": "<div style=\"display:inline-block; max-width:100%; min-width:300px; vertical-align:top; width:100%;\" class=\"mobile-wrapper\">\n  <table align=\"left\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:800px;\" class=\"max-width\">\n  <tbody>\n<tr>\n  <\/tr>\n  <tr>\n    <td valign=\"bottom\" align=\"center\" style=\"padding: 10px 30px 20px 20px;\">\n    <p class=\"center\" style=\"color:#black;font-size: 14px;line-height:25px; font-weight: normal;font-family: Helvetica, Arial, sans-serif; text-align: center;\">   \t\n      Unlike other health products, sugar is necessary to achieve optimal hydration through osmosis. Our team worked to develop a formula that balances the natural bitterness of CBD with the lowest amount of sugar and sodium needed for an enduring activity. With only 6g of natural cane sugar per stick pack (much less than other hydration products such as Gatorade, 34g of sugar) and no hidden sugar substitutes like stevia and no monk fruit, everyday athletes will know exactly what they’re putting in their bodies allowing them to make the most of their next activity.    \n      <\/p>\n<\/td>\n  <\/tr>\n<\/tbody>\n<\/table>\n<\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "1598039682745",
+          "1598040074024",
+          "1598040096107",
+          "1600797511054"
+        ],
+        "settings": {
+          "character": "shopify:\/\/shop_images\/swimmer_sipping_OFFFIELD_425x990_8a20a35a-e416-4e2e-a5c2-616fe131594c.gif"
+        }
+      },
+      "product-details": {
+        "type": "product-details",
+        "blocks": {
+          "1598041655072": {
+            "type": "tab",
+            "settings": {
+              "title": "hydration with benefits",
+              "tab_title": "hydration with benefits",
+              "atr_title1": "THC free",
+              "atr_title2": "Soy free",
+              "atr_title3": "Non-GMO",
+              "atr_title4": "Vegan",
+              "atr_title5": "Low sugar",
+              "atr_title6": "Caffeine free",
+              "atr_title7": "Gluten free",
+              "atr_title8": "Non-Dairy",
+              "icon": "",
+              "mobile_icon": "shopify:\/\/shop_images\/bottle_icon_41f5c74c-8560-4160-a75c-b5f9988a6d73.png",
+              "color_code": "red",
+              "content": "Fights inflammation and mental fatigue\n<br><br>\nAlleviates anxiety and improves energy\n<br><br>\nHydrates 2x faster than water alone\n<br><br>\nWay less sugar than other sports drinks\n<br><br>\nPowerful essential minerals you need",
+              "character": "shopify:\/\/shop_images\/Hydration_Bottle_Stick2.png"
+            }
+          },
+          "1598041579945": {
+            "type": "tab",
+            "settings": {
+              "title": "plant enhanced biometrics",
+              "tab_title": "plant enhanced biometrics",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "mobile_icon": "shopify:\/\/shop_images\/Adaptogens_icon2.png",
+              "color_code": "offgold",
+              "content": "We use Plant Enhanced Biometrics (PEB) to develop each of our formulations. Through a patented micro-encapsulation system, our water dispersible formula contains the highest quality CBD and CBG that mixes evenly. Sourcing the highest quality plants and minerals allows your mind to feel calm and your body to stay active.",
+              "character": "shopify:\/\/shop_images\/Plant_Magnify2.png"
+            }
+          },
+          "1598041870040": {
+            "type": "tab",
+            "settings": {
+              "title": "accessing the runner's high",
+              "tab_title": "accessing the <br>runner's high",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "mobile_icon": "shopify:\/\/shop_images\/product-ingredients-thc-free.png",
+              "color_code": "blue",
+              "content": "OFFFIELD uses broad spectrum CBD & CBG to access your Endocannabinoid System (ECS) with no psychoactive THC.  Activation of the ECS has been linked to the <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">runner's high<\/a>, triggered during high endurance exercise.",
+              "character": "shopify:\/\/shop_images\/OFFFIELD_Willie_Running.gif"
+            }
+          }
+        },
+        "block_order": [
+          "1598041655072",
+          "1598041579945",
+          "1598041870040"
+        ],
+        "settings": {
+        }
+      },
+      "product-text": {
+        "type": "product-text",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/OFFFIELD_Willie_Running.gif",
+          "title": "plant based science",
+          "content": "Only in the last decade has modern-day science been allowed to touch the glorious cannabis plant. Their findings are the bedrock of our formulations."
+        }
+      },
+      "product-text-2": {
+        "type": "product-text-2",
+        "settings": {
+          "title": "",
+          "content": ""
+        }
+      },
+      "product-tabs": {
+        "type": "product-tabs",
+        "blocks": {
+          "1598043562228": {
+            "type": "tab",
+            "settings": {
+              "title": "Runner's High",
+              "image": "shopify:\/\/shop_images\/Title_RunnersHigh.jpg",
+              "video": "",
+              "content": "The Runner’s High is a bragging right amongst runners, yet how it worked remained a mystery to scientists for generations. With the legalization of <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">cannabis research<\/a> came the discovery of the source of the Runner’s High. The Endocannabinoid System induces and regulates exercise highs for just about any activity. The same Endocannabinoid System that is activated with cannabinoids like CBD and CBG."
+            }
+          },
+          "1598043542824": {
+            "type": "tab",
+            "settings": {
+              "title": "HOW IT WORKS",
+              "image": "shopify:\/\/shop_images\/Title_TheECS2.jpg",
+              "video": "",
+              "content": "In 1992 Scientist Raphael Mechoulam discovered the Endocannabinoid System. Receptors that manage our well-being, including mood, pain, sleep, and immune functions.\n<br><br>\nThese same CB1 and CB2 receptors also activate when plant cannabinoids are introduced to your body, becoming a plant based solution for managing inflammation, anxiety, and mood."
+            }
+          },
+          "1598293346622": {
+            "type": "tab",
+            "settings": {
+              "title": "Hydration",
+              "image": "shopify:\/\/shop_images\/Title_Hydrated.jpg",
+              "video": "",
+              "content": "When has anyone every said, “I wish I was less hydrated.” \nHydration drinks like OFFFIELD make it easy to supplement the vitamins and minerals we all need when getting active. Anything that makes you sweat, even cleaning the house or jumping on the bed, means rehydrating is a good idea. And it tastes great too!"
+            }
+          },
+          "1600547403241": {
+            "type": "tab",
+            "settings": {
+              "title": "Testing",
+              "image": "shopify:\/\/shop_images\/Title_Tested.jpg",
+              "video": "",
+              "content": "We test all of our products to make sure that you get the best and safest quality ingredients.  Not only do we do it because we care, but also because it is required by law. Which we’re totally cool with: \n      <br> <br>\n      <a title=\"Download Results\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_EH_Original_Lime.pdf?v=1690917333\" target=\"_blank\">Download Results for Original Lime Enhanced Hydration <\/a>\n<br><br>\n      <a title=\"Download Results\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_EH_Dragon_Fruit.pdf?v=1690917334\" target=\"_blank\">Download Results for Dragon Fruit Lemonade Enhanced Hydration <\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1598043562228",
+          "1598043542824",
+          "1598293346622",
+          "1600547403241"
+        ],
+        "settings": {
+          "cta_url": "#MainContent",
+          "cta_text": "GET BACK UP THERE"
+        }
+      },
+      "1601072719275": {
+        "type": "homepage-guarantee",
+        "blocks": {
+          "1601270367086": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon_edurance.png",
+              "title": "mind and body",
+              "description": "Helps manage anxiety and stress\nfor more calm and focused energy."
+            }
+          },
+          "1601073040130": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lab_icon_c878ad85-aa9e-447e-a51e-e9df6f196d39.png",
+              "title": "science of exercise",
+              "description": "Doctor formulated to trigger the natural\n<a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"font-weight: bold;color: #e6ae6d;\">Runner's High.\n<\/a>"
+            }
+          },
+          "1601072821807": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon_plant.png",
+              "title": "plant enhanced",
+              "description": "L-Theanine, Broad Spectrum CBD & CBG for enhanced performance. \n<a href=\"https:\/\/offfield.com\/products\/enhanced-hydration-12-stick-bag-one-time\" style=\"font-weight: bold;color: #e6ae6d;\"> Learn more.\n<\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1601270367086",
+          "1601073040130",
+          "1601072821807"
+        ],
+        "settings": {
+          "background_color": "#b75c61",
+          "background_image": "shopify:\/\/shop_images\/OFFFIELD_Willie_Road_2200x2200_ea36bcec-e0dc-45fa-97db-af2037141e3b.png",
+          "figure_image": "shopify:\/\/shop_images\/OFFFIELD_Willie_Running_d4d70063-7afd-44a2-bb51-4725dfebf71c.gif",
+          "title": "",
+          "url": "shopify:\/\/collections\/hydration",
+          "cta": "TRY NOW",
+          "cta_style": "default"
+        }
+      },
+      "1601920129f9c672e9": {
+        "type": "homepage-hero",
+        "disabled": true,
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/Mobile_Blue_Sticks_Sides_v2.jpg",
+          "image": "shopify:\/\/shop_images\/OFFFIELD_Court_Blue_Green_smaller4.jpg",
+          "content_x": "left",
+          "content_y": "middle",
+          "text": "<span class=\"fc--white\"> Get Super Hydrated<\/span>\n<br>\n<div style=\"display:inline-block; max-width:100%; vertical-align:top; width:85%;\" class=\"mobile-wrapper\">\n<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"0%\" style=\"max-width:500px;\" class=\"max-width\">\n<tbody>\n<tr>\n<\/tr>\n<tr>\n    <td valign=\"top\" style=\"padding: 0px 0px 0px 0px;\"> <p style=\"color:white;font-size: 14px; line-height: 19px; font-weight: bol;font-family: avenir; \">\nPour OFFFIELD Enhanced Hydration in 8-12oz of high quality H2O, give it a good shake, and get ready to go.  Although onset time can range, we recommend drinking about 15 minutes before a short workout or take it with you for a long one. \n<\/p>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>\n<br>\n\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/2icons_CBD_LTheanine_622x313_36bfa186-1445-4800-a40d-31092268f1f0.png?v=1603916658\" width=\"180\">\n\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/2icons_b12_elect_622x313_f55506b0-4cf8-4a42-8af6-cc8eb4a1866d.png?v=1603916658\" width=\"180\">",
+          "include_stars": false,
+          "star_text": "<p style=\"color:white;font-size: 14px; line-height: 0px; font-weight: normal;font-family: avenir; \"> &nbsp5.0 average review <\/p>",
+          "text_alignment": "left",
+          "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+          "cta": "Learn More"
+        }
+      },
+      "160288819852ae16fc": {
+        "type": "homepage-product-carousel",
+        "blocks": {
+          "e120e61a-a524-454b-ba1a-363d5d0fe3c3": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Subscription_Box_Collection_Image.png",
+              "title": "enhanced bundle",
+              "title_color": "#e6af6e",
+              "subtitle": "25% off with subscription",
+              "subtitle_color": "#ffffff",
+              "description": "",
+              "description_color": "#e6af6e",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+              "cta": "SHOP Hydration",
+              "cta_style": "default",
+              "disclaimer": "<p style=\"color:white ;font-size: 15px; line-height: 2px; font-weight: normal;font-family: avenir; \">\n\n<\/p>",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "dc3302b5-a64b-4264-b69c-6bda52bb45b4": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Variety_2Sticks_home_wide1.png",
+              "title": "trial pack",
+              "title_color": "#e6af6e",
+              "subtitle": "with both flavors",
+              "subtitle_color": "#ffffff",
+              "description": "",
+              "description_color": "#e6af6e",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/trial-bundle-variety-pack",
+              "cta": "TRY IT",
+              "cta_style": "default",
+              "disclaimer": "<p style=\"color:white;font-size: 15px; line-height: 2px; font-weight: normal;font-family: avenir; \">\n\n<\/p>",
+              "disclaimer_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "e120e61a-a524-454b-ba1a-363d5d0fe3c3",
+          "dc3302b5-a64b-4264-b69c-6bda52bb45b4"
+        ],
+        "disabled": true,
+        "settings": {
+          "bg_color": "#b75c61"
+        }
+      },
+      "16032497008cfd1c56": {
+        "type": "homepage-hero",
+        "disabled": true,
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/Mobile_rnnr_bundle_promo.jpg",
+          "image": "shopify:\/\/shop_images\/Desktop_rnnr_2000x1400_v2.jpg",
+          "content_x": "center",
+          "content_y": "bottom",
+          "text": "",
+          "include_stars": false,
+          "star_text": "",
+          "text_alignment": "center",
+          "url": "shopify:\/\/products\/rnnr-hat-x-gummies-runners-high-bundle",
+          "cta": "THE RUNNERS HIGH BUNDLE"
+        }
+      },
+      "collection-promo": {
+        "type": "collection-promo",
+        "settings": {
+          "bg_color": "#ffffff",
+          "image_mobile": "shopify:\/\/shop_images\/collection_hero.jpg",
+          "image_desktop": "shopify:\/\/shop_images\/collection_hero2.jpg",
+          "title": "",
+          "title_color": "#e6af6e",
+          "subtitle": "high performance <br> energy gummies",
+          "subtitle_color": "#4e84b5",
+          "description": "Juicy watermelon combined with refreshing mint flavor to deliver the perfect blend that boosts performance and focuses the mind.\n<br><br>",
+          "description_color": "#020202",
+          "price": "",
+          "price_color": "#e6af6e",
+          "url": "https:\/\/offfield.com\/pages\/high-performance-energy-gummies",
+          "cta_text": "SHOP NEW GUMMIES"
+        }
+      },
+      "1611526230938a9746": {
+        "type": "homepage-movement",
+        "blocks": {
+          "1611526230938a9746-0": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.vice.com\/en\/article\/bvxbpa\/cbd-sports-drink-exercise-offfield-review",
+              "background_image": "shopify:\/\/shop_images\/vice_back.jpg",
+              "image": "shopify:\/\/shop_images\/vice_quote.png",
+              "background_color": "#4e84b5",
+              "kicker": "",
+              "kicker_color": "#4e84b5",
+              "title": "",
+              "title_color": "#e6af6e"
+            }
+          },
+          "1611526230938a9746-2": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/goop.com\/food\/entertaining\/how-to-run-better-and-other-highlights\/",
+              "background_image": "shopify:\/\/shop_images\/goop_back.jpg",
+              "image": "shopify:\/\/shop_images\/goop_quote1.png",
+              "background_color": "#9c9f8c",
+              "kicker": "",
+              "kicker_color": "#4e84b5",
+              "title": "",
+              "title_color": "#e6af6e"
+            }
+          },
+          "1611526230938a9746-1": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.byrdie.com\/what-is-cbg-5096225",
+              "background_image": "shopify:\/\/shop_images\/byrdie_back.jpg",
+              "image": "shopify:\/\/shop_images\/byrdie_quote.png",
+              "background_color": "#b75c61",
+              "kicker": "",
+              "kicker_color": "#4e84b5",
+              "title": "",
+              "title_color": "#e6af6e"
+            }
+          }
+        },
+        "block_order": [
+          "1611526230938a9746-0",
+          "1611526230938a9746-2",
+          "1611526230938a9746-1"
+        ],
+        "disabled": true,
+        "settings": {
+          "smiley": "shopify:\/\/shop_images\/smiley_wink.gif"
+        }
+      },
+      "1611537522645658d6": {
+        "type": "homepage-hero",
+        "disabled": true,
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/Tennis_Couple_Court_Hero_MOBILE.jpg",
+          "image": "shopify:\/\/shop_images\/Tennis_Couple_Court_Hero2.jpg",
+          "content_x": "left",
+          "content_y": "top",
+          "text": "<span class=\"fc--white\"> \nGet them a bag\n<br>they'll enjoy.\n\n<br>\n<a href=\"https:\/\/offfield.com\/products\/enhanced-hydration-12-stick-bag-one-time\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/vday_home_banner.png?v=1612073227\" width=\"350\"><\/a>\n\n<\/span>\n<p style=\"color:white;font-size: 13px; line-height: 1px; font-weight: 800;font-family: avenir;\">\nBUY ONE. GET ONE. HAVE FUN.\n<\/p>",
+          "include_stars": false,
+          "star_text": "",
+          "text_alignment": "center",
+          "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+          "cta": "SHOP NOW"
+        }
+      },
+      "product-accessories": {
+        "type": "product-accessories",
+        "settings": {
+          "show_share_buttons": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "Some more things that may interest you...",
+          "show_vendor": false
+        }
+      },
+      "161199172124e9dd5c": {
+        "type": "homepage-social",
+        "blocks": {
+          "a8ac8aa8-334a-483e-be1e-1fa51fe235fc": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Yellow1_square.jpg",
+              "text": "I've found myself feeling better and more energized later in matches.",
+              "handle": "David G."
+            }
+          },
+          "f39b89c9-39fd-408e-a89a-8531aee00e40": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Blue2_square.jpg",
+              "text": "Not only is the sports drink great for pre and post runs, we sometimes drink it throughout the day!",
+              "handle": "Cory H."
+            }
+          },
+          "1edabc7b-b3fb-473a-b549-ca99e18bf85f": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Red1_square.jpg",
+              "text": "I can say that I am really feeling a difference in muscle endurance.",
+              "handle": "Cheryl S."
+            }
+          },
+          "da650aa1-0094-40a2-82eb-9a5299ca645a": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Green1_square.jpg",
+              "text": "Well I’m anxiously awaiting my next order! My fave hydration.",
+              "handle": "Kym S."
+            }
+          },
+          "04a67930-2793-40fd-bf90-cce21fc47a46": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Yellow2_square.jpg",
+              "text": "The biggest thing I’ve seen is how quickly I recover.",
+              "handle": "James N."
+            }
+          },
+          "543c2b47-dd62-4e54-bc58-4b829c3f9e3c": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Blue1_square.jpg",
+              "text": "Fantastic product! Hydrated me for hiking and running.",
+              "handle": "Bradley C."
+            }
+          },
+          "0b59d02c-45ce-4109-87d3-0a894a595386": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Red2_square.jpg",
+              "text": "Makes me feel like I am focused on enjoying the ride.",
+              "handle": "Bianca P."
+            }
+          },
+          "fee7af24-600e-4d75-a911-72ad99a67cf0": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Green2_square.jpg",
+              "text": "I love using it before my workouts because it really helps.",
+              "handle": "Martha S."
+            }
+          }
+        },
+        "block_order": [
+          "a8ac8aa8-334a-483e-be1e-1fa51fe235fc",
+          "f39b89c9-39fd-408e-a89a-8531aee00e40",
+          "1edabc7b-b3fb-473a-b549-ca99e18bf85f",
+          "da650aa1-0094-40a2-82eb-9a5299ca645a",
+          "04a67930-2793-40fd-bf90-cce21fc47a46",
+          "543c2b47-dd62-4e54-bc58-4b829c3f9e3c",
+          "0b59d02c-45ce-4109-87d3-0a894a595386",
+          "fee7af24-600e-4d75-a911-72ad99a67cf0"
+        ],
+        "disabled": true,
+        "settings": {
+          "title_color": "#000000",
+          "title": "reviews podium",
+          "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+          "cta": "SEE FOR YOURSELF"
+        }
+      },
+      "16161035164a55c061": {
+        "type": "homepage-hero",
+        "disabled": true,
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/mobile_-cyber_1.jpg",
+          "image": "shopify:\/\/shop_images\/desktop_-cyber_1.jpg",
+          "content_x": "center",
+          "content_y": "bottom",
+          "text": "",
+          "include_stars": false,
+          "star_text": "4.9 Average",
+          "text_alignment": "center",
+          "url": "shopify:\/\/products\/cyber-monday-bundle-save-100",
+          "cta": "SHOP CYBER BUNDLE"
+        }
+      },
+      "product-new-ingredients": {
+        "type": "product-new-ingredients",
+        "blocks": {
+          "c31eb73b-775d-4d68-b916-cedddda35051": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/Cannabis_Leaf_41facba1-39d7-4340-8528-4888b39e6f5e.png",
+              "text_title": "20mg CBD & CBG",
+              "text_subtitle": "Selected for quality and effect, these broad spectrum phytocannabinoids work together to help you keep moving and feeling awesome throughout your activity."
+            }
+          },
+          "d188ee87-e882-4d0a-a263-69ab75dd04e7": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/ltheanine_icon_fde292b3-0950-4fc4-9101-d5010d397edf.png",
+              "text_title": "100mg L-Theanine",
+              "text_subtitle": "An incredible tea leaf derived energy boost without the jitteriness of caffeine. It's the thrill of winning, without the pressure of competing"
+            }
+          },
+          "06ef01fc-27f5-4dee-ab41-35c94fbc7884": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/b12_icon_bd5ae066-5c98-4584-a771-8dad198285e5.png",
+              "text_title": "Vitamins B6, B12, & C",
+              "text_subtitle": "Essential B Vitamins vital to creating red blood cells and give you a little boost. And Vitamin C to aid in active recovery and immunity."
+            }
+          },
+          "b00fd31e-dc33-4e34-a787-c5d5bdbc2fa6": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/magne_0.png",
+              "text_title": "Magnesium & Zinc",
+              "text_subtitle": "Magnesium (33mg) has been found to boost exercise performance and inflammation. While Zinc (1.6mg) is great for building a strong immune system."
+            }
+          }
+        },
+        "block_order": [
+          "c31eb73b-775d-4d68-b916-cedddda35051",
+          "d188ee87-e882-4d0a-a263-69ab75dd04e7",
+          "06ef01fc-27f5-4dee-ab41-35c94fbc7884",
+          "b00fd31e-dc33-4e34-a787-c5d5bdbc2fa6"
+        ],
+        "settings": {
+          "character": "shopify:\/\/shop_images\/swimmer_sipping_OFFFIELD_425x990_8a20a35a-e416-4e2e-a5c2-616fe131594c.gif",
+          "title": "quality ingredients for a quality experience"
+        }
+      },
+      "1619737462cc3aed16": {
+        "type": "homepage-social",
+        "blocks": {
+          "6c69dad9-722f-4b63-842b-a68ca3f81358": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Tennis_White.jpg",
+              "text": "\"Pushes the boundaries of player benefits inside & outside the lines.\"",
+              "handle": ""
+            }
+          },
+          "b4d54a6c-b0b1-4388-baae-07f55fd68709": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/thrillist_logo_360.jpg",
+              "text": "\"Their drink mixes have proved to be a hydrating hit.\"",
+              "handle": ""
+            }
+          },
+          "b0d02117-0245-4e49-9764-509831a258b6": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Vice_White.jpg",
+              "text": "\"I feel like I could hike forever. This is the Gatorade of weed.\"",
+              "handle": ""
+            }
+          },
+          "8e3abb21-faec-4028-a96e-87104ff62b14": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Goop_White.jpg",
+              "text": "\"The elusive Runner's High is that much easier to achieve.\"",
+              "handle": ""
+            }
+          },
+          "304afc69-81a5-4869-a195-e0ba0f07d72b": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Gossamer_White.jpg",
+              "text": "\"I can safely say I felt the difference and my running has benefited.\"",
+              "handle": ""
+            }
+          },
+          "caa257af-ca80-4cf8-89bb-33601853bdfb": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Thecut_White.jpg",
+              "text": "\"This is how I trick myself into morning workouts.\"",
+              "handle": ""
+            }
+          },
+          "b382a0e1-411e-4a65-8c34-0993490f012b": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Wallpaper_White.jpg",
+              "text": "\"Our pick of new players on the CBD market.\"",
+              "handle": ""
+            }
+          },
+          "3af44af7-e60b-4e73-b191-cb7cf4afaff7": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/Byrdie_White2.jpg",
+              "text": "\"When I first tried OFFFIELD, I was floored that I felt so thrilled.\"",
+              "handle": ""
+            }
+          }
+        },
+        "block_order": [
+          "6c69dad9-722f-4b63-842b-a68ca3f81358",
+          "b4d54a6c-b0b1-4388-baae-07f55fd68709",
+          "b0d02117-0245-4e49-9764-509831a258b6",
+          "8e3abb21-faec-4028-a96e-87104ff62b14",
+          "304afc69-81a5-4869-a195-e0ba0f07d72b",
+          "caa257af-ca80-4cf8-89bb-33601853bdfb",
+          "b382a0e1-411e-4a65-8c34-0993490f012b",
+          "3af44af7-e60b-4e73-b191-cb7cf4afaff7"
+        ],
+        "settings": {
+          "title_color": "",
+          "title": "",
+          "url": "",
+          "cta": ""
+        }
+      },
+      "section-product-gummy": {
+        "type": "section-product-gummy",
+        "blocks": {
+          "9861dbe0-3162-49f5-b05b-5c9829515922": {
+            "type": "block-0",
+            "settings": {
+              "block_title": "100mg CBD",
+              "block_img": "shopify:\/\/shop_images\/icon_edurance.png",
+              "block_subtitle": "Made For Endurance"
+            }
+          },
+          "e662ea26-60d6-4aba-a1c7-b2a47cc29ad4": {
+            "type": "block-0",
+            "settings": {
+              "block_title": "15mg CBG",
+              "block_img": "shopify:\/\/shop_images\/icon_plant.png",
+              "block_subtitle": "Plant Enhanced"
+            }
+          },
+          "aee0cb05-446c-4abb-9ad2-12ee5dee0d4a": {
+            "type": "block-0",
+            "settings": {
+              "block_title": "20mg Mate",
+              "block_img": "shopify:\/\/shop_images\/icon_caffeine.png",
+              "block_subtitle": "Yerba Mate Caffeine"
+            }
+          },
+          "61759d22-fcbe-4d58-bbe6-22411df73e65": {
+            "type": "block-1",
+            "settings": {
+              "ingredient_img": "shopify:\/\/shop_images\/cannabis.png",
+              "ingredient_title": "Broad spectrum CBD & CBG",
+              "ingredient_description": "Selected for quality and effect, these phytocannabinoids work together to help you keep moving and feeling awesome."
+            }
+          },
+          "2311c983-f52c-453c-a6e8-e3df7e4af9fc": {
+            "type": "block-1",
+            "settings": {
+              "ingredient_img": "shopify:\/\/shop_images\/yerba.png",
+              "ingredient_title": "Yerba mate",
+              "ingredient_description": "Yerba Mate comes from naturally caffeinated leaves found in South American rainforest, know to increase mental energy and focus."
+            }
+          },
+          "25d0b1bd-f474-4ccb-936f-813b5fe9f729": {
+            "type": "block-1",
+            "settings": {
+              "ingredient_img": "shopify:\/\/shop_images\/carbs.png",
+              "ingredient_title": "Good carbs",
+              "ingredient_description": "When you need long lasting energy, carbohydrates will fuel you quickly and help you last longer. That sounded way more sexual than expected. But probably works for that too."
+            }
+          },
+          "a8edf9da-9770-4621-99f8-2ef45bff9792": {
+            "type": "block-1",
+            "settings": {
+              "ingredient_img": "shopify:\/\/shop_images\/elder.png",
+              "ingredient_title": "Superfruits",
+              "ingredient_description": "Naturally flavored with Elderberry and Raspberry, superfruits know for their natural vitamins, amino acids, and antioxidants, prover to boost mental health and good for your heart."
+            }
+          },
+          "3beb70f9-5c6b-4c85-be0b-b39d6529780e": {
+            "type": "block-2",
+            "settings": {
+              "slider_image": "shopify:\/\/shop_images\/Gummies_red_cubes_ingredients_2.jpg"
+            }
+          },
+          "e6422c72-ea2e-4554-bc52-440e46d83983": {
+            "type": "block-2",
+            "settings": {
+              "slider_image": "shopify:\/\/shop_images\/gummies_3x3_db42a06b-56c0-416c-8f69-1510b04bdd17.jpg"
+            }
+          },
+          "ff4ff3b7-bd63-4146-9a5d-ae9296f17d27": {
+            "type": "block-2",
+            "settings": {
+              "slider_image": "shopify:\/\/shop_images\/labs_jar_gummies.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "9861dbe0-3162-49f5-b05b-5c9829515922",
+          "e662ea26-60d6-4aba-a1c7-b2a47cc29ad4",
+          "aee0cb05-446c-4abb-9ad2-12ee5dee0d4a",
+          "61759d22-fcbe-4d58-bbe6-22411df73e65",
+          "2311c983-f52c-453c-a6e8-e3df7e4af9fc",
+          "25d0b1bd-f474-4ccb-936f-813b5fe9f729",
+          "a8edf9da-9770-4621-99f8-2ef45bff9792",
+          "3beb70f9-5c6b-4c85-be0b-b39d6529780e",
+          "e6422c72-ea2e-4554-bc52-440e46d83983",
+          "ff4ff3b7-bd63-4146-9a5d-ae9296f17d27"
+        ],
+        "settings": {
+          "labs": "Offfield Labs SS2021",
+          "product_detail": "<p>As our inaugural <a href=\"#\" title=\"Offfield Labs\">Offfield Labs<strong>TM<\/strong><\/a> project, we're excited to make a CBD gummy with everyday athletes in mind, developed together, and made for you. This isn't an ordinary CBD gummy, this is an enhanced performance gummy.<\/p>",
+          "challenge_over_title": "The Challenge",
+          "challenge_title": "building a better gummy",
+          "challenge_desc": "Sometimes you need a portable source of energy to help you keep moving. Our gummies are packed with easily digestible carbohydrates to help your muscles re-energize. Key nutrients, vitamins, electrolytes and amino acids to maintain your mojo. And cannabinoids to help get your vibe up and inflammation down.\n<br><br>\nThe inspiration for our first enhanced performance gummy came from friends and customers asking for a high quality product similar to our enhanced hydration, but without the liquid. Many endurance athletes prefer to run on a empty stomach, but still need the electrolytes, vitamins, minerals, and anti-inflammatory cannabinoids to help them perform their best.",
+          "product_problems_title": "Problems With Current Gummies<br><br>",
+          "product_problems_list": "<p>Low Quality CBD Isolate<\/p><p>Low Quality Ingredients<\/p><p>Not Made for Activity<\/p>",
+          "product_plant_title": "Plant Enhanced Gummy For Athletes<br><br>",
+          "product_plant_list": "<p>Broad Spectrum CBD+CBG<\/p><p>Plant Based Performance<\/p><p>Energy From Yerba Mate<\/p><p>Clean Carbohydrates<\/p><p>Naturally Flavored with Superfruits<\/p><p>Electrolytes and Amino Acids<\/p>",
+          "offfield_over_title": "Developed Together. Made for you.",
+          "offfield_title": "offfield labs",
+          "offfield_desc": "<p>Testing high quality products at the intersection of cannabis research and performance science. Always with everyday athletes like you in mind.<br\/><\/p><p>Limited Edition, pre-release products. <\/p><p>Exclusively priced and made for you.<\/p><p><br\/>By participating in Offfield Labs, you have the opportunity of making something people love, and a chance to receive the finished product once it's ready at no additional cost. All we ask of you is your honesty, kindness, and support.<\/p>",
+          "text_more": "Learn more about Offfield Labs",
+          "product_ingredients_title": "quality ingredients <br> for a quality experience",
+          "popup_labs_title": "<img type=\"image\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/Labs_Title_bw_left.jpg?v=1629319028\" name=\"Offfield Labs\" position=\"center\" width=\"300px\">",
+          "popup_labs_description": "<p><strong>Innovation In Public<\/strong><\/p><p>Transparent in our process and our values. We test all of our products rigorously before making them available for Offfield Labs. We only make a very limited quantity so that we can improve on the formula with the help of everyday athletes, like you.<\/p><p><em><br\/><\/em><strong>Eliminates Waste<\/strong><\/p><p>The worst possible life-cycle of a product is sitting on a shelf, unwanted, unused, and ultimately thrown away. Labs allows us to innovate without creating waste (for our business and the environment), by starting small (or not making it at all if you’re not into it).<\/p><p><br\/><strong>Really Real Feedback<\/strong><\/p><p>We want help from real people doing their best to keep happy and healthy, so that we can deliver the best. If you love what we’re making, awesome! Let’s make it for real. If you don’t, all good! That’s what this is all about.<br\/><\/p><p><em>All Labs Products Are Tested & Certified in Development with Doctors, Specialists and Athletes. <\/em><\/p>",
+          "popup_nutrition_facts": "shopify:\/\/shop_images\/Nutrition_Facts_Enhanced_Gummies2.gif"
+        }
+      },
+      "16312477644887599f": {
+        "type": "homepage-hero",
+        "disabled": true,
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/Stick_Packs_Blue_Mobile.jpg",
+          "image": "shopify:\/\/shop_images\/Stick_Packs_Blue_Desktop2.jpg",
+          "content_x": "center",
+          "content_y": "middle",
+          "text": "<br><span class=\"fc--white\"> Movement <br> Made Happy. \n\n<p style=\"color:white;font-size: 14px; line-height: 20px; max-width: 500px; font-weight: normal;font-family: avenir;\">\nSports science and cannabis research <br> for the everyday athlete.<br>\n<\/p><\/span>",
+          "include_stars": false,
+          "star_text": "",
+          "text_alignment": "center",
+          "url": "shopify:\/\/products\/one-enhanced-hydration-12-pack",
+          "cta": "SHOP HYDRATION"
+        }
+      },
+      "16317683196bff5d76": {
+        "type": "homepage-hero",
+        "disabled": true,
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/End_Sale_mobile_large3.gif",
+          "image": "shopify:\/\/shop_images\/End_Sale_desktop_4.jpg",
+          "content_x": "center",
+          "content_y": "top",
+          "text": "<p style=\"color:#E7AF6E ;font-size: 18px; line-height: 1px;; font-weight: bold; font-family: avenir;\">\nCODE: NEWYEAR\n<\/p>\n<span class=\"fc--white\"> Your Future\nLooks Bright\n<p style=\"color:;font-size: 14px; line-height: 8px;  font-weight: bold; font-family: avenir;\"> Make your resolution your bitch.<br><br><br><br><\/p><\/span>",
+          "include_stars": false,
+          "star_text": "",
+          "text_alignment": "center",
+          "url": "shopify:\/\/collections\/all-products",
+          "cta": "SHOP NOW"
+        }
+      },
+      "16317745871977a476": {
+        "type": "homepage-product-carousel",
+        "blocks": {
+          "a3b05e70-2356-4041-8d69-dd4ead12b0d9": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lisa_Bottle2.png",
+              "title": "changing the game",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "<p style=\"color:white;font-size: 18px; line-height: 25px; max-width: 350px; font-weight: normal;font-family: avenir;\">\n\"I was skeptical but agreed to try it. It has been amazing. The shakiness and stress during play are gone and replaced by an increased sense of focus and energy. I’ve heard others describe it as a “runner’s high” which, for me, is an accurate description... A very subtle melting away of stress and a slight increase in energy.\" <br><\/p><img width=\"125\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/5stars_150px.png?v=1603914924\"> <p style=\"color:white;font-size: 13px; line-height: 0px; font-weight: bold;font-family: gothamnarrow; \"> LISA M. <\/p>",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/one-enhanced-hydration-12-pack",
+              "cta": "Read More Reviews",
+              "cta_style": "default",
+              "disclaimer": "Reviews are featured at the bottom of our product page",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "9991c75f-eef5-4afe-9e6d-ced32f696b00": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Tom_Bottle2.png",
+              "title": "runner's super high",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "<p style=\"color:white;font-size: 18px; line-height: 25px; max-width: 350px; font-weight: normal;font-family: avenir;\">\n\"I got a twelver of the lime version and used it for some runs; including my first ever 10k. The hydration part is great, but what’s super cool is the smooth ride afforded by the product. I put some tunes on and just settle into a nice rhythm. Free exercise. I’m hooked and I just signed up for a recurring subscription. \" <br><\/p><img width=\"125\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/5stars_150px.png?v=1603914924\"> <p style=\"color:white;font-size: 13px; line-height: 0px; font-weight: bold;font-family: gothamnarrow; \"> TOM M. <\/p>",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+              "cta": "READ MORE REVIEWS",
+              "cta_style": "default",
+              "disclaimer": "Reviews are featured at the bottom of our product page",
+              "disclaimer_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "a3b05e70-2356-4041-8d69-dd4ead12b0d9",
+          "9991c75f-eef5-4afe-9e6d-ced32f696b00"
+        ],
+        "disabled": true,
+        "settings": {
+          "bg_color": "#9c9f8c"
+        }
+      },
+      "163419183203348d4d": {
+        "type": "homepage-product-carousel",
+        "blocks": {
+          "ac115c32-a737-423a-8601-9b9f20fedebe": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/StockingStuffer_Homepage.png",
+              "title": "stocking stuffer bundle",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Save big and gift great!",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#ffffff",
+              "url": "shopify:\/\/products\/stocking-stuffer-holiday-bundle",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "FOR A LIMITED TIME",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "c68357b7-5563-43db-91b6-7080d797c727": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/TriBundle_Illustation_1.png",
+              "title": "tribundle",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#e6af6e",
+              "description": "Elevate your training and save with a bundle.",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#ffffff",
+              "url": "shopify:\/\/products\/tribundle-trial-bundle",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "QUALIFIES FOR FREE SHIPPING",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "56af8eb0-1535-4ec7-a409-e4a128f82687": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BB_Bundle_gummyfocus.png",
+              "title": "best of both",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Pair the gummies and hydration for the win.",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/best-of-both-trial-bundle",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "OUR MOST POPULAR BUNDLE",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "b1a8cef9-40b3-4d89-a5af-5f04a0523570": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EH_Lime_tennis.png",
+              "title": "enhanced hydration",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Improve focus and hydration",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "20% OFF ON RECURRING ORDERS",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "db612a6c-b5ab-42d5-87f9-4939e3cb90f4": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AG_Gunmmy_Bundle_Carousel_1.png",
+              "title": "gummy bundle",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Both flavors for less money. That's a win!",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/athletic-energy-gummy-trial-bundle",
+              "cta": "SOLD OUT",
+              "cta_style": "default",
+              "disclaimer": "QUALIFIES FOR FREE SHIPPING",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "302bcaa1-2ae9-4a34-8f48-0a4678f4f9f1": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AG_Matcha_Running.png",
+              "title": "athletic energy gummies",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Formulated to energize and stay focused.",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/athletic-gummies-matcha-melon",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "NEW FLAVOR NOW AVAILABLE",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "b6991c9e-fb50-48b8-957e-39c8697ae2a1": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HPSD_Illustration3.png",
+              "title": "high performance",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#e6af6e",
+              "description": "We put the active in psychoactive.",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#ffffff",
+              "url": "shopify:\/\/products\/high-performance-sports-drink-original-lime",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "< 0.3% THC (hemp-derived)*",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "09757888-b723-4ce3-8fd5-f13d3072443b": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/RunHighShorts_Orange.png",
+              "title": "run high",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "3\" inseam short shorts in breathable mesh.",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/run-high-orange-poppy-mesh-shorts",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "AVAILABLE IN BLUE",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "3c7786fa-38ae-4d03-82d4-fee2fb61e71a": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Get_Lifted_Carousel.png",
+              "title": "get lifted",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Lift weight and spirits",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/get-lifted-smoke-grey-muscle-t",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "LIMITED EDITION",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "fc0da38e-16a6-4081-9c57-4802497f05a0": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EH_Dragon_Bag_Girl.png",
+              "title": "dragon fruit lemonade",
+              "title_color": "#e6af6e",
+              "subtitle": "enhanced hydration",
+              "subtitle_color": "#ffffff",
+              "description": "",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/one-enhanced-hydration-12-pack",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "TRY RISK FREE. HAPPINESS GUARANTEE.",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "a14f56b2-9a82-4d5c-ad2a-61fd78ae8dd8": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EH_Trial_Splits.png",
+              "title": "trial pack",
+              "title_color": "#e6af6e",
+              "subtitle": "enhanced hydration",
+              "subtitle_color": "#ffffff",
+              "description": "",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/trial-bundle-variety-pack",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "LIMITED INVENTORY. WHILE SUPPLIES LAST.",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "5aa4d720-f500-4c91-b2c6-314ec552ed5d": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Subscription_Box_Collection_Image.png",
+              "title": "subscription box",
+              "title_color": "#e6af6e",
+              "subtitle": "25% off every order",
+              "subtitle_color": "#ffffff",
+              "description": "",
+              "description_color": "#ffffff",
+              "price": "$29.99",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+              "cta": "SUBSCRIBE TODAY",
+              "cta_style": "default",
+              "disclaimer": "",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "66b2a405-fd64-46a3-bb23-81d4666b0437": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/black_on_white_BACK_transparent.png",
+              "title": "movement <br> made happy",
+              "title_color": "#e6af6e",
+              "subtitle": "long-sleeve shirt",
+              "subtitle_color": "#ffffff",
+              "description": "$45",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/move-happy-collection-white-long-sleeve",
+              "cta": "CHECK OUT THE SHIRT",
+              "cta_style": "default",
+              "disclaimer": "IMAGE FEATURES BACK OF SHIRT",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "0856c2c9-bad9-477f-81f9-bae30c343d5b": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Nalgene_Bottle_Red_1.png",
+              "title": "movement made happy",
+              "title_color": "#e6af6e",
+              "subtitle": "16oz nalgene bottle",
+              "subtitle_color": "#ffffff",
+              "description": "",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/nalgene-bottle-16oz",
+              "cta": "CHECK OUT THE BOTTLE",
+              "cta_style": "default",
+              "disclaimer": "LIMITED EDITION COLORS AVAILABLE",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "967b1885-c975-4a4d-a7cc-32f04c6d48b2": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Sweater_Racketeering_White_Tennis.png",
+              "title": "racketeering",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "limited edition sweater",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/los-angeles-racketeering-white-crew",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "FREE SHIPPING ON ALL ORDERS",
+              "disclaimer_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "ac115c32-a737-423a-8601-9b9f20fedebe",
+          "c68357b7-5563-43db-91b6-7080d797c727",
+          "56af8eb0-1535-4ec7-a409-e4a128f82687",
+          "b1a8cef9-40b3-4d89-a5af-5f04a0523570",
+          "db612a6c-b5ab-42d5-87f9-4939e3cb90f4",
+          "302bcaa1-2ae9-4a34-8f48-0a4678f4f9f1",
+          "b6991c9e-fb50-48b8-957e-39c8697ae2a1",
+          "09757888-b723-4ce3-8fd5-f13d3072443b",
+          "3c7786fa-38ae-4d03-82d4-fee2fb61e71a",
+          "fc0da38e-16a6-4081-9c57-4802497f05a0",
+          "a14f56b2-9a82-4d5c-ad2a-61fd78ae8dd8",
+          "5aa4d720-f500-4c91-b2c6-314ec552ed5d",
+          "66b2a405-fd64-46a3-bb23-81d4666b0437",
+          "0856c2c9-bad9-477f-81f9-bae30c343d5b",
+          "967b1885-c975-4a4d-a7cc-32f04c6d48b2"
+        ],
+        "settings": {
+          "bg_color": "#4e84b5"
+        }
+      },
+      "section-another_product": {
+        "type": "section-another_product",
+        "blocks": {
+          "e0ce9dcf-dc70-4044-adef-4eb80cda1966": {
+            "type": "block-1",
+            "settings": {
+              "ingredient_img": "shopify:\/\/shop_images\/cannabis.png",
+              "ingredient_title": "Full Spectrum CBD",
+              "ingredient_description": "Selected for quality and effect, these phytocannabinoids work together to help you keep moving and feeling awesome."
+            }
+          },
+          "93aa25c0-8732-4ce1-a8e7-a90d042594ca": {
+            "type": "block-1",
+            "settings": {
+              "ingredient_img": "shopify:\/\/shop_images\/lidocaine_Vile_icon_80b61c26-a26e-4c51-b7dc-3582c75a4d7f.png",
+              "ingredient_title": "Lidocaine",
+              "ingredient_description": "This is the strong stuff. We're not messing around here. Lidocaine is an anesthetic that prevents pain by blocking the signals at the nerve endings on skin."
+            }
+          },
+          "c0708b45-e203-4218-bf5e-93409bba6ab7": {
+            "type": "block-1",
+            "settings": {
+              "ingredient_img": "shopify:\/\/shop_images\/mint_icon_6bc2e968-a3b4-40d6-99e6-fab1cbb70358.png",
+              "ingredient_title": "Menthol",
+              "ingredient_description": "Smells like pain relief! Menthol is an organic compound has both anesthetic and counterirritant qualities."
+            }
+          },
+          "ebf78e62-630d-45be-98f6-e1500fb72527": {
+            "type": "block-0",
+            "settings": {
+              "block_title": "500mg CBD",
+              "block_img": "shopify:\/\/shop_images\/icon_plant.png",
+              "block_subtitle": "PLANT ENHANCED"
+            }
+          },
+          "2a322deb-3043-4026-a2e6-e857a3354191": {
+            "type": "block-0",
+            "settings": {
+              "block_title": "4% Lidocaine",
+              "block_img": "shopify:\/\/shop_images\/lab_icon_c878ad85-aa9e-447e-a51e-e9df6f196d39.png",
+              "block_subtitle": "Lab Formulated"
+            }
+          },
+          "ba4ab175-485c-48b5-b0e7-1dff2919c760": {
+            "type": "block-0",
+            "settings": {
+              "block_title": "1% Menthol",
+              "block_img": "shopify:\/\/shop_images\/icon_pain.png",
+              "block_subtitle": "Pin Point Pain Relief"
+            }
+          },
+          "2a9b768c-2072-463c-b23b-f3e0468a2c1c": {
+            "type": "block-2",
+            "settings": {
+              "slider_image": "shopify:\/\/shop_images\/gel_black.jpg"
+            }
+          },
+          "0ce84edf-f739-4663-9bc7-5905296911e6": {
+            "type": "block-2",
+            "settings": {
+              "slider_image": "shopify:\/\/shop_images\/RollOn_Scroll1.jpg"
+            }
+          },
+          "cfdb8f76-75ac-4188-926b-4bd52d88479e": {
+            "type": "block-2",
+            "settings": {
+              "slider_image": "shopify:\/\/shop_images\/RollOn_Scroll2.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "e0ce9dcf-dc70-4044-adef-4eb80cda1966",
+          "93aa25c0-8732-4ce1-a8e7-a90d042594ca",
+          "c0708b45-e203-4218-bf5e-93409bba6ab7",
+          "ebf78e62-630d-45be-98f6-e1500fb72527",
+          "2a322deb-3043-4026-a2e6-e857a3354191",
+          "ba4ab175-485c-48b5-b0e7-1dff2919c760",
+          "2a9b768c-2072-463c-b23b-f3e0468a2c1c",
+          "0ce84edf-f739-4663-9bc7-5905296911e6",
+          "cfdb8f76-75ac-4188-926b-4bd52d88479e"
+        ],
+        "settings": {
+          "labs": "Offfield Labs V2.2022",
+          "product_detail": "<p>We're excited to make a roll-on designed to work fast without all the mess. This Enhanced Recovery Roll-On is a strong starting point for a better approach to targeted pain relief. Together we’ll take it to a whole new level. <\/p>",
+          "challenge_over_title": "The Challenge",
+          "challenge_title": "build a better roll-on",
+          "challenge_desc": "Let’s face it, we all get sore. Muscles that ache. Ailments that flare-up. Joints that need love. What we hear from you all is how a little relief can go a long way. This roll-on is designed for you to put it where it hurts, for that well-earned relief. \n\nDesigned to deliver targeted relief with 500mg CBD + 4% Lidocaine + 1% Menthol. These active ingredients sit at the intersection of our product philosophy. Combining the latest in cannabinoid research with impactful sports science.",
+          "product_problems_title": "The Problems With Current Roll-Ons",
+          "product_problems_list": "<p>Super Expensive<\/p><p>Limited Active Ingredients <\/p><p>Lack of Preventative Ingredients <\/p><p>Hemp Isolate<\/p>",
+          "product_plant_title": "A Plant Enhanced Roll-On",
+          "product_plant_list": "<p>Full Spectrum CBD<\/p><p>Lidocaine + Menthol<\/p><p>Immediate Relief<\/p>",
+          "offfield_over_title": "Developed Together. Made for you.",
+          "offfield_title": "offfield labs",
+          "offfield_desc": "<p>Testing high quality products at the intersection of cannabis research and performance science. Always with everyday athletes like you in mind.<br\/><\/p><p>Limited edition, pre-release products.<\/p><p>Exclusively priced and made for you.<\/p><p><br\/>By participating in Offfield Labs, you have the opportunity of making something people love, and a chance to receive the finished product once it's ready at no additional cost. All we ask of you is your honesty, kindness, and support.<\/p>",
+          "text_more": "Learn more about what you're getting yourself into.",
+          "product_ingredients_title": "quality ingredients <br>for a quality experience",
+          "popup_labs_title": "<img type=\"image\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/Labs_Title_bw_left.jpg?v=1629319028\" name=\"Offfield Labs\" position=\"center\" width=\"300px\">",
+          "popup_labs_description": "<p><strong>Innovation In Public<\/strong><\/p><p>Transparent in our process and our values. We test all of our products rigorously before making them available for Offfield Labs. We only make a very limited quantity so that we can improve on the formula with the help of everyday athletes, like you.<\/p><p><em><br\/><\/em><strong>Eliminates Waste<\/strong><\/p><p>The worst possible life-cycle of a product is sitting on a shelf, unwanted, unused, and ultimately thrown away. Labs allows us to innovate without creating waste (for our business and the environment), by starting small (or not making it at all if you’re not into it).<\/p><p><br\/><strong>Really Real Feedback<\/strong><\/p><p>We want help from real people doing their best to keep happy and healthy, so that we can deliver the best. If you love what we’re making, awesome! Let’s make it for real. If you don’t, all good! That’s what this is all about.<br\/><\/p><p><em>All Labs Products Are Tested & Certified in Development with Doctors, Specialists and Athletes.<\/em><\/p>",
+          "popup_nutrition_facts": "shopify:\/\/shop_images\/Drug_Facts_RollOn.jpg"
+        }
+      },
+      "164498661544ae34ad": {
+        "type": "homepage-hero",
+        "disabled": true,
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/Court_Mobile.jpg",
+          "image": "shopify:\/\/shop_images\/Court_Desktop.jpg",
+          "content_x": "left",
+          "content_y": "bottom",
+          "text": "<p style=\"color:white; font-size: 28px; line-height: 10px; max-width: 600px; font-weight: bold ;font-family: avenir;\"> enhanced hydration\n<\/p>\n\n<p style=\"color:white; font-size: 14px; line-height: 18px; max-width: 300px; font-weight: ;font-family: avenir;\"> Science-backed and sports-focused mix that has everything you want to stay active.<br><br><br>\n<\/p>",
+          "include_stars": false,
+          "star_text": "",
+          "text_alignment": "left",
+          "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+          "cta": "SHOP HYDRATION"
+        }
+      },
+      "product-new": {
+        "type": "product-new",
+        "settings": {
+          "show_share_buttons": false
+        }
+      },
+      "product-details-new": {
+        "type": "product-details-new",
+        "blocks": {
+          "a7f85cfb-e3aa-4986-b268-b043b0616e9e": {
+            "type": "tab",
+            "settings": {
+              "title": "gummies with benefits",
+              "tab_title": "gummies <br> with benefits",
+              "atr_title1": "THC Free",
+              "atr_title2": "Vegan",
+              "atr_title3": "Non-GMO",
+              "atr_title4": "Gluten Free",
+              "atr_title5": "Dairy Free",
+              "atr_title6": "Soy Free",
+              "atr_title7": "No Perservatives",
+              "atr_title8": "No Artificial Sweeteners",
+              "icon": "",
+              "color_code": "red",
+              "content": "Quick source of energy to go the distance\n<br><br>\nAlleviates anxiety and improves focus\n<br><br>\nAids in hydration and supports fluid balance <br><br>\nFights muscle fatigue and cramping\n<br><br>\nPacked with Electrolytes and Amino Acids",
+              "character": "shopify:\/\/shop_images\/Untitled_3x_60e01b66-5b0c-4b08-aa20-2b48fa6fa1c9.png"
+            }
+          },
+          "f91024c1-157d-4dd8-be37-1c0d291986aa": {
+            "type": "tab",
+            "settings": {
+              "title": "made better by athletes",
+              "tab_title": "made better <br> by athletes",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "color_code": "offgold",
+              "content": "Our inaugural Offfield Labs project, we set out to build a better gummy. Thanks to the feedback of over 200 athletes from our community, we created an Athletic Gummy made for primetime.",
+              "character": "shopify:\/\/shop_images\/runner_gummy_1.png"
+            }
+          },
+          "9694ef6b-1798-479c-a7f3-4f4f61435c74": {
+            "type": "tab",
+            "settings": {
+              "title": "activate your runner's high",
+              "tab_title": "activate your <br> runner's high",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "color_code": "blue",
+              "content": "OFFFIELD uses broad spectrum CBD & CBG to access your Endocannabinoid System (ECS) with no psychoactive THC.  Activation of the ECS has been linked to the <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">runner's high<\/a>, triggered during high endurance exercise.",
+              "character": "shopify:\/\/shop_images\/OFFFIELD_Willie_Running_d4d70063-7afd-44a2-bb51-4725dfebf71c.gif"
+            }
+          }
+        },
+        "block_order": [
+          "a7f85cfb-e3aa-4986-b268-b043b0616e9e",
+          "f91024c1-157d-4dd8-be37-1c0d291986aa",
+          "9694ef6b-1798-479c-a7f3-4f4f61435c74"
+        ],
+        "settings": {
+        }
+      },
+      "product-hero-new": {
+        "type": "product-hero-new",
+        "settings": {
+          "enable__section": true,
+          "image": "shopify:\/\/shop_images\/gummies_3x3_db42a06b-56c0-416c-8f69-1510b04bdd17.jpg",
+          "content_x": "center",
+          "content_y": "middle",
+          "text": "",
+          "sub": "",
+          "text_alignment": "center"
+        }
+      },
+      "product-new-ingredients-new": {
+        "type": "product-new-ingredients-new",
+        "blocks": {
+          "58017772-5587-4911-83e1-22d84260857a": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/cannabis.png",
+              "text_title": "Broad spectrum CBD & CBG",
+              "text_subtitle": "50mg of CBD + 8mg CBG per serving, these phytocannabinoids are extra strength for extra days. Just the right dose for the long haul."
+            }
+          },
+          "fcdce8c7-d226-49f5-b2e5-18320e8e8993": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/yerba.png",
+              "text_title": "Organic Yerba Mate",
+              "text_subtitle": "Naturally caffeinated South American Yerba Mate increases mental energy and focus."
+            }
+          },
+          "088b67f7-f883-4586-a761-49aa4591a9e8": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/carbs_0fea1353-4e37-4898-bf18-38dffe26af9c.png",
+              "text_title": "Good carbs",
+              "text_subtitle": "6g of carbohydrates for when you need fast working and long lasting energy. You'll be breaking through walls  not hitting them."
+            }
+          },
+          "6eeeb282-cfb6-4f5d-af02-484276424505": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/matcha.png",
+              "text_title": "Organic Matcha",
+              "text_subtitle": "A subtle and smooth taste that delivers on an energy boost without the effects of a crash."
+            }
+          }
+        },
+        "block_order": [
+          "58017772-5587-4911-83e1-22d84260857a",
+          "fcdce8c7-d226-49f5-b2e5-18320e8e8993",
+          "088b67f7-f883-4586-a761-49aa4591a9e8",
+          "6eeeb282-cfb6-4f5d-af02-484276424505"
+        ],
+        "settings": {
+          "character": "shopify:\/\/shop_images\/cycler_inflammation.png",
+          "title": "quality ingredients for a quality experience"
+        }
+      },
+      "product-media-new": {
+        "type": "product-media-new",
+        "settings": {
+          "video": "",
+          "text": "",
+          "url": "",
+          "cta": ""
+        }
+      },
+      "product-tabs-new": {
+        "type": "product-tabs-new",
+        "blocks": {
+          "3fd7f8d0-bf81-4419-8255-35a3d60ec122": {
+            "type": "tab",
+            "settings": {
+              "title": "Runner's High",
+              "image": "shopify:\/\/shop_images\/Title_RunnersHigh.jpg",
+              "video": "",
+              "content": "The Runner’s High is a bragging right amongst runners, yet how it worked remained a mystery to scientists for generations. With the legalization of <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">cannabis research<\/a> came the discovery of the source of the Runner’s High. The Endocannabinoid System induces and regulates exercise highs for just about any activity. The same Endocannabinoid System that is activated with cannabinoids like CBD and CBG."
+            }
+          },
+          "abd9ed2f-add1-44c9-92b6-249c052544da": {
+            "type": "tab",
+            "settings": {
+              "title": "How it works",
+              "image": "shopify:\/\/shop_images\/Title_TheECS.jpg",
+              "video": "",
+              "content": "In 1992 Scientist Raphael Mechoulam discovered the Endocannabinoid System. Receptors that manage our well-being, including mood, pain, sleep, and immune functions.\n<br><br>\nThese same CB1 and CB2 receptors also activate when plant cannabinoids are introduced to your body, becoming a plant based solution for managing inflammation, anxiety, and mood.\n<br><br>"
+            }
+          },
+          "6a989596-a42f-49b0-ba30-eb459f5048cb": {
+            "type": "tab",
+            "settings": {
+              "title": "Offfield Labs",
+              "image": "shopify:\/\/shop_images\/Athletic_Gummies_PDP_Science.jpg",
+              "video": "",
+              "content": "As our inaugural Offfield Labs project, with the help of hundreds of customers, we developed our CBD gummy with everyday athletes in mind, developed together, and made for you. This isn't an ordinary CBD gummy, this is an enhanced performance athletic gummy."
+            }
+          },
+          "784bcbbe-a4b6-482d-bc3d-4c8cbb8654ef": {
+            "type": "tab",
+            "settings": {
+              "title": "Testing",
+              "image": "shopify:\/\/shop_images\/Title_Tested.jpg",
+              "video": "",
+              "content": "We test all of our products to make sure that you get the best and safest quality ingredients.  Not only do we do it because we care, but also because it is required by law. Which we’re totally cool with: \n      <br> <br>\n      <a title=\"Download Results\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_AEG_Yerba_Berry.pdf?v=1690917334\" target=\"_blank\">Download Results for Yerba Berry Athletic Energy Gummies <\/a>\n<br><br>\n      <a title=\"Download Results\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_AEG_Matcha_Melon.pdf?v=1690917334\" target=\"_blank\">Download Results for Matcha Melon Athletic Energy Gummies<\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "3fd7f8d0-bf81-4419-8255-35a3d60ec122",
+          "abd9ed2f-add1-44c9-92b6-249c052544da",
+          "6a989596-a42f-49b0-ba30-eb459f5048cb",
+          "784bcbbe-a4b6-482d-bc3d-4c8cbb8654ef"
+        ],
+        "settings": {
+          "cta_url": "",
+          "cta_text": "GET BACK UP THERE"
+        }
+      },
+      "product-text-2-new": {
+        "type": "product-text-2-new",
+        "settings": {
+          "title": "",
+          "content": ""
+        }
+      },
+      "1650408660e7c4d212": {
+        "type": "homepage-hero",
+        "disabled": true,
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/mobile_Reo_RedYellow_OFFFIELD_drinking.jpg",
+          "image": "shopify:\/\/shop_images\/Reo_RedYellow_OFFFIELD_drinking_27b8aa93-dfdc-4a8b-a6e0-3824cffaef0e.jpg",
+          "content_x": "left",
+          "content_y": "top",
+          "text": "<p style=\"color:white; font-size:45px; line-height: 42px; max-width: 500px; font-weight: 800 ;font-family: ;\"> Go Hard.\n<br>Move Happy.\n<br><\/p>",
+          "include_stars": false,
+          "star_text": "sdfg",
+          "text_alignment": "left",
+          "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+          "cta": "GET HYDRATED"
+        }
+      },
+      "165591483914ec78e5": {
+        "type": "homepage-editorials",
+        "blocks": {
+          "e32502c7-259f-4fd4-9168-d7f96f3db0bb": {
+            "type": "editorial",
+            "settings": {
+              "quote": "\"I started using this water enhancement this past March during my tennis matches. I have found that I am calmer and more focused in the moment. I love this product!\" <br>\n<br>\nApril B. <br> June 22, 2022",
+              "logo": "shopify:\/\/shop_images\/5stars_06ea4dde-3035-4f7d-8430-8849894eca07.png"
+            }
+          },
+          "25194c0e-d0d3-4a9a-b123-2981020e3a43": {
+            "type": "editorial",
+            "settings": {
+              "quote": "\"I’ve been using the electrolytes, gummies and roller to help me training for my first marathon. Give it a try and I promise you won’t go back!\" <br><br>Taylor W.<br>June 10, 2022",
+              "logo": "shopify:\/\/shop_images\/5stars_06ea4dde-3035-4f7d-8430-8849894eca07.png"
+            }
+          },
+          "dac2b79b-c20c-441e-8f37-b938a0cc6840": {
+            "type": "editorial",
+            "settings": {
+              "quote": "\"By and large, offfield helps my game by at least 100% I feel more relaxed, yet focused. I also have noticed decreased inflammation after playing, which is just icing on the cake!\" <br><br>Ernest S. <br> June 7, 2022",
+              "logo": "shopify:\/\/shop_images\/5stars_06ea4dde-3035-4f7d-8430-8849894eca07.png"
+            }
+          },
+          "cad862d5-8777-4648-8f1b-fba671dd4613": {
+            "type": "editorial",
+            "settings": {
+              "quote": "\"As labelled and advertised my overall experience has been satisfying. I am for one very happy with offfield I have recommend it to my friends.\" \n<br><br>\nDean W.\n<br>\nJune 6, 2022",
+              "logo": "shopify:\/\/shop_images\/5stars_06ea4dde-3035-4f7d-8430-8849894eca07.png"
+            }
+          },
+          "823270a9-512f-4d00-8117-634c96cad653": {
+            "type": "editorial",
+            "settings": {
+              "quote": "\"Great so far! I have really just been using OFFField consistently for a few weeks, but for my longer runs it helps me to feel relaxed and calm, which helps me perform better--So far so good!\"\n<br><br>\nCory H.\n<br> June 1, 2022",
+              "logo": "shopify:\/\/shop_images\/5stars_06ea4dde-3035-4f7d-8430-8849894eca07.png"
+            }
+          },
+          "b6599021-3750-405f-8ab7-5848e4e82ec2": {
+            "type": "editorial",
+            "settings": {
+              "quote": "\"Love it! Taste great and helps me push through my exercises.\"\n<br><br>\nJames B.\n<br>\nMay 31, 2022",
+              "logo": "shopify:\/\/shop_images\/5stars_06ea4dde-3035-4f7d-8430-8849894eca07.png"
+            }
+          },
+          "6d90446c-a8e6-4c63-879c-b3a6d0df7a1c": {
+            "type": "editorial",
+            "settings": {
+              "quote": "\"I ran a trifecta this past weekend and I always have a hard time keeping focused and hydrated this had a good taste and refreshing as I climbed my many miles and ran harder than I think I ever ran thank you.\"<br><br>\nBilli J. <br>\nMay 26, 2022",
+              "logo": "shopify:\/\/shop_images\/5stars_06ea4dde-3035-4f7d-8430-8849894eca07.png"
+            }
+          },
+          "f412f6b9-55e9-4dd7-be46-5198b95b05cc": {
+            "type": "editorial",
+            "settings": {
+              "quote": "\"Really helped my tennis game!\nMy muscles and mind were much calmer, which minimizes those mental disruptions especially during serving and in come-from-behind situations!\" <br><br>\nDee Dee M.\n<br> May 16, 2022",
+              "logo": "shopify:\/\/shop_images\/5stars_06ea4dde-3035-4f7d-8430-8849894eca07.png"
+            }
+          }
+        },
+        "block_order": [
+          "e32502c7-259f-4fd4-9168-d7f96f3db0bb",
+          "25194c0e-d0d3-4a9a-b123-2981020e3a43",
+          "dac2b79b-c20c-441e-8f37-b938a0cc6840",
+          "cad862d5-8777-4648-8f1b-fba671dd4613",
+          "823270a9-512f-4d00-8117-634c96cad653",
+          "b6599021-3750-405f-8ab7-5848e4e82ec2",
+          "6d90446c-a8e6-4c63-879c-b3a6d0df7a1c",
+          "f412f6b9-55e9-4dd7-be46-5198b95b05cc"
+        ],
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "cart-slide": {
+        "type": "cart-slide",
+        "settings": {
+        }
+      },
+      "homepage-hero-v": {
+        "type": "homepage-hero-v",
+        "settings": {
+          "checkbox": false,
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/BlackFriday_BOGO_Mobile_hero3_2230b12e-4f09-41d0-a617-fca49546bdd6.jpg",
+          "image": "shopify:\/\/shop_images\/BlackFriday_BOGO_Desktop_hero6_46b34584-b30c-41f1-b7f1-3afb852507e5.jpg",
+          "content_x": "center",
+          "content_y": "bottom",
+          "text": "<span style=\"color:white; font-size:55px; line-height: 45px; max-width: 500px; font-weight: 800 ;font-family: ;\"> Gift One or Get One? \n<p style=\"color:white; font-size: 16px; line-height: 20px;  font-weight: normal ;font-family: avenir;\"> Buy the Enhanced Hydration Bundle, Get a Second Free. What you do with it is on you.\n<\/p><\/span>",
+          "include_stars": false,
+          "star_text": "4.9 Average",
+          "text_alignment": "center",
+          "url": "",
+          "cta": "SHOP GUMMIES"
+        }
+      },
+      "homepage-hero": {
+        "type": "homepage-hero",
+        "settings": {
+          "video": "",
+          "content_x": "center",
+          "content_y": "middle",
+          "text": "",
+          "include_stars": false,
+          "star_text": "",
+          "text_alignment": "center",
+          "url": "",
+          "cta": ""
+        }
+      },
+      "homepage-social-v": {
+        "type": "homepage-social-v",
+        "blocks": {
+          "825729bf-3fbd-45a9-8eef-e32c64cf7a01": {
+            "type": "card",
+            "settings": {
+              "url": "shopify:\/\/products\/offfield-racket-dampener",
+              "image": "shopify:\/\/shop_images\/IMG_6566.jpg",
+              "text": "Happy Racket Dampener\n<br>Red & Gold",
+              "handle": "$4"
+            }
+          },
+          "870f2d20-d1ab-4ae6-b20b-5091611b4268": {
+            "type": "card",
+            "settings": {
+              "url": "shopify:\/\/products\/run-high-black-mesh-shorts",
+              "image": "shopify:\/\/shop_images\/social_shorts.jpg",
+              "text": "Run High Mesh Shorts\n<br> Black 5\" Inseam",
+              "handle": "$45"
+            }
+          },
+          "68e27f00-29f9-440b-9b8c-a9888bb596f9": {
+            "type": "card",
+            "settings": {
+              "url": "shopify:\/\/products\/nalgene-bottle-snow-bird-blue-16oz",
+              "image": "shopify:\/\/shop_images\/Bottle_Snow_mobile_2_84edfd49-5059-460f-a8cb-4957b033260a.jpg",
+              "text": "Movement Made Happy\n<br>16oz Snowbird Nalgene",
+              "handle": "$16"
+            }
+          },
+          "c944ce8f-a703-4fe1-8b46-86e8da91564b": {
+            "type": "card",
+            "settings": {
+              "url": "shopify:\/\/products\/nalgene-bottle-16oz",
+              "image": "shopify:\/\/shop_images\/bottle_1.jpg",
+              "text": "Movement Made Happy\n<br> 16oz Red & Clear Nalgene",
+              "handle": "$16"
+            }
+          },
+          "67dca6e0-0688-4c5d-9c4d-7ac47cdd7363": {
+            "type": "card",
+            "settings": {
+              "url": "shopify:\/\/products\/move-happy-collection-white-long-sleeve",
+              "image": "shopify:\/\/shop_images\/social_shirt.jpg",
+              "text": "Movement Made Happy\n<br> White Long Sleeve",
+              "handle": "$50"
+            }
+          },
+          "9d32259c-89e5-45e7-88f9-a94360c23151": {
+            "type": "card",
+            "settings": {
+              "url": "shopify:\/\/products\/offfield-tennis-white-hat",
+              "image": "shopify:\/\/shop_images\/hat_losangeles_bg.jpg",
+              "text": "Offfield Tennis Los Angeles\n<br> White Hat",
+              "handle": "$32"
+            }
+          },
+          "8bddadfa-fa38-431b-b333-d30a84e3ccdc": {
+            "type": "card",
+            "settings": {
+              "url": "shopify:\/\/products\/get-lifted-smoke-grey-muscle-t",
+              "image": "shopify:\/\/shop_images\/GetLifted_Post_4.jpg",
+              "text": "Get Lifted Muscle Shirt\n<br> Smoke Grey",
+              "handle": "$50"
+            }
+          }
+        },
+        "block_order": [
+          "825729bf-3fbd-45a9-8eef-e32c64cf7a01",
+          "870f2d20-d1ab-4ae6-b20b-5091611b4268",
+          "68e27f00-29f9-440b-9b8c-a9888bb596f9",
+          "c944ce8f-a703-4fe1-8b46-86e8da91564b",
+          "67dca6e0-0688-4c5d-9c4d-7ac47cdd7363",
+          "9d32259c-89e5-45e7-88f9-a94360c23151",
+          "8bddadfa-fa38-431b-b333-d30a84e3ccdc"
+        ],
+        "settings": {
+          "checkbox": false,
+          "title_color": "#e6af6e",
+          "title": "you might like these...",
+          "url": "shopify:\/\/collections\/all-products",
+          "cta": "SHOP FULL STORE"
+        }
+      },
+      "homepage-product-carousel-v": {
+        "type": "homepage-product-carousel-v",
+        "blocks": {
+          "1cf36079-8761-4171-9508-e10b1693a341": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BlackFriday_BOGO_carousel_1.png",
+              "title": "OPTION 1: KEEP IT",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Treat yourself. You've earned it.",
+              "description_color": "#ffffff",
+              "price": "4 Bags for $65 <s>130<\/s>",
+              "price_color": "#e6af6e",
+              "url": "https:\/\/offfield.com\/cart\/41592854315182:2?discount=KEEPTWO",
+              "cta": "ADD TO CHECKOUT",
+              "cta_style": "default",
+              "disclaimer": "USE CODE: KEEPTWO",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "c71d8612-1a77-45a5-ae9f-e0abda500ad0": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BlackFriday_BOGO_carousel_2.png",
+              "title": "OPTION 2: GIFT IT",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Make that special someone... less thirsty.",
+              "description_color": "#ffffff",
+              "price": "4 Bags for $65 <s>130<\/s>",
+              "price_color": "#e6af6e",
+              "url": "https:\/\/offfield.com\/cart\/41592854315182:2?discount=GIFTONE",
+              "cta": "ADD TO CHECKOUT",
+              "cta_style": "default",
+              "disclaimer": "USE CODE: GIFTONE",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "9fb342bb-dca0-4584-829d-394f6c0287af": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AG_1_Bag_Cycling_1_1.png",
+              "title": "athletic gummies",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "high performance edibles",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/athletic-gummies",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "TRY RISK FREE. HAPPINESS GUARANTEE.",
+              "disclaimer_color": "#ffffff"
+            }
+          },
+          "bdbd3989-f58b-4af1-8676-afda433cbf9a": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EnhancedHydration_Bag_Tennis_1.png",
+              "title": "enhanced hydration",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "sports drink  mix",
+              "description_color": "#ffffff",
+              "price": "",
+              "price_color": "#e6af6e",
+              "url": "shopify:\/\/products\/enhanced-hydration-12-stick-bag-one-time",
+              "cta": "SHOP NOW",
+              "cta_style": "default",
+              "disclaimer": "TRY RISK FREE. HAPPINESS GUARANTEE.",
+              "disclaimer_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1cf36079-8761-4171-9508-e10b1693a341",
+          "c71d8612-1a77-45a5-ae9f-e0abda500ad0",
+          "9fb342bb-dca0-4584-829d-394f6c0287af",
+          "bdbd3989-f58b-4af1-8676-afda433cbf9a"
+        ],
+        "settings": {
+          "checkbox": false,
+          "bg_color": "#4e84b5"
+        }
+      },
+      "homepage-guarantee-v": {
+        "type": "homepage-guarantee-v",
+        "blocks": {
+          "bf3c107d-28ba-436c-9cfb-f8d7e3cbbbc9": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/option_one.png",
+              "title": "Option 1: Keep It",
+              "description": "Buy the Enhanced Hydration Trial Bundle, save a ton of money, and receive 2 bags of each flavor."
+            }
+          },
+          "7cc8ca02-449c-4645-8de3-29a414e41316": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/option_two.png",
+              "title": "Option 2: Gift It",
+              "description": "We'll ask for their address and send anywhere in the US. Or we can send it to you if you want to hand it over yourself."
+            }
+          },
+          "da4b551c-c019-4aab-8b1d-5498a06d7ce9": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/option_three.png",
+              "title": "Option 3: That's It",
+              "description": "I think at this point we've exhausted our options. Happy Holidays!"
+            }
+          }
+        },
+        "block_order": [
+          "bf3c107d-28ba-436c-9cfb-f8d7e3cbbbc9",
+          "7cc8ca02-449c-4645-8de3-29a414e41316",
+          "da4b551c-c019-4aab-8b1d-5498a06d7ce9"
+        ],
+        "settings": {
+          "checkbox": false,
+          "background_color": "#b75c61",
+          "background_image": "shopify:\/\/shop_images\/OFFFIELD_Willie_Road_2200x2200_ea36bcec-e0dc-45fa-97db-af2037141e3b_1.png",
+          "figure_image": "shopify:\/\/shop_images\/Turkey_Trot_Runner.png",
+          "title": "",
+          "url": "shopify:\/\/products\/enhanced-hydration-trial-bundle",
+          "cta": "See the bundle",
+          "cta_style": "default"
+        }
+      },
+      "homepage-guarantee-vv": {
+        "type": "homepage-guarantee-vv",
+        "blocks": {
+          "51cc82bc-31dd-403a-a76d-21407d95d25d": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shipping_icon_959f6b0a-baef-4c2a-9209-5cf31d13725b.png",
+              "title": "free shipping",
+              "description": "Thanks to our friends at the USPS."
+            }
+          },
+          "6ba86fd8-125d-4697-82fc-9e6f1cb0a3ed": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/gaurantee_icon_39a997b3-d0c9-4080-a909-e663c9a567ab.png",
+              "title": "third party tested",
+              "description": "High quality paperwork."
+            }
+          },
+          "1e875266-f800-4b34-8d7e-0d57f6355e4f": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lastprisoner_icon_cb78d3a9-61e8-43e4-b0b1-e572addadf9c.png",
+              "title": "last prisoner project",
+              "description": "1% of revenue goes towards reform."
+            }
+          }
+        },
+        "block_order": [
+          "51cc82bc-31dd-403a-a76d-21407d95d25d",
+          "6ba86fd8-125d-4697-82fc-9e6f1cb0a3ed",
+          "1e875266-f800-4b34-8d7e-0d57f6355e4f"
+        ],
+        "settings": {
+          "background_color": "#4e84b5",
+          "background_image": "shopify:\/\/shop_images\/court-bg_d891bb49-5b7a-46a4-b31b-4f174e008ba1.png",
+          "figure_image": "shopify:\/\/shop_images\/Guy_throwing_bag_wide_2d6f787b-a6fd-4542-8627-4841918b6ede.gif",
+          "title": "",
+          "url": "\/pages\/about",
+          "cta": "OUR GOALS",
+          "cta_style": "default"
+        }
+      },
+      "homepage-social-vv": {
+        "type": "homepage-social-vv",
+        "blocks": {
+          "1e3e07c0-ca53-40f0-b3af-59229badb4d5": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CSPX2rWlCjF\/",
+              "image": "shopify:\/\/shop_images\/social_court_f83b97a5-a73a-4259-894f-79eaa5ee595c.jpg",
+              "text": "When they hit low, we get high.",
+              "handle": "🎾 The Courts"
+            }
+          },
+          "10a3ccb4-4064-46fb-bc06-e1209a1a2e26": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CULIWFdPkcv\/",
+              "image": "shopify:\/\/shop_images\/social_damp_c0469f5a-d38d-4ffa-bcd5-80221e05748b.jpg",
+              "text": "What’s small, damp, and gets hit with balls?",
+              "handle": "😇 Racket Dampener"
+            }
+          },
+          "4831c08f-01ff-4213-a78a-949966e2fd6e": {
+            "type": "card",
+            "settings": {
+              "url": "",
+              "image": "shopify:\/\/shop_images\/social_nalgene_61c5e825-8dc1-40a3-abd8-125e43398702.jpg",
+              "text": "*Bottle in photo not to scale 😜",
+              "handle": "🔫 Summer Nights Bottle"
+            }
+          },
+          "2e7fa706-461a-4e8c-beb0-db67c2ef0881": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CZe0kWdpG0T\/",
+              "image": "shopify:\/\/shop_images\/social_aquatic_81008df8-8fed-422e-a384-f123b5cf9d14.jpg",
+              "text": "When ball is life aquatic 🚣‍♂️",
+              "handle": "🎬 John Margaritis"
+            }
+          },
+          "a3df069a-5dca-41d4-b494-2f3bfca88ccf": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CXuBvaPPbx6\/",
+              "image": "shopify:\/\/shop_images\/social_dump_7b1a5537-d70a-470b-8b53-c59ee6afeda1.jpg",
+              "text": "Not a dump photo dump 🏞",
+              "handle": "📍 Goldstein Tennis Court"
+            }
+          },
+          "c870246b-8637-4a8d-a520-4c63b2711dad": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CXRiWm0PmyI\/",
+              "image": "shopify:\/\/shop_images\/social_shorts_eccddc26-e70f-4995-b143-e409a8e76dd0.jpg",
+              "text": "Let your crotch do all the talking.",
+              "handle": "🩳 Run High Collection"
+            }
+          },
+          "2d25c8b1-4be2-4df1-be8b-4010dae4b55e": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CXMf7jPhjFA\/",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2022-02-15_at_9.47.47_PM_e033fa60-337c-43fe-bd4c-30799c30d7bc.png",
+              "text": "Friendly Reminder 😇",
+              "handle": "📰 Tennis Magazine"
+            }
+          },
+          "8bcfbc5f-13f4-43e9-8982-362a7a5da67e": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CNDckaNHA3a\/",
+              "image": "shopify:\/\/shop_images\/social_dog_86a338de-55ba-4223-9601-ed5f088517f3.jpg",
+              "text": "When you find your new favorite running trail",
+              "handle": "#movementmadehappy"
+            }
+          },
+          "612c5a7c-92c2-449b-b56f-0f4f4d3c2cf0": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CJ9HP4NBZV0\/",
+              "image": "shopify:\/\/shop_images\/social_shirt_743c5dbe-3e45-4025-b847-7a41673c5d05.jpg",
+              "text": "As part of our Physical Education initiative, we’ve launched a new line.",
+              "handle": "🌴 Movement Made Happy"
+            }
+          },
+          "89badf36-7af4-44f7-b8bb-a0205832de47": {
+            "type": "card",
+            "settings": {
+              "url": "https:\/\/www.instagram.com\/p\/CZuV-OmJnp4\/",
+              "image": "shopify:\/\/shop_images\/social_plug_3458eb5e-f8e0-4d42-a5d5-2c4f55ecb804.jpg",
+              "text": "When the plug finally comes through 🛄",
+              "handle": "📸 @photographerhal"
+            }
+          }
+        },
+        "block_order": [
+          "1e3e07c0-ca53-40f0-b3af-59229badb4d5",
+          "10a3ccb4-4064-46fb-bc06-e1209a1a2e26",
+          "4831c08f-01ff-4213-a78a-949966e2fd6e",
+          "2e7fa706-461a-4e8c-beb0-db67c2ef0881",
+          "a3df069a-5dca-41d4-b494-2f3bfca88ccf",
+          "c870246b-8637-4a8d-a520-4c63b2711dad",
+          "2d25c8b1-4be2-4df1-be8b-4010dae4b55e",
+          "8bcfbc5f-13f4-43e9-8982-362a7a5da67e",
+          "612c5a7c-92c2-449b-b56f-0f4f4d3c2cf0",
+          "89badf36-7af4-44f7-b8bb-a0205832de47"
+        ],
+        "settings": {
+          "title_color": "#e6af6e",
+          "title": "social occasion",
+          "url": "https:\/\/www.instagram.com\/offfield\/",
+          "cta": "@OFFFIELD"
+        }
+      },
+      "homepage-hero-v-double-page": {
+        "type": "homepage-hero-v-double-page",
+        "settings": {
+          "checkbox": true,
+          "video": "",
+          "content_x": "center",
+          "content_y": "middle",
+          "text": "",
+          "include_stars": false,
+          "star_text": "",
+          "text_alignment": "center",
+          "url": "",
+          "cta": ""
+        }
+      },
+      "homepage-product-carousel-v-double-page": {
+        "type": "homepage-product-carousel-v-double-page",
+        "blocks": {
+          "c9770015-d630-4a9d-a45f-c9320d53a46c": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BlackFriday_BOGO_carousel_2.png",
+              "title": "OPTION 2: GIFT IT",
+              "title_color": "#e6af6e",
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "description": "Make that special someone... less thirsty",
+              "description_color": "#ffffff",
+              "price": "4 Bags for $65 <s> $130<\/s>",
+              "price_color": "#e6af6e",
+              "url": "https:\/\/offfield.com\/cart\/41592854315182:2?discount=GIFTONE",
+              "cta": "ADD TO CHECKOUT",
+              "cta_style": "default",
+              "disclaimer": "USE CODE: GIFTONE",
+              "disclaimer_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "c9770015-d630-4a9d-a45f-c9320d53a46c"
+        ],
+        "settings": {
+          "checkbox": true,
+          "bg_color": "#4e84b5"
+        }
+      },
+      "homepage-guarantee-v-double-page": {
+        "type": "homepage-guarantee-v-double-page",
+        "settings": {
+          "checkbox": true,
+          "background_color": "",
+          "title": "",
+          "url": "",
+          "cta": "",
+          "cta_style": "default"
+        }
+      },
+      "homepage-social-v-double-page": {
+        "type": "homepage-social-v-double-page",
+        "settings": {
+          "checkbox": true,
+          "title_color": "",
+          "title": "",
+          "url": "",
+          "cta": ""
+        }
+      },
+      "bc4876e3-e988-4cb6-bf4f-24590498874a": {
+        "type": "homepage-hero",
+        "settings": {
+          "video": "",
+          "mobile_image": "shopify:\/\/shop_images\/Hero_Can_vertical_2.jpg",
+          "image": "shopify:\/\/shop_images\/Hero_Can_horizontal_2_496b8e19-18ed-44e3-ab22-fc0c86e5948c.jpg",
+          "content_x": "center",
+          "content_y": "bottom",
+          "text": "",
+          "include_stars": false,
+          "star_text": "",
+          "text_alignment": "left",
+          "url": "shopify:\/\/products\/high-performance-sports-drink-original-lime",
+          "cta": "SHOP HIGH PERFORMANCE"
+        }
+      },
+      "sezzle-widget": {
+        "type": "sezzle-widget",
+        "settings": {
+        }
+      },
+      "product-sport": {
+        "type": "product-sport",
+        "settings": {
+          "show_share_buttons": false
+        }
+      },
+      "product-details-sport": {
+        "type": "product-details-sport",
+        "blocks": {
+          "2b185181-c312-46e5-98e7-7f272dca9f50": {
+            "type": "tab",
+            "settings": {
+              "title": "the world's first high performance sports drink",
+              "tab_title": "high performance",
+              "atr_title1": "Contains THC*",
+              "atr_title2": "Soy Free",
+              "atr_title3": "Non-GMO",
+              "atr_title4": "Vegan",
+              "atr_title5": "Low Sugar",
+              "atr_title6": "Caffeine Free",
+              "atr_title7": "Gluten Free",
+              "atr_title8": "Non-Carobonated",
+              "icon": "",
+              "color_code": "red",
+              "content": "Triggers the effects of the Runner's High\n<br><br>\nFights inflammation and mental fatigue\n<br><br>\nAlleviates anxiety and improves energy\n<br><br>\nHydrates 2x faster than water alone\n<br><br>\nWay less sugar than other sports drinks",
+              "character": "shopify:\/\/shop_images\/cans_icon_784f0a12-8dfc-4862-a14e-fbadb653e44d.png"
+            }
+          },
+          "f402c7ca-1df7-402b-bda9-092c08f5bfd1": {
+            "type": "tab",
+            "settings": {
+              "title": "offfield labs approved",
+              "tab_title": "labs approved",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "color_code": "blue",
+              "content": "Over 300 athletes across multiple disciplines participating in the creation of this formula. By far one of the most popular and successful Offfield Labs programs to date.",
+              "character": "shopify:\/\/shop_images\/cans_labs_spin_wide2.gif"
+            }
+          },
+          "4dad799c-d92e-4e1d-aa41-faac9885900d": {
+            "type": "tab",
+            "settings": {
+              "title": "accessing the runner's high",
+              "tab_title": "accessing the <br>runner's high",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "color_code": "green",
+              "content": "OFFFIELD High Performance Products use broad spectrum CBD & CBG, and hemp derived THC to access your Endocannabinoid System (ECS). Activation of the ECS has been linked to the <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">runner's high<\/a>, triggered during high endurance exercise. Providing a full mind and body experience.",
+              "character": "shopify:\/\/shop_images\/OFFFIELD_Willie_Running_d4d70063-7afd-44a2-bb51-4725dfebf71c_1.gif"
+            }
+          }
+        },
+        "block_order": [
+          "2b185181-c312-46e5-98e7-7f272dca9f50",
+          "f402c7ca-1df7-402b-bda9-092c08f5bfd1",
+          "4dad799c-d92e-4e1d-aa41-faac9885900d"
+        ],
+        "settings": {
+        }
+      },
+      "product-hero-sport": {
+        "type": "product-hero-sport",
+        "settings": {
+          "enable__section": true,
+          "content_x": "center",
+          "content_y": "middle",
+          "text": "",
+          "sub": "",
+          "text_alignment": "center"
+        }
+      },
+      "product-new-ingredients-sport": {
+        "type": "product-new-ingredients-sport",
+        "blocks": {
+          "03c3615c-0ee3-407c-bb91-dd61baff5434": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/Cannabis_Leaf_41facba1-39d7-4340-8528-4888b39e6f5e.png",
+              "text_title": "5mg THC",
+              "text_subtitle": "This product contains hemp-derived THC, a psychoactive molecule found in the plant to dial it up a notch. <br>< 0.3% THC (hemp-derived)*"
+            }
+          },
+          "d9e9c2cc-764c-4a71-926a-16c093a9357b": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/Cannabis_Leaf_41facba1-39d7-4340-8528-4888b39e6f5e.png",
+              "text_title": "10mg CBD",
+              "text_subtitle": "Selected for quality and effect, this broad spectrum phytocannabinoid works together to help you keep moving and feeling awesome throughout your activity."
+            }
+          },
+          "f6801968-c686-4d90-8548-177c9feee590": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/Cannabis_Leaf_41facba1-39d7-4340-8528-4888b39e6f5e.png",
+              "text_title": "10mg CBG",
+              "text_subtitle": "Cannabigerol is known as the \"Mother of All Cannabinoids.\" This powerful molecule amplifies benefits, promoting focus during fitness."
+            }
+          },
+          "14bd7639-00aa-42f4-855e-5bd89733f268": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/b12_icon_bd5ae066-5c98-4584-a771-8dad198285e5.png",
+              "text_title": "Vitamins B6, B12 & C",
+              "text_subtitle": "Essential B Vitamins vital to creating red blood cells and give you a little boost. And Vitamin C to aid in active recovery and immunity."
+            }
+          },
+          "1bc6ed04-1527-4d47-b6eb-98547c536496": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/ltheanine_icon_fde292b3-0950-4fc4-9101-d5010d397edf.png",
+              "text_title": "100mg L-Theanine",
+              "text_subtitle": "An incredible tea leaf derived energy boost without the jitteriness of caffeine. It's the thrill of winning, without the pressure of competing."
+            }
+          },
+          "634c295f-2e7b-4173-bc41-982f1affc032": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/magne_0_c7b8012e-a94f-4bc3-8959-474e0f5bd367.png",
+              "text_title": "Magnesium & Zinc",
+              "text_subtitle": "Magnesium has been found to boost exercise performance. While Zinc is great for building a strong immune system."
+            }
+          }
+        },
+        "block_order": [
+          "03c3615c-0ee3-407c-bb91-dd61baff5434",
+          "d9e9c2cc-764c-4a71-926a-16c093a9357b",
+          "f6801968-c686-4d90-8548-177c9feee590",
+          "14bd7639-00aa-42f4-855e-5bd89733f268",
+          "1bc6ed04-1527-4d47-b6eb-98547c536496",
+          "634c295f-2e7b-4173-bc41-982f1affc032"
+        ],
+        "settings": {
+          "character": "shopify:\/\/shop_images\/runner_1.png",
+          "title": "quality ingredients for a quality experience"
+        }
+      },
+      "product-media-sport": {
+        "type": "product-media-sport",
+        "settings": {
+          "video": "",
+          "text": "",
+          "url": "",
+          "cta": ""
+        }
+      },
+      "product-tabs-sport": {
+        "type": "product-tabs-sport",
+        "blocks": {
+          "32e246af-416d-41ee-9712-4bf215d01e87": {
+            "type": "tab",
+            "settings": {
+              "title": "Runner's High",
+              "image": "shopify:\/\/shop_images\/Title_RunnersHigh.jpg",
+              "video": "",
+              "content": "The Runner’s High is a bragging right amongst runners, yet how it worked remained a mystery to scientists for generations. With the legalization of <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">cannabis research<\/a> came the discovery of the source of the Runner’s High. The Endocannabinoid System induces and regulates exercise highs for just about any activity. The same Endocannabinoid System that is activated with cannabinoids like THC, CBD and CBG."
+            }
+          },
+          "98fd9937-1de3-44bf-81aa-f9d491dc15ea": {
+            "type": "tab",
+            "settings": {
+              "title": "How it Works",
+              "image": "shopify:\/\/shop_images\/Title_TheECS2.jpg",
+              "video": "",
+              "content": "In 1992 Scientist Raphael Mechoulam discovered the Endocannabinoid System. Receptors that manage our well-being, including mood, pain, sleep, and immune functions.\n<br><br>\nThese same CB1 and CB2 receptors also activate when plant cannabinoids are introduced to your body, becoming a plant based solution for managing inflammation, anxiety, and mood."
+            }
+          },
+          "5d2184d0-1370-4c51-84a2-4d496de51360": {
+            "type": "tab",
+            "settings": {
+              "title": "Hydration",
+              "image": "shopify:\/\/shop_images\/Title_Hydrated.jpg",
+              "video": "",
+              "content": "When has anyone every said, “I wish I was less hydrated”? Hydration drinks like OFFFIELD make it easy to supplement the vitamins and minerals we all need when getting active. Anything that makes you sweat, even cleaning the house or jumping on the bed, means rehydrating is a good idea. And it tastes great too!"
+            }
+          },
+          "e79bcb67-556e-4649-af5b-68d4b0ad6cf7": {
+            "type": "tab",
+            "settings": {
+              "title": "Testing",
+              "image": "shopify:\/\/shop_images\/Title_Tested.jpg",
+              "video": "",
+              "content": "We test all of our products to make sure that you get the best and safest quality ingredients.  Not only do we do it because we care, but also because it is required by law. Which we’re totally cool with: \n      <br><br>\n      <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_HPSD_Original_Lime.pdf?v=1690917334\" target=\"_blank\" title=\"Download Results\">Download Results for Original Lime High Performance Sports Drink <\/a>\n <br> <br>\n      <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_HPSD_Dragon_Fruit.pdf?v=1690917334\" target=\"_blank\" title=\"Download Results\">Download Results for Dragon Fruit Lemonade High Performance Sports Drink <\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "32e246af-416d-41ee-9712-4bf215d01e87",
+          "98fd9937-1de3-44bf-81aa-f9d491dc15ea",
+          "5d2184d0-1370-4c51-84a2-4d496de51360",
+          "e79bcb67-556e-4649-af5b-68d4b0ad6cf7"
+        ],
+        "settings": {
+          "cta_url": "",
+          "cta_text": "GET BACK UP THERE"
+        }
+      },
+      "product-text-2-sport": {
+        "type": "product-text-2-sport",
+        "settings": {
+          "title": "",
+          "content": ""
+        }
+      },
+      "3033862d-cd88-4826-9d2a-03d5ab9489d9": {
+        "type": "homepage-guarantee",
+        "blocks": {
+          "a4bf9d19-b0d1-4e80-a041-9230e8da3fd3": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon_plant_38584c86-c2da-4fdd-96de-225d3ad9a73d.png",
+              "title": "thc infused",
+              "description": "This is the first THC Infused* sports drink to activate the Runner's High.<br>"
+            }
+          },
+          "3019fc99-e316-41f8-9d90-3931a21dedb6": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lab_icon_dc5925db-e13d-4df7-aaa1-8e94c24e5dc2.png",
+              "title": "labs approved",
+              "description": "Offfield Labs Trial product with over 300 athletes participating in development."
+            }
+          },
+          "cc088fdf-be72-49c1-970b-bb93d19fcfa2": {
+            "type": "detail",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shipping_icon_959f6b0a-baef-4c2a-9209-5cf31d13725b.png",
+              "title": "ships direct",
+              "description": "This product ships to 46 states around the country, direct to your door."
+            }
+          }
+        },
+        "block_order": [
+          "a4bf9d19-b0d1-4e80-a041-9230e8da3fd3",
+          "3019fc99-e316-41f8-9d90-3931a21dedb6",
+          "cc088fdf-be72-49c1-970b-bb93d19fcfa2"
+        ],
+        "settings": {
+          "background_color": "#4e84b5",
+          "figure_image": "shopify:\/\/shop_images\/OFFgif03_00_05_BlueCanNOTHCTransparent.gif",
+          "title": "high performance <br> sports drink",
+          "url": "shopify:\/\/products\/high-performance-sports-drink-original-lime",
+          "cta": "SHOP HIGH PERFORMANCE",
+          "cta_style": "default"
+        }
+      },
+      "product-enhanced": {
+        "type": "product-enhanced",
+        "settings": {
+          "show_share_buttons": false
+        }
+      },
+      "product-details-enhanced": {
+        "type": "product-details-enhanced",
+        "blocks": {
+          "6b76fa18-67d4-460b-9bdb-ee8028f45e58": {
+            "type": "tab",
+            "settings": {
+              "title": "hydration with benefits",
+              "tab_title": "hydration with benefits",
+              "atr_title1": "THC free",
+              "atr_title2": "Soy free",
+              "atr_title3": "Non-GMO",
+              "atr_title4": "Vegan",
+              "atr_title5": "Low sugar",
+              "atr_title6": "Caffeine free",
+              "atr_title7": "Gluten free",
+              "atr_title8": "Non-Dairy",
+              "icon": "",
+              "mobile_icon": "shopify:\/\/shop_images\/bottle_icon_41f5c74c-8560-4160-a75c-b5f9988a6d73.png",
+              "color_code": "red",
+              "content": "Fights inflammation and mental fatigue\n<br><br>\nAlleviates anxiety and improves energy\n<br><br>\nHydrates 2x faster than water alone\n<br><br>\nWay less sugar than other sports drinks\n<br><br>\nPowerful essential minerals you need",
+              "character": "shopify:\/\/shop_images\/Hydration_Bottle_Stick2.png"
+            }
+          },
+          "b9a0ea0d-57e9-4d6a-8799-220e82394d93": {
+            "type": "tab",
+            "settings": {
+              "title": "plant enhanced biometrics",
+              "tab_title": "plant enhanced biometrics",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "mobile_icon": "shopify:\/\/shop_images\/Adaptogens_icon2.png",
+              "color_code": "offgold",
+              "content": "We use Plant Enhanced Biometrics (PEB) to develop each of our formulations. Through a patented micro-encapsulation system, our water dispersible formula contains the highest quality CBD and CBG that mixes evenly. Sourcing the highest quality plants and minerals allows your mind to feel calm and your body to stay active.",
+              "character": "shopify:\/\/shop_images\/Plant_Magnify2.png"
+            }
+          },
+          "078c9ef6-d5c7-4fbf-9878-773afc25712d": {
+            "type": "tab",
+            "settings": {
+              "title": "accessing the runner's high",
+              "tab_title": "accessing the <br>runner's high",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "mobile_icon": "shopify:\/\/shop_images\/product-ingredients-thc-free.png",
+              "color_code": "blue",
+              "content": "OFFFIELD uses broad spectrum CBD & CBG to access your Endocannabinoid System (ECS) with no psychoactive THC.  Activation of the ECS has been linked to the <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">runner's high<\/a>, triggered during high endurance exercise.",
+              "character": "shopify:\/\/shop_images\/OFFFIELD_Willie_Running.gif"
+            }
+          }
+        },
+        "block_order": [
+          "6b76fa18-67d4-460b-9bdb-ee8028f45e58",
+          "b9a0ea0d-57e9-4d6a-8799-220e82394d93",
+          "078c9ef6-d5c7-4fbf-9878-773afc25712d"
+        ],
+        "settings": {
+        }
+      },
+      "product-hero-enhanced": {
+        "type": "product-hero-enhanced",
+        "settings": {
+          "enable__section": true,
+          "content_x": "center",
+          "content_y": "middle",
+          "text": "",
+          "sub": "",
+          "text_alignment": "center"
+        }
+      },
+      "product-new-ingredients-enhanced": {
+        "type": "product-new-ingredients-enhanced",
+        "blocks": {
+          "27c8524b-c206-4c3a-bb81-d9baf189ed67": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/Cannabis_Leaf_41facba1-39d7-4340-8528-4888b39e6f5e.png",
+              "text_title": "20mg CBD & CBG",
+              "text_subtitle": "Selected for quality and effect, these broad spectrum phytocannabinoids work together to help you keep moving and feeling awesome throughout your activity."
+            }
+          },
+          "399d69d0-a4cb-418b-a73f-db11a35f1379": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/ltheanine_icon_fde292b3-0950-4fc4-9101-d5010d397edf.png",
+              "text_title": "100mg L-Theanine",
+              "text_subtitle": "An incredible tea leaf derived energy boost without the jitteriness of caffeine. It's the thrill of winning, without the pressure of competing"
+            }
+          },
+          "83501075-9993-419b-bc4b-368e51661840": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/b12_icon_bd5ae066-5c98-4584-a771-8dad198285e5.png",
+              "text_title": "Vitamins B6, B12, & C",
+              "text_subtitle": "Essential B Vitamins vital to creating red blood cells and give you a little boost. And Vitamin C to aid in active recovery and immunity."
+            }
+          },
+          "1590a0a3-c849-40c4-97c2-6447cc0b1a45": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/magne_0.png",
+              "text_title": "Magnesium & Zinc",
+              "text_subtitle": "Magnesium (33mg) has been found to boost exercise performance and inflammation. While Zinc (1.6mg) is great for building a strong immune system."
+            }
+          }
+        },
+        "block_order": [
+          "27c8524b-c206-4c3a-bb81-d9baf189ed67",
+          "399d69d0-a4cb-418b-a73f-db11a35f1379",
+          "83501075-9993-419b-bc4b-368e51661840",
+          "1590a0a3-c849-40c4-97c2-6447cc0b1a45"
+        ],
+        "settings": {
+          "character": "shopify:\/\/shop_images\/swimmer_sipping_OFFFIELD_425x990_8a20a35a-e416-4e2e-a5c2-616fe131594c.gif",
+          "title": "quality ingredients for a quality experience"
+        }
+      },
+      "product-media-enhanced": {
+        "type": "product-media-enhanced",
+        "settings": {
+          "video": "",
+          "text": "",
+          "url": "",
+          "cta": ""
+        }
+      },
+      "product-tabs-enhanced": {
+        "type": "product-tabs-enhanced",
+        "blocks": {
+          "f0643565-11df-479b-8a7d-21225d2095f1": {
+            "type": "tab",
+            "settings": {
+              "title": "Runner's High",
+              "image": "shopify:\/\/shop_images\/Title_RunnersHigh.jpg",
+              "video": "",
+              "content": "The Runner’s High is a bragging right amongst runners, yet how it worked remained a mystery to scientists for generations. With the legalization of <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">cannabis research<\/a> came the discovery of the source of the Runner’s High. The Endocannabinoid System induces and regulates exercise highs for just about any activity. The same Endocannabinoid System that is activated with cannabinoids like CBD and CBG."
+            }
+          },
+          "2770276a-96bb-483a-a11c-6cce3fceb74f": {
+            "type": "tab",
+            "settings": {
+              "title": "HOW IT WORKS",
+              "image": "shopify:\/\/shop_images\/Title_TheECS2.jpg",
+              "video": "",
+              "content": "In 1992 Scientist Raphael Mechoulam discovered the Endocannabinoid System. Receptors that manage our well-being, including mood, pain, sleep, and immune functions.\n<br><br>\nThese same CB1 and CB2 receptors also activate when plant cannabinoids are introduced to your body, becoming a plant based solution for managing inflammation, anxiety, and mood."
+            }
+          },
+          "aea42a02-f9b0-4012-b074-2070a0e33b3f": {
+            "type": "tab",
+            "settings": {
+              "title": "Hydration",
+              "image": "shopify:\/\/shop_images\/Title_Hydrated.jpg",
+              "video": "",
+              "content": "When has anyone every said, “I wish I was less hydrated.” \nHydration drinks like OFFFIELD make it easy to supplement the vitamins and minerals we all need when getting active. Anything that makes you sweat, even cleaning the house or jumping on the bed, means rehydrating is a good idea. And it tastes great too!"
+            }
+          },
+          "ae1982d8-ce23-4652-ae67-d4f757322aeb": {
+            "type": "tab",
+            "settings": {
+              "title": "Testing",
+              "image": "shopify:\/\/shop_images\/Title_Tested.jpg",
+              "video": "",
+              "content": "We test all of our products to make sure that you get the best and safest quality ingredients.  Not only do we do it because we care, but also because it is required by law. Which we’re totally cool with: \n      <br> <br>\n      <a title=\"Download Results\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_EH_Original_Lime.pdf?v=1690917333\" target=\"_blank\">Download Results for Original Lime Enhanced Hydration <\/a>\n<br><br>\n      <a title=\"Download Results\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_EH_Dragon_Fruit.pdf?v=1690917334\" target=\"_blank\">Download Results for Dragon Fruit Lemonade Enhanced Hydration <\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "f0643565-11df-479b-8a7d-21225d2095f1",
+          "2770276a-96bb-483a-a11c-6cce3fceb74f",
+          "aea42a02-f9b0-4012-b074-2070a0e33b3f",
+          "ae1982d8-ce23-4652-ae67-d4f757322aeb"
+        ],
+        "settings": {
+          "cta_url": "",
+          "cta_text": "GET BACK UP THERE"
+        }
+      },
+      "product-text-2-enhanced": {
+        "type": "product-text-2-enhanced",
+        "settings": {
+          "title": "",
+          "content": ""
+        }
+      },
+      "product-new-athletic": {
+        "type": "product-new-athletic",
+        "settings": {
+          "show_share_buttons": false
+        }
+      },
+      "product-details-new-athletic": {
+        "type": "product-details-new-athletic",
+        "blocks": {
+          "9d39c81c-b911-455b-aee0-365a043fdfef": {
+            "type": "tab",
+            "settings": {
+              "title": "gummies with benefits",
+              "tab_title": "gummies <br> with benefits",
+              "atr_title1": "",
+              "atr_title2": "Vegan",
+              "atr_title3": "Non-GMO",
+              "atr_title4": "Gluten Free",
+              "atr_title5": "Dairy Free",
+              "atr_title6": "Soy Free",
+              "atr_title7": "No Perservatives",
+              "atr_title8": "No Artificial Sweeteners",
+              "icon": "",
+              "color_code": "red",
+              "content": "Quick source of energy to go the distance\n<br><br>\nAlleviates anxiety and improves focus\n<br><br>\nAids in hydration and supports fluid balance <br><br>\nFights muscle fatigue and cramping\n<br><br>\nPacked with Electrolytes and Amino Acids",
+              "character": "shopify:\/\/shop_images\/product_icon_1.png"
+            }
+          },
+          "0501d90b-8dbd-4c17-9f34-55e21c126a91": {
+            "type": "tab",
+            "settings": {
+              "title": "edibles actually made for exercise",
+              "tab_title": "edibles actually <br> made for exercise",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "color_code": "offgold",
+              "content": "These may be delicious, but they ain't candy! They are packed with everything you need to make the most out of your next workout.",
+              "character": "shopify:\/\/shop_images\/runner_2.png"
+            }
+          },
+          "f4dfec79-53ae-466c-b1e5-6dcd3387a243": {
+            "type": "tab",
+            "settings": {
+              "title": "activate your runner's high",
+              "tab_title": "activate your <br> runner's high",
+              "atr_title1": "",
+              "atr_title2": "",
+              "atr_title3": "",
+              "atr_title4": "",
+              "atr_title5": "",
+              "atr_title6": "",
+              "atr_title7": "",
+              "atr_title8": "",
+              "icon": "",
+              "color_code": "blue",
+              "content": "OFFFIELD uses THC, CBD & CBG to access your Endocannabinoid System (ECS).  Activation of the ECS has been linked to the <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">runner's high<\/a>, triggered during high endurance exercise.",
+              "character": "shopify:\/\/shop_images\/OFFFIELD_Willie_Running.gif"
+            }
+          }
+        },
+        "block_order": [
+          "9d39c81c-b911-455b-aee0-365a043fdfef",
+          "0501d90b-8dbd-4c17-9f34-55e21c126a91",
+          "f4dfec79-53ae-466c-b1e5-6dcd3387a243"
+        ],
+        "settings": {
+        }
+      },
+      "product-hero-new-athletic": {
+        "type": "product-hero-new-athletic",
+        "settings": {
+          "enable__section": true,
+          "content_x": "center",
+          "content_y": "middle",
+          "text": "",
+          "sub": "",
+          "text_alignment": "center"
+        }
+      },
+      "product-new-ingredients-new-athletic": {
+        "type": "product-new-ingredients-new-athletic",
+        "blocks": {
+          "8ba33401-ffb3-42d0-95d7-8887ab9d8b6d": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/cannabis.png",
+              "text_title": "Cannabinoids",
+              "text_subtitle": "3mg THC : 40mg CBD : 10mg CBG per serving, these phytocannabinoids are extra strength for extra days. Just the right dose for the long haul."
+            }
+          },
+          "0d8a5986-5208-452b-8d08-26e2c1aad84c": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/yerba.png",
+              "text_title": "Organic Yerba Mate",
+              "text_subtitle": "Naturally caffeinated South American Yerba Mate increases mental energy and focus."
+            }
+          },
+          "aeed0283-3e59-4776-b813-ac52cb7d2e96": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/carbs_0fea1353-4e37-4898-bf18-38dffe26af9c.png",
+              "text_title": "Good carbs",
+              "text_subtitle": "6g of carbohydrates for when you need fast working and long lasting energy. You'll be breaking through walls  not hitting them."
+            }
+          },
+          "ad27c14d-dca1-403a-88b8-b13fdbef8bc4": {
+            "type": "text",
+            "settings": {
+              "image_card": "shopify:\/\/shop_images\/matcha.png",
+              "text_title": "Amino Acids",
+              "text_subtitle": "Helps boost performance, improve mental clarity and speed up recovery for any level of athlete."
+            }
+          }
+        },
+        "block_order": [
+          "8ba33401-ffb3-42d0-95d7-8887ab9d8b6d",
+          "0d8a5986-5208-452b-8d08-26e2c1aad84c",
+          "aeed0283-3e59-4776-b813-ac52cb7d2e96",
+          "ad27c14d-dca1-403a-88b8-b13fdbef8bc4"
+        ],
+        "settings": {
+          "character": "shopify:\/\/shop_images\/cycler_inflammation.png",
+          "title": "quality ingredients for a quality experience"
+        }
+      },
+      "product-media-new-athletic": {
+        "type": "product-media-new-athletic",
+        "settings": {
+          "video": "",
+          "text": "",
+          "url": "",
+          "cta": ""
+        }
+      },
+      "product-tabs-new-athletic": {
+        "type": "product-tabs-new-athletic",
+        "blocks": {
+          "36955066-9534-4162-be83-1a95d4860980": {
+            "type": "tab",
+            "settings": {
+              "title": "Runner's High",
+              "image": "shopify:\/\/shop_images\/Title_RunnersHigh.jpg",
+              "video": "",
+              "content": "The Runner’s High is a bragging right amongst runners, yet how it worked remained a mystery to scientists for generations. With the legalization of <a href=\"https:\/\/offfield.com\/blogs\/news\/runners-high-is-real-and-we-have-the-endocannabinoid-system-to-thank\" style=\"text-decoration: underline;color: #4d84b5;\">cannabis research<\/a> came the discovery of the source of the Runner’s High. The Endocannabinoid System induces and regulates exercise highs for just about any activity. The same Endocannabinoid System that is activated with cannabinoids like CBD and CBG."
+            }
+          },
+          "71c0703a-ac79-474f-9a1f-7b291890d121": {
+            "type": "tab",
+            "settings": {
+              "title": "How it works",
+              "image": "shopify:\/\/shop_images\/Title_TheECS.jpg",
+              "video": "",
+              "content": "In 1992 Scientist Raphael Mechoulam discovered the Endocannabinoid System. Receptors that manage our well-being, including mood, pain, sleep, and immune functions.\n<br><br>\nThese same CB1 and CB2 receptors also activate when plant cannabinoids are introduced to your body, becoming a plant based solution for managing inflammation, anxiety, and mood.\n<br><br>"
+            }
+          },
+          "261dcf94-361e-42ea-8d09-6b7d7a6daf00": {
+            "type": "tab",
+            "disabled": true,
+            "settings": {
+              "title": "Offfield Labs",
+              "image": "shopify:\/\/shop_images\/Athletic_Gummies_PDP_Science.jpg",
+              "video": "",
+              "content": "As our inaugural Offfield Labs project, with the help of hundreds of customers, we developed our CBD gummy with everyday athletes in mind, developed together, and made for you. This isn't an ordinary CBD gummy, this is an enhanced performance athletic gummy."
+            }
+          },
+          "307c670d-e99c-4723-aef7-b2a951292f62": {
+            "type": "tab",
+            "settings": {
+              "title": "Testing",
+              "image": "shopify:\/\/shop_images\/Title_Tested.jpg",
+              "video": "",
+              "content": "We test all of our products to make sure that you get the best and safest quality ingredients.  Not only do we do it because we care, but also because it is required by law. Which we’re totally cool with: \n      <br> <br>\n      <a title=\"Download Results\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_AEG_Yerba_Berry.pdf?v=1690917334\" target=\"_blank\">Download Results for Yerba Berry Athletic Energy Gummies <\/a>\n<br><br>\n      <a title=\"Download Results\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/1571\/4442\/files\/COA_AEG_Matcha_Melon.pdf?v=1690917334\" target=\"_blank\">Download Results for Matcha Melon Athletic Energy Gummies<\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "36955066-9534-4162-be83-1a95d4860980",
+          "71c0703a-ac79-474f-9a1f-7b291890d121",
+          "261dcf94-361e-42ea-8d09-6b7d7a6daf00",
+          "307c670d-e99c-4723-aef7-b2a951292f62"
+        ],
+        "settings": {
+          "cta_url": "",
+          "cta_text": "GET BACK UP THERE"
+        }
+      },
+      "product-text-2-new-athletic": {
+        "type": "product-text-2-new-athletic",
+        "settings": {
+          "title": "",
+          "content": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "bc4876e3-e988-4cb6-bf4f-24590498874a",
+      "16161035164a55c061",
+      "1619737462cc3aed16",
+      "163419183203348d4d",
+      "1601072719275",
+      "3033862d-cd88-4826-9d2a-03d5ab9489d9",
+      "16032497008cfd1c56",
+      "1590169154689",
+      "1650408660e7c4d212",
+      "1590012692432",
+      "164498661544ae34ad",
+      "16317683196bff5d76",
+      "1589918136898",
+      "16312477644887599f",
+      "1611537522645658d6",
+      "1611526230938a9746",
+      "1601920129f9c672e9",
+      "160288819852ae16fc",
+      "16317745871977a476",
+      "161199172124e9dd5c",
+      "165591483914ec78e5",
+      "1590087315667",
+      "1590534555964",
+      "1592513823827",
+      "1592607534506"
+    ],
+    "blocks": {
+      "2153490007123654574": {
+        "type": "shopify:\/\/apps\/gdpr-ccpa-cookie-management\/blocks\/gdpr_cookie_consent\/4fbe573f-a377-4fea-9801-3ee0858cae41",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "4275615285897611771": {
+        "type": "shopify:\/\/apps\/fera\/blocks\/embed\/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "17151115064775110295": {
+        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
+        "disabled": false,
+        "settings": {
+          "color_brand": "#c5ff88",
+          "contrast_color": "#ffffff",
+          "color_brand_secondary": "#c5ff88",
+          "corners": "16px",
+          "app_background": "#f9f8f4",
+          "app_container": 1200,
+          "app_vertical_padding": 32,
+          "images_aspect_ratio": "1",
+          "cards_background": "#ffffff",
+          "cards_border_color": "rgba(0,0,0,0)"
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "11468047240823483236": {
+        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/checkout-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+        "disabled": false,
+        "settings": {
+          "heading": "Sezzle Checkout Button",
+          "template": "Checkout with %%logo%%",
+          "mode": "light",
+          "padding": 9,
+          "marginTop": 0,
+          "marginRight": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "width": "auto"
+        }
+      },
+      "12608439564960700138": {
+        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+        "disabled": false,
+        "settings": {
+          "heading": "Sezzle Widget",
+          "font_size": 14,
+          "font_family": "inherit"
+        }
+      },
+      "10864971697205422121": {
+        "type": "shopify:\/\/apps\/gorgias-live-chat-helpdesk\/blocks\/gorgias\/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
+        "disabled": false,
+        "settings": {
         }
       }
     }
   },
   "presets": {
     "Default": {
-      "logo_width": 50,
-      "colors_solid_button_labels": "#ffffff",
-      "colors_accent_1": "#121212",
-      "gradient_accent_1": "",
-      "colors_accent_2": "#45c0b6",
-      "gradient_accent_2": "",
-      "colors_text": "#000000",
-      "colors_outline_button_labels": "#121212",
-      "colors_background_1": "#fafaf9",
-      "gradient_background_1": "",
-      "colors_background_2": "#6b6b6b",
-      "gradient_background_2": "",
-      "type_header_font": "helvetica_n7",
-      "heading_scale": 100,
-      "type_body_font": "helvetica_n4",
-      "body_scale": 100,
-      "page_width": 1600,
-      "spacing_sections": 0,
-      "spacing_grid_horizontal": 16,
-      "spacing_grid_vertical": 8,
-      "buttons_border_thickness": 1,
-      "buttons_border_opacity": 100,
-      "buttons_radius": 2,
-      "buttons_shadow_opacity": 0,
-      "buttons_shadow_horizontal_offset": 0,
-      "buttons_shadow_vertical_offset": 4,
-      "buttons_shadow_blur": 5,
-      "variant_pills_border_thickness": 0,
-      "variant_pills_border_opacity": 0,
-      "variant_pills_radius": 4,
-      "variant_pills_shadow_opacity": 0,
-      "variant_pills_shadow_horizontal_offset": 0,
-      "variant_pills_shadow_vertical_offset": 4,
-      "variant_pills_shadow_blur": 5,
-      "inputs_border_thickness": 1,
-      "inputs_border_opacity": 10,
-      "inputs_radius": 2,
-      "inputs_shadow_opacity": 0,
-      "inputs_shadow_horizontal_offset": 0,
-      "inputs_shadow_vertical_offset": -12,
-      "inputs_shadow_blur": 5,
-      "card_style": "standard",
-      "card_image_padding": 0,
-      "card_text_alignment": "left",
-      "card_color_scheme": "background-2",
-      "card_border_thickness": 0,
-      "card_border_opacity": 10,
-      "card_corner_radius": 4,
-      "card_shadow_opacity": 0,
-      "card_shadow_horizontal_offset": 0,
-      "card_shadow_vertical_offset": 0,
-      "card_shadow_blur": 10,
-      "collection_card_style": "standard",
-      "collection_card_image_padding": 0,
-      "collection_card_text_alignment": "left",
-      "collection_card_color_scheme": "background-2",
-      "collection_card_border_thickness": 0,
-      "collection_card_border_opacity": 10,
-      "collection_card_corner_radius": 4,
-      "collection_card_shadow_opacity": 0,
-      "collection_card_shadow_horizontal_offset": 0,
-      "collection_card_shadow_vertical_offset": 4,
-      "collection_card_shadow_blur": 5,
-      "blog_card_style": "standard",
-      "blog_card_image_padding": 0,
-      "blog_card_text_alignment": "left",
-      "blog_card_color_scheme": "background-2",
-      "blog_card_border_thickness": 0,
-      "blog_card_border_opacity": 10,
-      "blog_card_corner_radius": 0,
-      "blog_card_shadow_opacity": 0,
-      "blog_card_shadow_horizontal_offset": 0,
-      "blog_card_shadow_vertical_offset": 4,
-      "blog_card_shadow_blur": 5,
-      "text_boxes_border_thickness": 0,
-      "text_boxes_border_opacity": 10,
-      "text_boxes_radius": 4,
-      "text_boxes_shadow_opacity": 0,
-      "text_boxes_shadow_horizontal_offset": 0,
-      "text_boxes_shadow_vertical_offset": 4,
-      "text_boxes_shadow_blur": 5,
-      "media_border_thickness": 0,
-      "media_border_opacity": 5,
-      "media_radius": 4,
-      "media_shadow_opacity": 0,
-      "media_shadow_horizontal_offset": 0,
-      "media_shadow_vertical_offset": 4,
-      "media_shadow_blur": 5,
-      "popup_border_thickness": 0,
-      "popup_border_opacity": 10,
-      "popup_corner_radius": 0,
-      "popup_shadow_opacity": 0,
-      "popup_shadow_horizontal_offset": 0,
-      "popup_shadow_vertical_offset": 4,
-      "popup_shadow_blur": 5,
-      "drawer_border_thickness": 0,
-      "drawer_border_opacity": 10,
-      "drawer_shadow_opacity": 0,
-      "drawer_shadow_horizontal_offset": 0,
-      "drawer_shadow_vertical_offset": 4,
-      "drawer_shadow_blur": 5,
-      "badge_position": "bottom left",
-      "badge_corner_radius": 40,
-      "sale_badge_color_scheme": "accent-2",
-      "sold_out_badge_color_scheme": "inverse",
-      "accent_icons": "text",
-      "brand_headline": "© 2023 \/ Shopify, Inc.",
-      "brand_description": "<p>©2023\/ Shopify, Inc.<\/p>",
-      "brand_image_width": 100,
-      "social_facebook_link": "",
-      "social_instagram_link": "",
-      "social_youtube_link": "",
-      "social_tiktok_link": "",
-      "social_twitter_link": "",
-      "social_snapchat_link": "",
-      "social_pinterest_link": "",
-      "social_tumblr_link": "",
-      "social_vimeo_link": "",
-      "predictive_search_enabled": true,
-      "predictive_search_show_vendor": false,
-      "predictive_search_show_price": false,
-      "currency_code_enabled": false,
-      "cart_type": "drawer",
-      "show_vendor": false,
-      "show_cart_note": false,
-      "cart_drawer_collection": "hydrogen",
-      "sections": {
-        "main-password-header": {
-          "type": "main-password-header",
-          "settings": {
-            "color_scheme": "background-1"
-          }
-        },
-        "main-password-footer": {
-          "type": "main-password-footer",
-          "settings": {
-            "color_scheme": "background-1"
-          }
-        }
-      }
+      "content_for_index": [
+
+      ]
     }
   }
 }

@@ -1,0 +1,68 @@
+{% if section.settings.image != blank or section.settings.video != blank %}
+  <section class="product__media">
+    <div class="product-media__container">
+      <div class="product-media__content">
+        <div class="product-media__media">
+          {% if section.settings.video != blank %}
+            <div class="product-media__video-container" js-video-container>
+              <video class="product-media__video" src="{{section.settings.video}}" {% if section.settings.image != blank %}poster="{{section.settings.image | img_url: '1280x'}}"{% endif %} js-video></video>
+              <button class="product-media__video-overlay" js-video-overlay>
+                {% render 'icon-play' %}
+              </button>
+            </div>
+          {% else %}
+            {% if section.settings.image %}
+              {% render 'lazy-image', image: section.settings.image %}
+            {% endif %}
+          {% endif %}
+        </div>
+        <div class="product-media__text-content">
+          <div class="product-media__text">
+            {{section.settings.text}}
+          </div>
+          {% if section.settings.url != blank %}
+            <a href="{{section.settings.url}}" class="btn product-media__button" data-text="{{section.settings.cta}}">{{section.settings.cta}}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Product Media",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "video",
+        "label": "Video .mp4 URL"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "CTA"
+      },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "CTA Target"
+      },
+      {
+        "type": "text",
+        "id": "cta",
+        "label": "CTA Text"
+      }
+    ]
+  }
+{% endschema %}

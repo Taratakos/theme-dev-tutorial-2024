@@ -1,0 +1,116 @@
+{%if section.settings.enable__section == false %}
+  {%- capture image_classes -%}
+  hero
+  {%- endcapture -%}
+  <section {% render 'lazy-background-image', img_classes: image_classes, image: section.settings.image %}>
+  <div class="hero-alignment-container  hero--{{section.settings.content_x}} hero--{{section.settings.content_y}}">
+    <div class="hero__content hero__content--{{section.settings.text_alignment}}">
+      <div class="hero-content__main">
+        {{section.settings.text}}
+      </div>
+      {% if section.settings.sub != blank %}
+        <div class="hero-content__sub">
+          {{section.settings.sub}}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  </section>
+{%endif%}
+
+
+{% schema %}
+  {
+    "name": "Hero",
+    "settings": [
+
+      {
+        "type":"checkbox",
+        "id":"enable__section",
+        "label":"Hide section"
+      },
+
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background Image"
+      },
+
+      {
+        "type": "header",
+        "content": "Content"
+      },
+
+      {
+        "type": "select",
+        "id": "content_x",
+        "label": "Content X Positioning",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "content_y",
+        "label": "Content Y Positioning",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "middle",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "middle"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "textarea",
+        "id": "sub",
+        "label": "Subtext"
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text Alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      }
+    ]
+  }
+{% endschema %}

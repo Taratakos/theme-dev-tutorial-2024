@@ -1,0 +1,41 @@
+<section class="product__icons" data-section-type="product-icons">
+  <div class="product-icons__carousel" js-carousel>
+    {% for block in section.blocks %}
+      <div class="product-icons__image">
+        <a href="{{block.settings.url}}" target="_blank" class="product-icons__link" title="{{block.settings.alt}}" aria-label="{{block.settings.alt}}">{% render 'lazy-image', image: block.settings.image, alt: block.settings.alt %}</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Icons",
+    "max_blocks": 4,
+    "settings": [
+    ],
+    "blocks": [
+      {
+        "type": "icon",
+        "name": "Icon",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "textarea",
+            "id": "alt",
+            "label": "Alt text for image (required)"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

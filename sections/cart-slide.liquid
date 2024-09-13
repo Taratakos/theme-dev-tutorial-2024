@@ -1,0 +1,314 @@
+<style>
+  body .recommended-products-wrapper .recommended-product .rc-container-wrapper.rc_container_wrapper {
+    display: none !important;
+  }
+</style>
+
+{% layout none %}
+<div class="js-slide--cart slide-cart">
+    <div class="cart-header-container">
+      <div class="cart-box">
+        <span class="close-slide-cart"> 
+          <svg width="100%" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" {% if non_focusable %} focusable="false"{% endif %} />
+          </svg>
+      </span>
+      <div>
+        <h2>your bag</h2>
+       <!--  <span class="cart__free-shipping">you get free shipping. that's chill.</span> -->
+      </div>
+      </div>
+
+        {% assign pro = false %}
+        {% for item in cart.items %}
+          {% if item.properties.shipping_interval_frequency %}
+              {% assign pro = true %}
+          {% endif %}
+        {% endfor %}
+        <div class="progress-bar-container" data-sum-free="6500">
+          <div class="progress-bar__text">
+              {% if 6500 > cart.total_price and pro == false %}
+                  <p class="free-shipping-text">{{ 6500 | minus: cart.total_price | money}} more or subscribe for free shipping.</p>
+              {% else %}
+                  <p class="free-shipping-text">You get free shipping! That's chill.</p>
+              {% endif %}
+          </div>
+  <!--         <div class="progress">
+              <div class="progress_inner{% if cart.total_price >= 6500 %} progress-full{% endif %}"></div>
+          </div> -->
+      </div>
+    </div>
+
+    <div class="slide-cart__products">
+      {% if cart.item_count == 0 %}
+        <div class="empty-cart">
+          <h2 class="empty-cart__title">nothing in your bag yet</h2>
+          <span class="empty-cart__subtitle">Find something you like and come on back!</span>
+          <a data-text="KEEP SHOPPING" class="btn empty-cart__shopping" href="/">KEEP SHOPPING</a>
+        </div>
+        {% else %}
+        {% for item in cart.items %}
+        
+        {% assign currentProduct = all_products[item.product.handle] %}
+
+          <div data-id="{{ item.variant_id }}" class="slide-cart__product" data-key="{{item.key}}" js-cart-product>
+              <div class="slide-cart-product__contents">
+                  <div class="slide-cart__flex">
+                      <a href="{{item.product.url}}" class="cart-product__image">
+                          {% render 'lazy-image', image: item.image %}
+                      </a>
+                      <div class="slide-cart-product__information">
+                          <div class="cart-product__text">
+                          <a href="{{item.url}}" class="cart-product__title">
+                              {{item.product.title | split: '|' | first}}
+                          </a>
+                          {% if item.product.title contains '|' %}
+                              <div class="cart-product__subtitle">
+                              {{item.product.title | split: '|' | last }}
+                              </div>
+                          {% endif %}
+                          {% unless item.variant.title contains 'Default' %}
+                              <span style="display: none;" class="cart-product__variant">{{ item.variant.title }}</span>
+                          {% endunless %}
+                          <div class="cart-product__quantity">
+                              <button class="js-qty__adjust js-qty__adjust--minus" data-qty="1" data-adjust="minus">-</button>
+                              <input 
+                                type="text" 
+                                class="js-qty__num" 
+                                name="updates[]" 
+                                id="updates_{{ item.key }}" 
+                                value="{{ item.quantity }}" 
+                                min="1" 
+                                aria-label="{{ 'cart.general.item_quantity' | t }}" 
+                                id="Quantity-{{item.product.title}}" 
+                                data-sub=" {% if item.product.tags contains 'Subscription' %}{{ item.variant.metafields.subscriptions.discount_variant_id}}{% else %}{{ item.variant.id}}{% endif %}"  
+                                data-variant-id="{{item.variant_id}}"
+                                data-item-line="{{forloop.index}}" 
+                                data-max="{{settings.product_limit}}" 
+                                js-qty-num
+                              >
+                              <button class="js-qty__adjust js-qty__adjust--plus" data-qty="1" data-adjust="plus">+</button>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="container-price-remove">
+                      <p class="slide-cart-product__remove" data-variant-key="{{ item.key }}" data-variant-id="{{item.variant_id}}" data-item-line="{{forloop.index}}" aria-label="Remove {{item.title}}">REMOVE</p>
+                      <div class="cart-product__price-container">
+                          {% if item.product.compare_at_price %}
+                          <div class="cart-product__compare-price">
+                              {{item.product.compare_at_price | money}}
+                          </div>
+                          {% endif %}
+                          <div class="cart-product__price">
+                          {{ item.price | money }} 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+              {% assign has_subscriptions = false %}
+              {% if item.selling_plan_allocation %}
+              
+                 {% assign has_subscriptions = true %}
+              {% endif %}
+
+              {% if currentProduct.variants.size > 1 %}
+
+                <div class="option_wrapper_select">
+                  <select 
+                    disabled
+                    data-selected-id="{{ item.variant_id }}"  
+                    class="current-product__select"
+                  >
+                    {% assign count = 0 %}
+                    {% for variants in currentProduct.variants %}
+   
+                    {% assign count = count | plus: 1 %}                                    
+                      <option  value="{{variants.id}}"
+                      {% if variants.available  == false %} disabled {% endif %} 
+                        {% if variants.id ==  item.variant_id %}selected{% endif %}>
+                        {{variants.title}}
+                      </option>
+                    {% endfor %}
+                  </select>
+                  <img
+                    style="display: none" 
+                    class="dropdown-sub"
+                    src="{{ 'drop-down-icon.svg' | asset_url }}" 
+                    alt="dropdown icon"
+                  />
+                </div>
+                
+              {% endif %}
+
+       
+               <script>console.log('item',{{ has_subscriptions }})</script>
+              {% if has_subscriptions == false %} 
+                  <div 
+                    style="display: none;"
+                    data-sub="{{ item.variant.metafields.subscriptions.discount_variant_id }}" 
+                    data-variant-id="{{item.variant_id}}" 
+                    class="subscription__btn {% unless item.variant.metafields.subscriptions.discount_variant_id %} subscribe__off {% endunless %}"
+                  
+                  >
+                  {% assign itemFilterSub = item.title | split: " | " | first%}
+                    {% if itemFilterSub contains 'high performance sports drink' %}
+                      <span>Level up to Subscription & Save 10%</span>
+                    {% else %}
+                      <span>Level up to Subscription & Save 20%</span>
+                    {% endif %}
+                  </div>
+
+                  {% else %}
+
+                  <div class="subscribtion-select">
+                    <select
+                      disabled
+                      data-selected-id="{{ item.variant_id }}"
+                      name="subscribtion" 
+                      class="subscribtion-values"
+                    >
+                      <option  value=" 15 Days" {%- if  item.selling_plan_allocation.selling_plan.name == " 15 Days" -%} selected {%- endif -%}>Delivers every 15 days</option>
+                      <option  value=" 30 Days" {%- if  item.selling_plan_allocation.selling_plan.name == " 30 Days" -%} selected {%- endif -%}>Delivers every 30 days</option>
+                      <option  value=" 45 Days" {%- if  item.selling_plan_allocation.selling_plan.name == " 45 Days" -%} selected {%- endif -%} >Delivers every 45 days</option>
+                    </select>
+                    <img
+                   style="display: none;" 
+                      class="dropdown-sub"
+                      src="{{ 'drop-down-icon.svg' | asset_url }}" 
+                      alt="dropdown icon"
+                    />
+                  </div>
+              {% endif %}
+          </div>
+          {% endfor %}
+        {% endif %}
+
+    </div>
+    <div class="recommended-products-container">
+        <h6>goodies you might like</h6>
+        <div class="recommended-products-wrapper">
+          {% assign coutProduct = 0 %}
+          {% assign productIds = cart.items | map: 'product_id' %}
+            {% for product in collections['all-products'].products  %}
+            {% if coutProduct >= 4 %}
+              {% break %}
+            {% endif %}
+          
+            {% assign discoutProductId = product.metafields.subscriptions.discount_product_id | plus: 0 %}
+
+            {% if productIds contains product.id or productIds contains discoutProductId %}
+
+              {% continue %}
+              {% else %}
+                {% assign coutProduct = coutProduct | plus: 1 %}
+            {% endif %}
+
+            {% if product.available %}
+                <div data-recom="{{ product.id }}"  class="recommended-product">
+                    <div class="recommended-product-image">
+                        <a  href="{{product.url}}">
+                            <img src="{{product.featured_media.preview_image | img_url: '600x'}}" alt="">
+                        </a>
+                        <div class="recommended-product-description">
+                            <a class="product-title" href="{{product.url}}">{{product.title | split: '|' | first }}</a>
+                            <p class="product-subtitle">{{product.title | split: '|' | last }}</p>
+                            <p class="product-price">{{product.price | money}}</p>
+                        </div>
+                    </div>
+                    <form method="post" accept-charset="UTF-8" action="/cart/add" enctype="multipart/form-data" class=" " data-productid="{{product.id}}" data-product-form>
+                        <input type="hidden" name="form_type" value="product">
+                        <input type="hidden" name="utf8" value="✓">
+                        <div id="ProductPrice" style="display: none;">{{ product.price | money }}</div>
+            
+                        <select name="id" class="" data-productid="{{product.id}}" data-product-select style="display: none;">
+                            {% for variant in product.variants %}
+                            <option {% if variant.available == false %} disabled {% endif %} value="{{ variant.id }}">{{ variant.title }}</option>
+                            {% endfor %}
+                        </select>
+            
+                        <div class="product__add-container">
+                        <button
+                                type="submit"
+                                name="add"
+                                class=" product__atc"
+                                data-add-to-cart
+                                data-text="{%- if product.selected_or_first_available_variant.available -%}ADD{%- else -%}Sold Out{%- endif -%}"
+                                {% unless product.selected_or_first_available_variant.available%}disabled="disabled"{% endunless %}>
+                            {%- if product.selected_or_first_available_variant.available -%}ADD{%- else -%}Sold Out{%- endif -%}
+                            </span>
+                        </button>
+                        </div>
+                    </form>     
+                </div> 
+
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+  <footer class="cart__footer">
+    <div class="cart__subtotal">
+    subtotal: <span id="cart__subtotal" js-cart-subtotal>{{ cart.total_price | money }}</span>
+    </div>
+    
+    <!-- Route Code Edited 8/2/2024 -->
+    <div class="route-div"></div>
+    <style>
+      .pw-route-protection .pw-container:not(.legacy) .pw-row-1 .left .pw-logo-container svg {
+        fill: rgb(41, 214, 214) !important;
+      }
+      .pw-route-protection .pw-container:not(.legacy) .pw-row-3 .capsule .sticker-container svg {
+        fill: rgb(255, 255, 255) !important;
+      }
+      .pw-route-protection .pw-container:not(.legacy) .pw-row-3 .capsule .sticker-container svg path {
+        fill: rgb(41, 214, 214) !important;
+      }
+      .pw-route-protection .pw-container:not(.legacy) .pw-row-3 .capsule .combination_mark-container svg {
+        fill: rgb(0, 0, 0) !important;
+      }
+    </style>
+    <!-- End Route Code -->
+    
+    <a data-text="CHECKOUT" class="btn cart__button--checkout cart__button--sidebar" href="#">CHECKOUT</a>
+    <a class="btn cart-continue" href="#" data-text= "CONTINUE SHOPPING">CONTINUE SHOPPING</a>
+    <div class="cart__disclaimer">
+        Shipping and Taxes calculated at checkout
+    </div>
+  </footer>
+  
+{% if cart.item_count == 0 %}
+  <style>
+    .cart__footer {
+      display: none;
+    }
+  </style>
+  {% else %}
+  <style>
+    .cart__footer {
+      display: block;
+    }
+  </style>
+{% endif %}
+
+</div>
+
+<!-- <script>
+  var arr = [];
+</sc>
+{%- for item in product.variants -%}
+
+    <script>
+      console.log({{product | json}})
+       arr.push({
+         id: {{ variant.id | json }},
+         title: {{variant.title | json}}
+        })
+
+        //console.log(arr)
+
+    </scr>
+{% endfor %} -->

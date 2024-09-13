@@ -1,0 +1,104 @@
+{% if section.settings.image_mobile != blank %}
+  <section class="collection__promo">
+    <div class="collection-promo__container" style="background-color: {{section.settings.bg_color}};">
+      <div class="collection-promo__image">
+        <div class="collection-promo__image--mobile">
+          {% render 'lazy-image', image: section.settings.image_mobile %}
+        </div>
+        <div class="collection-promo__image--desktop">
+          {% render 'lazy-image', image: section.settings.image_desktop %}
+        </div>
+      </div>
+      <div class="collection-promo__content">
+        {% if section.settings.title != blank %}
+          <h1 class="collection-promo__title" style="color: {{section.settings.title_color}};">{{section.settings.title}}</h1>
+        {% endif %}
+        {% if section.settings.subtitle != blank %}
+          <h1 class="collection-promo__subtitle" style="color: {{section.settings.subtitle_color}};">{{section.settings.subtitle}}</h1>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <h1 class="collection-promo__description" style="color: {{section.settings.description_color}};">{{section.settings.description}}</h1>
+        {% endif %}
+        {% if section.settings.price != blank %}
+          <h1 class="collection-promo__price" style="color: {{section.settings.price_color}};">{{section.settings.price}}</h1>
+        {% endif %}
+        {% if section.settings.url != blank %}
+          <a href="{{section.settings.url}}" class="btn collection-promo__btn" data-text="{{section.settings.cta_text}}">{{section.settings.cta_text}}</a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Collection Promo",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Mobile Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_desktop",
+        "label": "Desktop Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "type": "color",
+        "id": "subtitle_color",
+        "label": "Subtitle Color"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "color",
+        "id": "description_color",
+        "label": "Description Color"
+      },
+      {
+        "type": "text",
+        "id": "price",
+        "label": "Price"
+      },
+      {
+        "type": "color",
+        "id": "price_color",
+        "label": "Price Color"
+      },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "CTA URL"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text"
+      }
+    ]
+  }
+{% endschema %}

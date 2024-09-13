@@ -1,0 +1,239 @@
+{% render 'feed-army' %}
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign featured_image = current_variant.featured_image | default: product.featured_image -%}
+<div class="product" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true">
+  <div {% render 'lazy-background-image', image: images['product-top-background.jpg'], img_classes: 'product__top-container' %}>
+    <div class="product__top">
+      <section class="product__carousel">
+        <div class="product-carousel__images" js-product-carousel>
+          {% for image in product.images %}
+            <div class="product-carousel__image">
+              {% render 'lazy-image', image: image %}
+            </div>
+          {% endfor %}
+        </div>
+        {% if product.images.size > 1 %}
+          <ul class="product-carousel__dots">
+            {% for image in product.images %}
+              <li class="product-carousel__dot {% if forloop.first %}selected{% endif %}">
+                <button class="product-carousel__trigger" data-index="{{forloop.index0}}" aria-label="Go to slide {{forloop.index}}" js-image-carousel-trigger></button>
+              </li>
+            {% endfor %}
+          </ul>
+          <button class="product-carousel__arrow product-carousel__arrow-prev" aria-label="Previous" js-arrow-prev>{% render 'icon-arrow-left' %}</button>
+          <button class="product-carousel__arrow product-carousel__arrow-next" aria-label="Next" js-arrow-next>{% render 'icon-arrow-right' %}</button>
+        {% endif %}
+      </section>
+      <section class="product__content">
+        <header class="product__header">
+          <div class="product__stars">
+                        <div data-fera-container="549950" data-product_id="{{ product.id }}"></div>
+            <style>
+              .fera-productReviewsSummary-content {
+                display: flex;
+                align-items: center;
+                gap: 3px;
+              }
+
+            
+
+              .fera-productReviewsSummary-reviewCount {
+                font-family: "Avenir", sans-serif;
+                opacity: 1;
+                padding-top: 2px;
+              }
+            </style>
+          </div>
+          <script>
+
+</script>
+          <h1 class="product__title">{{product.title | split: '|' | first | strip }}</h1>
+          {% if product.handle contains 'enhanced-hydration-12-stick-bag-one-time' %}
+          <h2 class="product__subtitle">{{product.title | split: '|' | last | strip }}</h2>
+  <!--           <div id="ProductPrice" style="display: none;">{{ product.price | money }}</div> -->
+            {%elsif product.title contains '|'%}
+              <h2 class="product__subtitle">{{product.title | split: '|' | last | strip }}</h2>
+          {% endif %}
+
+<!--      {% if product.title contains '|' %}
+            <h2 class="product__subtitle">{{product.title | split: '|' | last | strip }}</h2>
+          {% endif %} -->
+
+        </header>
+
+        <form method="post" accept-charset="UTF-8" action="/cart/add" enctype="multipart/form-data" class="product__form" data-productid="{{product.id}}" data-product-form>
+          <input type="hidden" name="form_type" value="product">
+          <input type="hidden" name="utf8" value="✓">
+          <div class="product__description rte  product__description--desktop">
+            {{product.description}}
+            <div id="ProductPrice" style="display: none;">{{ product.price | money }}</div>
+          </div>
+
+          <div class="choose__flavor">Choose Your Flavor:</div>
+          {% comment %}RECHARGE{% endcomment %}
+          
+            {% include 'subscription-product-enhanced' %}
+            <div class="rc-widget-injection-parent"></div>
+
+            <select name="id" class="" data-productid="{{product.id}}" data-product-select style="display: none;">
+              {% for variant in product.variants %}
+                <option value="{{ variant.id }}">{{ variant.title }}</option>
+              {% endfor %}
+            </select>
+
+            <!-- {% for product_option in product.options_with_values %}
+
+            <select data-single-option-selector data-index="option{{ forloop.index }}">
+              {% for value in product_option.values %}
+                <option {% if product_option.selected_value == value %}selected{% endif %}>
+                  {{ value }}
+                </option>
+              {% endfor %}
+            </select>
+
+            {% endfor %} -->
+
+
+          <div class="quantity-addcart">
+
+          <div class="product__quantity">
+            <label for="Quantity" class="product-quantity__label">Quantity</label>
+            <div class="product-quantity__input-container">
+              <button class="js-qty__adjust js-qty__adjust--minus" data-qty="1"  data-adjust="minus" js-qty-adjust aria-label="Decrease Quantity">-</button>
+              <input type="text" class="js-qty__num" value="1" min="1" maxlength="3" aria-label="quantity" pattern="[0-9]*" name="quantity" id="Quantity" data-max="{{settings.product_limit}}" js-qty-num>
+              <button class="js-qty__adjust js-qty__adjust--plus" data-qty="1" data-adjust="plus" js-qty-adjust  aria-label="Increase Quantity">+</button>
+            </div>
+          </div>
+
+          <div class="product__add-container">
+            <button
+                style="border-top: none;"  
+                    type="submit"
+                    name="add"
+                    class="btn product__atc"
+                    data-add-to-cart
+                    data-text="{%- if current_variant.available -%}ADD TO BAG{%- else -%}Sold Out{%- endif -%}"
+                    {% unless current_variant.available %}disabled="disabled"{% endunless %}>
+              {%- if current_variant.available -%}ADD TO BAG{%- else -%}Sold Out{%- endif -%}
+              </span>
+            </button>
+          </div>
+
+          </div>
+        </form>
+
+        <style>
+          .quantity-addcart {
+            display: flex;
+          }
+
+					.quantity-addcart .product-quantity__input-container {
+						height: 40px;
+					}
+
+          .quantity-addcart .product__quantity {
+            border-right: none;
+            margin: 0;
+            border-top: none; 
+          }
+
+          .quantity-addcart .product__quantity {
+            width: 30%;
+          }
+
+          .quantity-addcart .product__quantity .js-qty__num {
+            width: 50px;
+          }
+
+          .quantity-addcart .product__add-container {
+            width: 100%;
+          }
+
+          .product__title {
+            font-size: 1.5rem;
+          }
+      
+          .choose__flavor {
+            font-family: 'Avenir',sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 5px;
+          }
+      
+          .product__variant-wrapper select {
+            padding-left: 15px;
+            border-bottom: 2px solid black;
+          }
+      
+          .product__variant-wrapper {
+            margin-bottom: 10px;
+          }
+ 
+
+          @media (max-width: 425px) {
+            .product__subtitle {
+              margin-bottom: 10px;
+            }
+            .quantity-addcart .product__quantity .js-qty__num {
+              width: 35px;
+            }
+          }
+        </style>
+
+        <div class="product__disclaimer">
+          <button
+            class="product__club-trigger"
+            data-remodal-target="club-details-modal"
+            js-subscription-remodal
+           >Subscription with Benefits:
+          </button>
+          <span>Skip, change or cancel till you're happy.</span>
+        </div>
+
+        <div class="product__description rte  product__description--mobile">{{product.description}}</div>
+      </section>
+    </div>
+    <div class="remodal__club-details" data-remodal-id="club-details-modal">
+      <div class="remodal-content">
+        <button data-remodal-action="close" class="remodal__close" title="Close" aria-label="Close">{% render 'icon-close' %}</button>
+        <div class="club-details__logo">
+          {% render 'lazy-image', image: images['offfield-health-club-logo.jpg'] %}
+        </div>
+        <p class="club-details__text">
+          <span class="fc--blue">SWEET SAVINGS</span><br><br>
+          Subscribers Save 25% On Every Bag<br><br><br>
+          <span class="fc--red">EASY BREEZY</span><br><br>
+          Choose your quantity, skip or cancel anytime.<br><br>
+          Just email us if you want to add, subtract or make any other changes to your existing subscription. <br><br><br>
+          <span class="fc--green">FRIENDS WITH BENEFITS</span><br><br>
+          FREE Membership to our OFFIELD Health Club!<br><br>
+          Members get early access to new products and merch, and can participate in events and R&D. <br><br>
+          This is just the start. More to Come!
+        </p>
+        <div class="club-details__disclaimer">
+          <a href="mailto:sup@offfield.com" class="club-details__link">contact us</a> if you have any questions
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% unless product == empty %}
+    <script type="application/json" data-product-json>
+      {{ product | json }}
+    </script>
+  {% endunless %}
+</div>
+
+{% schema %}
+  {
+  "name": "Product pages",
+  "settings": [
+  {
+  "type": "checkbox",
+  "id": "show_share_buttons",
+  "label": "Show social sharing buttons",
+  "default": false
+  }
+  ]
+  }
+{% endschema %}

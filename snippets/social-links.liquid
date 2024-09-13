@@ -1,0 +1,15 @@
+{%- assign social_accounts = 'Facebook, Twitter, Pinterest, Instagram, TikTok, Snapchat, Tumblr, YouTube, Vimeo,' | split: ', ' -%}
+<ul class="social-links">
+  {%- for social in social_accounts -%}
+    {%- assign social_handle = social | handleize -%}
+    {%- capture social_link %}social_{{ social_handle }}_link{%- endcapture -%}
+    {%- capture social_icon -%}icon-{{ social_handle }}{%- endcapture -%}
+    {%- if settings[social_link] != blank -%}
+      <li class="social-link">
+        <a href="{{ settings[social_link] }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: social }}" class="social-link__link">
+          {%- include social_icon -%}
+        </a>
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>

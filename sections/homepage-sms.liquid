@@ -1,0 +1,59 @@
+<section class="homepage-sms" style="background-color: {{section.settings.background_color}}">
+  <div class="homepage-sms__container">
+    <div class="homepage-sms__text">
+      {% if section.settings.title != blank %}
+        <h1 class="homepage-sms__title" style="color: {{section.settings.title_color}}">{{section.settings.title}}</h1>
+      {% endif %}
+      {% if section.settings.subtitle != blank %}
+        <h2 class="homepage-sms__subtitle" style="color: {{section.settings.subtitle_color}}">{{section.settings.subtitle}}</h2>
+      {% endif %}
+    </div>
+    <div class="homepage-sms__klaviyo">
+      <div class="klaviyo-form-QRFAWz"></div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Homepage - SMS",
+    "class": "homepage__section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#9c9f8c"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#e6af6e"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "color",
+        "id": "subtitle_color",
+        "label": "Subtitle Color",
+        "default": "#000000"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+      }
+    ],
+    "presets": [
+      {
+        "name": "SMS",
+        "category": "Homepage"
+      }
+    ]
+  }
+
+{% endschema %}

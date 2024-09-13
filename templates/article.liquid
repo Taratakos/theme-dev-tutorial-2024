@@ -1,0 +1,51 @@
+{%- capture article_category -%}
+  {% for tag in article.tags %}
+    {% if tag contains 'display:' %}
+      {{ tag | split: ':' | last | strip }}
+    {% endif %}
+  {% endfor %}
+{%- endcapture -%}
+<article class="article article--{{article_category | handle}}" role="article" itemscope itemtype="http://schema.org/Article">
+  {% render 'article-hero' %}
+  {% for tag in article.tags %}
+    {% if tag contains 'display:' %}
+      <span class="article__tag">{{article_category | strip}}</span>
+    {% endif %}
+  {% endfor %}
+  <div class="article__content rte">
+    <div class="article__social">
+      {% render 'social-sharing',  share_title: article.title, share_permalink: article.url, share_image: article.image %}
+    </div>
+    {{article.content}}
+  </div>
+  <div class="article__disclaimer">
+    You think you can do better?  Become a contributing writer!<br>
+    <a class="article-disclaimer__link" href="mailto:write@offfield.com">write@offfield.com</a>
+  </div>
+  {% render 'related-articles' %}
+</article>
+
+{% comment %}
+<h2></h2>
+
+<h3></h3>
+
+<p></p>
+
+<div class="article__image">
+  <img src="" alt="">
+  <div class="article-image__credentials">
+    <span>description</span>
+    <span>by</span>
+  </div>
+</div>
+
+<blockquote>Text</blockquote>
+
+<div class="article-content__hero-container" style>
+  <div class="article-content__hero">
+    <div class="article-content-hero__text"></div>
+  </div>
+  <div class="article-content-hero__caption"></div>
+</div>
+{% endcomment %}

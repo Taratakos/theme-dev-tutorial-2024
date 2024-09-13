@@ -1,0 +1,50 @@
+<header class="site-header" js-header>
+  {% if settings.include_preheader and template == 'index' %}
+    <section class="site-preheader" style="background-color: {{settings.preheader_background}}; color: {{settings.preheader_color}};">
+      {{settings.preheader_text}}
+    </section>
+  {% endif %}
+  <section class="header">
+    <div class="site-header__left">
+      <button class="site-header__mobile-trigger site-header__button" js-drawer-open-left>{% render 'icon-menu' %}</button>
+      <nav class="site-header__nav">
+        <ul class="header-nav__links">
+          {% for link in linklists['main-menu'].links %}
+            <li class="header-nav__link-container">
+              <a href="{{link.url}}" class="header-nav__link">{{link.title}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="site-header__logo">
+      <a href="/" class="site-header__link site-header__link--logo">{% render 'site-logo' %}</a>
+    </div>
+    <div class="site-header__right">
+      <nav class="site-header__nav">
+        <ul class="header-nav__links">
+          <li class="header-nav__link-container">
+            <a href="/account" class="header-nav__link">
+              {% if customer %}
+                ACCOUNT
+              {% else %}
+                SIGN IN
+              {% endif %}
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="/cart" class="site-header__bag {% if cart.item_count <= 0 %}site-header__bag--empty{% endif %}">
+        {% render 'icon-bag' %}
+        <span class="site-header__bag-count" js-bag-count>
+          {%- if cart.item_count < 10 -%}
+            {%- assign cart_count = cart.item_count | prepend: '0' -%}
+          {%- else -%}
+            {%- assign cart_count = cart.item_count -%}
+          {%- endif -%}
+          {{cart_count}}
+        </span>
+      </a>
+    </div>
+  </section>
+</header>

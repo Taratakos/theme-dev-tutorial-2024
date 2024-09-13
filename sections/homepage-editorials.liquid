@@ -1,0 +1,48 @@
+<section class="homepage-editorials" data-section-type="homepage-editorials">
+  <ul class="homepage-editorial__carousel" js-editorial-carousel>
+    {% for block in section.blocks %}
+      <li class="homepage-editorial__editorial">
+                <div class="homepage-editorial__logo">
+          {% render 'lazy-image', image: block.settings.logo %}
+        </div>
+        <p class="homepage-editorial__quote">
+          {{block.settings.quote}}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% schema %}
+  {
+    "name": "Homepage - Editorials",
+    "class": "homepage__section",
+    "settings": [
+    ],
+    "blocks": [
+      {
+        "type": "editorial",
+        "name": "Editorial",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "quote",
+            "label": "Quote"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Editorials",
+        "category": "Homepage"
+      }
+    ]
+  }
+
+{% endschema %}

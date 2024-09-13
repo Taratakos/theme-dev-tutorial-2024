@@ -1,0 +1,36 @@
+<section class="blog" data-section-type="blog">
+  {% if current_tags == blank %}
+    {% section 'blog-carousel' %}
+  {% endif %}
+  {% render 'blog-tags' %}
+
+  {% paginate blog.articles by 12 %}
+    <section class="blog__articles" js-articles>
+      {% for article in blog.articles %}
+        <a href="{{article.url}}" class="blog__article" js-article>
+          <div class="blog-article__image">
+            {% render 'lazy-image', image: article.image %}
+          </div>
+          <div class="blog-article__content">
+            {% for tag in article.tags %}
+              {% if tag contains 'display:' %}
+                <h2 class="blog-article__tag blog-article__tag--{{ tag | split: ':' | last | handle | strip }}">{{ tag | split: ':' | last | strip }}</h2>
+              {% endif %}
+            {% endfor %}
+            <h1 class="blog-article__title">{{article.title}}</h1>
+            <p class="blog-article__excerpt">{{article.excerpt}}</p>
+          </div>
+        </a>
+      {% endfor %}
+      {% if paginate.current_page == 1 %}
+        {% section 'blog-recommendations' %}
+      {% endif %}
+    </section>
+    {% if paginate.next %}
+      <div class="blog__pagination">
+        <button href="{{paginate.next.url}}" class="btn pagination__button" aria-label="Load More" data-text="LOAD SOME OLDIES, BUT GOODIES" js-pagination-path>LOAD SOME OLDIES, BUT GOODIES</a>
+      </div>
+    {% endif %}
+  {% endpaginate %}
+  {% render 'blog-signup' %}
+</section>

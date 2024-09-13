@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "product-sport": {
+      "type": "product-sport",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "product-sport"
+  ]
+}

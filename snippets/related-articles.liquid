@@ -1,0 +1,36 @@
+<div class="related-articles__container">
+  <section class="related-articles" data-section-type="homepage-articles">
+    <header class="related-articles__header">
+      <h1 class="related-articles__title">thirsty for more?</h1>
+        <a href="{{blog.url}}" class="btn related-articles__btn--desktop" data-text="MORE STORIES">MORE STORIES</a>
+    </header>
+    
+    <div class="related-articles__cards" js-carousel>
+      {% assign counter = 0 %}
+      {% for related_article in blog.articles limit: 4 %}
+        {% unless related_article.title == article.title %}
+          {% assign counter = counter | plus: 1 %}
+          <a href="{{related_article.url}}" class="related-articles__card">
+            <div class="related-articles-card__image">
+              {% render 'lazy-image', image: related_article.image %}
+            </div>
+            {% for tag in related_article.tags %}
+              {% if tag contains 'display:' %}
+                <div class="related-articles-card__tag related-articles-card__tag--{{ tag | split: ':' | last | handle | strip }}">{{ tag | split: ':' | last | strip }}</div>
+              {% endif %}
+            {% endfor %}
+            <h1 class="related-articles-card__title">{{related_article.title}}</h1>
+            <p class="related-articles-card__excerpt">{{related_article.excerpt}}</p>
+          </a>
+          {% if counter == 3 %}
+            {% break %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.cta != blank %}
+      <a href="{{blog.url}}" class="btn  homepage-article__btn--mobile" data-text="{{section.settings.cta}}">{{section.settings.cta}}</a>
+    {% endif %}
+  </section>
+</div>

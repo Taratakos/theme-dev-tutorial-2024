@@ -1,0 +1,243 @@
+{% assign product = all_products[section.settings.product] %}
+<section class="homepage-product" data-section-type="homepage-product" style="background-color: {{section.settings.background_color}}">
+  <div class="homepage-product__container">
+    <div class="homepage-product__carousel">
+      <div class="homepage-product__images-container">
+        <div class="homepage-product__images" js-homepage-product-carousel>
+          {% for image in product.images %}
+            <div class="homepage-product__image">
+              {% render 'lazy-image', image: image %}
+            </div>
+          {% endfor %}
+        </div>
+        {% if product.images.size > 1 %}
+          <ul class="homepage-product-image__dots">
+            {% for image in product.images %}
+              <li class="homepage-product-image__dot {% if forloop.first %}selected{% endif %}">
+                <button class="homepage-product-image__trigger" data-index="{{forloop.index0}}" aria-label="Go to slide {{forloop.index}}" js-homepage-product-trigger></button>
+              </li>
+            {% endfor %}
+          </ul>
+          <button class="homepage-product-image__arrow homepage-product-image__arrow-prev" aria-label="Previous" js-arrow-prev>{% render 'icon-arrow-left' %}</button>
+          <button class="homepage-product-image__arrow homepage-product-image__arrow-next" aria-label="Next" js-arrow-next>{% render 'icon-arrow-right' %}</button>
+        {% endif %}
+      </div>
+    </div>
+    <header class="homepage-product__header">
+      <h1 class="homepage-product__title" style="color: {{section.settings.title_color}}"><a href="{{product.url}}" class="homepage-product__title-link">{{product.title | split: '|' | first | strip }}</a></h1>
+      {% if product.title contains '|' %}
+        <h2 class="homepage-product__subtitle">{{product.title | split: '|' | last | strip }}</h2>
+      {% endif %}
+      <div class="homepage-product__reviews">
+        <span class=" stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}" data-product-type="{{product.type}}" data-product-title="{{product.title}}"  style="display:block;">{{ product.metafields.stamped.badge }}</span>
+      </div>
+    </header>
+    <div class="homepage-product__content">
+      <div class="homepage-product__description rte" style="color: {{section.settings.description_color}}">
+        {{product.description}}
+      </div>
+      
+      <form method="post" accept-charset="UTF-8" action="/cart/add" enctype="multipart/form-data" class="homepage-product__form" data-productid="{{product.id}}" data-product-form>
+        <input type="hidden" name="form_type" value="product">
+        <input type="hidden" name="utf8" value="✓">
+        {% comment %}RECHARGE{% endcomment %}
+        {% comment %}
+        {% if product.available %}
+          {% include 'subscription-product' %}
+        {% endif %}
+        <select name="id" class="no-js" data-productid="{{product.id}}" data-product-select>
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}">{{ variant.title }}</option>
+          {% endfor %}
+        </select>
+        {% endcomment %}
+
+        {% for tag in product.tags %}
+          {% if tag contains 'renew-collection--' %}
+            {% assign collection_handle = tag | split: '--' | last %}
+            {% assign renew_collection = collections[collection_handle] %}
+          {% endif %}
+        {% endfor %}
+
+        {% if renew_collection %}
+          <div class="homepage-product__id-select">
+            <select name="id" class="homepage-product__id" data-product-select>
+              {% assign selected = false %}
+              {% for product in renew_collection.products %}
+                {% if product.available %}
+                  <option value="{{product.variants[0].id}}" {% unless selected %}selected{% endunless %}>{{ product.title | split: '-' | last | strip }}</option>
+                  {% assign selected = true %}
+                {% endif %}
+              {% endfor %}
+            </select>
+            
+            {% assign selected = false %}
+            {% for product in renew_collection.products %}
+              {% if product.available %}
+                <div class="homepage-product__radio-container" style="--index: {{forloop.index}}">
+                  <input type="radio" id="radio-{{product.handle}}" class="homepage-product__radio" name="variant" value="{{product.variants[0].id}}" {% unless selected %}checked{% endunless %} data-single-option-selector>
+                  <label for="radio-{{product.handle}}" class="homepage-product__radio-label">
+                    <div class="homepage-product__radio-label-content">
+                      <span>{{ product.title | split: '|' | last | strip }}</span>
+                      <span>
+                        {% if product.compare_at_price > product.price %}
+                          {{ product.price | money }} <span class="homepage-product__compare-price">{{ product.compare_at_price | money }}</span>
+                        {% else %}
+                          {{ product.price | money }}
+                        {% endif %}
+                      </span>
+                    </div>
+                  </label>
+                </div>
+                {% assign selected = true %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% else %}
+          {% if product.variants.size > 1 %}
+            <select name="id" class="homepage-product__select">
+              {% for variant in product.variants %}
+                <option value="{{variant.id}}">{{variant.title}}</option>
+              {% endfor %}
+            </select>
+          {% else %}
+            <div class="homepage-product__id-select">
+              <div class="homepage-product__radio-container" style="--index: 1">
+                <input type="radio" id="radio-{{product.handle}}" class="homepage-product__radio" name="id" value="{{product.variants[0].id}}" checked>
+                <label for="radio-{{product.handle}}" class="homepage-product__radio-label">
+                  <div class="homepage-product__radio-label-content">
+                    <span>{{ product.title | split: '|' | last | strip }}</span>
+                    <span>
+                      {% if product.compare_at_price > product.price %}
+                        {{ product.price | money }} <span class="homepage-product__compare-price">{{ product.compare_at_price | money }}</span>
+                      {% else %}
+                        {{ product.price | money }}
+                      {% endif %}
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+        
+
+        <div class="homepage-product__quantity">
+          <label for="Quantity" class="homepage-product-quantity__label">Quantity</label>
+          <div class="homepage-product-quantity__input-container">
+            <button class="js-qty__adjust js-qty__adjust--minus" data-qty="1"  data-adjust="minus" js-qty-adjust aria-label="Decrease Quantity">-</button>
+            <input type="text" class="js-qty__num" value="1" min="1" maxlength="3" aria-label="quantity" pattern="[0-9]*" name="quantity" id="Quantity" data-max="{{settings.product_limit}}" js-qty-num>
+            <button class="js-qty__adjust js-qty__adjust--plus" data-qty="1"  data-adjust="plus" js-qty-adjust aria-label="Increase Quantity">+</button>
+          </div>
+        </div>
+
+        {% if product.available %}
+          <div class="homepage-product__add-container">
+            <button type="submit" name="add" class="btn homepage-product__cta" data-text="ADD TO BAG">ADD TO BAG</button>
+          </div>
+        {% endif %}
+      </form>
+      <div class="homepage-product__disclaimer">
+        <span>Try risk-free. Your happiness comes first.</span> <button class="homepage-product__club-trigger" data-remodal-target="club-details-modal" js-subscription-remodal>How Club Membership Works</button>
+      </div>
+    </div>
+  </div>
+  <div class="remodal__club-details" data-remodal-id="club-details-modal">
+    <div class="remodal-content">
+      <button data-remodal-action="close" class="remodal__close" title="Close" aria-label="Close">{% render 'icon-close' %}</button>
+      <div class="club-details__logo">
+        {% render 'lazy-image', image: images['offfield-health-club-logo.jpg'] %}
+      </div>
+      <p class="club-details__text">
+        20% off every order* <br><br>
+        Don't sweat your next order, <br>
+        OFFFIELD delivered to you monthly <br><br>
+        Free shipping on all US orders <br><br>
+        Skip any month you don't need a re up <br><br>
+        Early access to new products and merch <br><br>
+        Participate in events and testing in R&D <br><br>
+        This is just the start. More to come
+      </p>
+      <div class="club-details__disclaimer">
+        *might exclude some merch, but we’ll take that case by case.
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Homepage - Product",
+    "class": "homepage__section",
+    "settings": [
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color"
+      },
+      {
+        "type": "color",
+        "id": "subtitle_color",
+        "label": "Subtitle Color"
+      },
+      {
+        "type": "color",
+        "id": "description_color",
+        "label": "Description Color"
+      },
+      {
+        "type": "select",
+        "id": "cta_style",
+        "label": "CTA Style",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          },
+          {
+            "value": "btn--blue",
+            "label": "Blue"
+          },
+          {
+            "value": "btn--red",
+            "label": "Red"
+          },
+          {
+            "value": "btn--green",
+            "label": "Green"
+          },
+          {
+            "value": "btn--offgold",
+            "label": "Off Gold"
+          },
+          {
+            "value": "btn--black",
+            "label": "Black"
+          },
+          {
+            "value": "btn--underline",
+            "label": "Underline"
+          }
+        ],
+        "default": "default"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product",
+        "category": "Homepage"
+      }
+    ]
+  }
+
+{% endschema %}

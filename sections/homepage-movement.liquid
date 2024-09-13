@@ -1,0 +1,142 @@
+<section class="homepage-movement" data-section-type="homepage-movement">
+  {% if section.settings.smiley != blank %}
+    <div class="movement__smiley" style="background-image: url({{section.settings.smiley | img_url: '200x' }})"></div>
+  {% endif %}
+  <h1 class="movement__title">
+    <span class="movement-title__word fc--blue">
+      <span class="movement-title__letter" style="--i:1; --a:2.5;">M</span>
+      <span class="movement-title__letter" style="--i:2; --a:3.5;">o</span>
+      <span class="movement-title__letter" style="--i:3; --a:4.5;">v</span>
+      <span class="movement-title__letter" style="--i:4; --a:5.5;">e</span>
+      <span class="movement-title__letter" style="--i:5; --a:6.5;">m</span>
+      <span class="movement-title__letter" style="--i:6; --a:7.5;">e</span>
+      <span class="movement-title__letter" style="--i:7; --a:8.5;">n</span>
+      <span class="movement-title__letter" style="--i:8; --a:9.5;">t</span>
+    </span>
+    <span class="movement-title__letter movement-title__space" style="--i:9; --a:1"> </span>
+    <span class="movement-title__word fc--green">
+      <span class="movement-title__letter" style="--i:10; --a:2;">M</span>
+      <span class="movement-title__letter" style="--i:11; --a:3;">a</span>
+      <span class="movement-title__letter" style="--i:12; --a:4;">d</span>
+      <span class="movement-title__letter" style="--i:13; --a:5;">e</span>
+    </span>
+    <span class="movement-title__letter movement-title__space" style="--i:14; --a: 6;"> </span>
+    <span class="movement-title__word fc--red">
+      <span class="movement-title__letter" style="--i:15; --a:7;">H</span>
+      <span class="movement-title__letter" style="--i:16; --a:8;">a</span>
+      <span class="movement-title__letter" style="--i:17; --a:9;">p</span>
+      <span class="movement-title__letter" style="--i:18; --a:10;">p</span>
+      <span class="movement-title__letter" style="--i:19; --a:11;">y</span>
+    </span>
+    <span class="movement-title__word fc--offgold">
+      <span class="movement-title__letter" style="--i:20; --a:12;">.</span>
+    </span>
+  </h1>
+  <div class="movement__content" js-movement-carousel>
+    {% for block in section.blocks %}
+      <div class="movement__card">
+        <a href="{{block.settings.url}}" class="movement-card__link">
+          {%- capture bg_styles -%}
+            background-color: {{block.settings.background_color}};
+          {%- endcapture -%}
+          {% if block.settings.background_image != blank %}
+            <div {% render 'lazy-background-image', image: block.settings.background_image, img_classes: 'movement-card__background', styles: bg_styles %}></div>
+          {% else %}
+            <div class="movement-card__background" style="{{bg_styles}}"></div>
+          {% endif %}
+          <div class="movement-card__text">
+            <h2 class="movement-card__kicker" style="color: {{block.settings.kicker_color}}">{{block.settings.kicker}}</h2>
+            <h1 class="movement-card__title" style="color: {{block.settings.title_color}}">{{block.settings.title}}</h1>
+          </div>
+          <div class="movement-card__image" js-movement-image>
+            {% render 'lazy-image', image: block.settings.image %}
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Homepage - Movement",
+    "class": "homepage__section homepage__section--movement",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "smiley",
+        "label": "Background Smiley"
+      }
+    ],
+    "max_blocks": 3,
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          },
+          {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color",
+            "default": "#ffffff"
+          },
+          {
+            "type": "text",
+            "id": "kicker",
+            "label": "Kicker"
+          },
+          {
+            "type": "color",
+            "id": "kicker_color",
+            "label": "Kicker Color",
+            "default": "#4e84b5"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title Color",
+            "default": "#e6af6e"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Movement",
+        "category": "Homepage",
+        "blocks": [
+          {
+            "type": "card"
+          },
+          {
+            "type": "card"
+          },
+          {
+            "type": "card"
+          }
+        ]
+      }
+    ]
+  }
+
+{% endschema %}

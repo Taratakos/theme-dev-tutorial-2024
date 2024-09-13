@@ -1,0 +1,24 @@
+{% render 'product-text', image: section.settings.image, title: section.settings.title, text: section.settings.content %}
+
+{% schema %}
+  {
+    "name": "Product Text",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "content",
+        "label": "Content"
+      }
+    ]
+  }
+{% endschema %}

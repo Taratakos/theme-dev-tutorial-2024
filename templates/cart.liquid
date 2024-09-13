@@ -1,0 +1,110 @@
+{% include 'subscription-cart-footer' %}
+<section class="cart" data-section-type="cart">
+  <h1 class="cart__title">your bag</h1>
+  {% if cart.item_count > 0 %}
+    <h2 class="cart__free-shipping">you got free shipping. that's chill.</h2>
+    {% assign has_subscription = false %}
+    {% render 'banana-stand-cart-top-container' %}
+
+    <form action="/cart" class="cart__form" method="post" novalidate js-cart-form>
+      <div class="cart__products">
+        {% for item in cart.items %}
+          <div class="cart__product" data-key="{{item.key}}" js-cart-product>
+            <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="cart-product__remove" data-item-line="{{forloop.index}}" aria-label="Remove {{item.title}}">{% render 'icon-close' %}</a>
+            <div class="cart-product__contents">
+              <a href="{{item.product.url}}" class="cart-product__image">
+                {% render 'lazy-image', image: item.image %}
+              </a>
+              <div class="cart-product__information">
+                <div class="cart-product__text">
+                  <a href="{{item.url}}" class="cart-product__title">
+                    {{item.product.title | split: '|' | first}}
+                  </a>
+                  {% if item.product.title contains '|' %}
+                    <div class="cart-product__subtitle">
+                      {{item.product.title | split: '|' | last }}
+                    </div>
+                  {% endif %}
+                  {% unless item.variant.title contains 'Default' %}
+                    <span class="cart-product__variant">{{ item.variant.title }}</span>
+                  {% endunless %}
+                  {% comment %}
+                  {% if item.id == 35984163176606 %}
+                    <button class="cart-product__add-subscription" data-current-id="35984163176606" data-target-id="38112142753966" js-change-subscription>&plus; subscribe and save 25%</button>
+                  {% endif %}
+                  {% if item.id == 38112142753966 %}
+                    <button class="cart-product__remove-subscription" data-current-id="38112142753966" data-target-id="35984163176606" js-change-subscription>{% render 'icon-close' %} subscription</button>
+                    <span class="cart-product__disclaimer">Ships every month</span>
+                  {% endif %}
+                  {% endcomment %}
+                </div>
+                <div class="cart-product__price-container">
+                  {% if item.product.compare_at_price %}
+                    <div class="cart-product__compare-price">
+                      {{item.product.compare_at_price | money}}
+                    </div>
+                  {% endif %}
+                  <div class="cart-product__price">
+                    {{ item.price | money }}
+                  </div>
+                </div>
+                
+                <div class="cart-product__quantity">
+                  <button class="js-qty__adjust js-qty__adjust--minus" data-qty="1" data-adjust="minus" js-qty-adjust aria-label="Decrease Quantity">-</button>
+                  <label for="Quantity-{{item.product.title}}"></label>
+                  <input type="text" class="js-qty__num" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" aria-label="{{ 'cart.general.item_quantity' | t }}" id="Quantity-{{item.product.title}}" data-variant-id="{{item.variant_id}}" data-item-line="{{forloop.index}}" data-max="{{settings.product_limit}}" js-qty-num>
+                  <button class="js-qty__adjust js-qty__adjust--plus" data-qty="1" data-adjust="plus" js-qty-adjust aria-label="Increase Qty">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="cart__sidebar">
+        <footer class="cart__footer">
+          <div class="cart__subtotal">
+            subtotal: <span id="cart__subtotal" js-cart-subtotal>{{ cart.total_price | money }}</span>
+          </div>
+          <div class="cart__disclaimer">
+            Shipping & taxes calculated at checkout
+          </div>
+          
+          <!-- Route Code Edited 8/2/2024 -->
+          <div class="route-div"></div>
+          <!-- End Route Code -->
+          
+          <button type="submit" id="cart-checkout-button" class="btn cart__button--checkout" name="checkout" data-text="CHECKOUT" aria-label="CHECKOUT" js-cart-checkout>
+            CHECKOUT
+          </button>
+        </footer>
+      </div>
+    </form>
+  {% else %}
+    <div class="cart__empty">
+      <div class="supports-cookies">
+        <p>You have no items in your shopping bag.</p>
+        <a href="/" class="btn cart-empty__btn" data-text="Continue Shopping" aria-label="Continue Shopping" >Continue Shopping</a>
+      </div>
+      <div class="supports-no-cookies">
+        <p>{{ 'cart.general.cookies_required' | t }}</p>
+      </div>
+    </div>
+  {% endif %}
+</section>
+<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=7a00c939-7ef5-439a-b25d-d6ce64e11adc"></script>
+<script type="text/javascript">
+document.sezzleConfig = {
+    "configGroups": [
+        {
+            "targetXPath": "#cart__subtotal",
+            "theme": "light",
+            "altVersionTemplate": {
+            "en": "4 interest-free payments of %%price%% with %%logo%% %%info%%"
+        }
+      }
+    ]
+}
+</script>
+<script src='https://widget.sezzle.com/v1/javascript/price-widget?uuid=7a00c939-7ef5-439a-b25d-d6ce64e11adc'></script>
+
+{% section 'sezzle-widget' %}

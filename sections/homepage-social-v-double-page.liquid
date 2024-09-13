@@ -1,0 +1,117 @@
+{% if section.settings.checkbox == false %}
+  <section class="homepage-social" data-section-type="homepage-social">
+    <header class="homepage-social__header">
+      <div class="homepage-social-header__text">
+        <h1 class="homepage-social-header__title" style="color: {{section.settings.title_color}}">{{section.settings.title}}</h1>
+      </div>
+      {% if section.settings.url != blank %}
+        <a href="{{section.settings.url}}" class="btn  homepage-social__btn--desktop" data-text="{{section.settings.cta}}" target="_blank">{{section.settings.cta}}</a>
+      {% endif %}
+    </header>
+    <ul class="homepage-social__cards" js-homepage-social-carousel>
+      {% for block in section.blocks %}
+        <li class="homepage-social__card">
+          {% if block.settings.url != blank %}
+            <a href="{{block.settings.url}}" class="homepage-social-card__link" title="{{block.settings.handle}}">
+          {% else %}
+            <div class="homepage-social-card__container">
+          {% endif %}
+          <div class="homepage-social-card__image">
+            {% render 'lazy-image', image: block.settings.image %}
+          </div>
+          <div class="homepage-social-card__content">
+            <div class="homepage-social-card__text-container">
+              <p class="homepage-social-card__text">
+                <span class="ellipsis">...</span>
+                {{block.settings.text}}
+              </p>
+            </div>
+            <span class="homepage-social-card__handle">
+              {{block.settings.handle}}
+            </span>
+          </div>
+          {% if block.settings.url != blank %}
+            </a>
+          {% else %}
+            </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    {% if section.settings.url != blank %}
+      <div class="homepage-social__btn--mobile-container">
+        <a href="{{section.settings.url}}" class="btn homepage-social__btn--mobile" data-text="{{section.settings.cta}}" target="_blank">{{section.settings.cta}}</a>
+      </div>
+    {% endif %}
+  </section>
+{% endif %}
+{% schema %}
+  {
+    "name": "Homepage - Social V2",
+    "class": "homepage__section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Title"
+      },
+      {
+        "type": "checkbox",
+        "id": "checkbox",
+        "label": "Check if you want hide section"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "header",
+        "content": "CTA"
+      },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "CTA URL"
+      },
+      {
+        "type": "text",
+        "id": "cta",
+        "label": "CTA Text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "text",
+            "id": "handle",
+            "label": "Handle"
+          }
+        ]
+      }
+    ]
+  }
+
+{% endschema %}

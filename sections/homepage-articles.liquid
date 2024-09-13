@@ -1,0 +1,65 @@
+{% assign blog = blogs[section.settings.blog] %}
+<section class="homepage-articles" data-section-type="homepage-articles">
+  <header class="homepage-articles__header">
+    <h1 class="homepage-articles__title">{{section.settings.title}}</h1>
+    {% if section.settings.cta != blank %}
+      <a href="{{blog.url}}" class="btn  homepage-article__btn--desktop" data-text="{{section.settings.cta}}">{{section.settings.cta}}</a>
+    {% endif %}
+  </header>
+  
+  <div class="homepage-articles__cards" js-carousel>
+    {% for article in blog.articles limit: 3 %}
+      <a href="{{article.url}}" class="homepage-articles__card">
+        <div class="homepage-articles-card__image">
+          {% render 'lazy-image', image: article.image %}
+        </div>
+        {% for tag in article.tags %}
+          {% if tag contains 'display:' %}
+            <div class="homepage-articles-card__tag homepage-articles-card__tag--{{ tag | split: ':' | last | handle | strip }}">{{ tag | split: ':' | last | strip }}</div>
+          {% endif %}
+        {% endfor %}
+        <h1 class="homepage-articles-card__title">{{article.title}}</h1>
+        <p class="homepage-articles-card__excerpt">{{article.excerpt}}</p>
+      </a>
+    {% endfor %}
+  </div>
+
+  {% if section.settings.cta != blank %}
+    <a href="{{blog.url}}" class="btn  homepage-article__btn--mobile" data-text="{{section.settings.cta}}">{{section.settings.cta}}</a>
+  {% endif %}
+</section>
+
+{% schema %}
+  {
+    "name": "Homepage - Articles",
+    "class": "homepage__section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title"
+      },
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Blog"
+      },
+      {
+        "type": "header",
+        "content": "CTA"
+      },
+      {
+        "type": "text",
+        "id": "cta",
+        "label": "CTA Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Articles",
+        "category": "Homepage"
+      }
+    ]
+  }
+
+{% endschema %}

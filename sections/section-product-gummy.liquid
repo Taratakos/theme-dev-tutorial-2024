@@ -1,0 +1,637 @@
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+
+<div class="section-gummy">
+    <div class="block-content" >
+        <ul class="gummy-content" >
+            <li class="gummy-content content-product-details" >
+                <span class="text-label">{{ section.settings.labs }}</span>
+                <h1 class="title">{{ product.title }}</h1>
+                <div class="description">
+                    {{ section.settings.product_detail }}
+                </div>
+
+                <div class="detail-img" id="product-video-image">
+                        {% if product.media != blank %}
+                            <video class="gummy-content-img" width="270" height="270" autoplay loop muted playsinline>
+                                <source src="{{ "gummy_new.mov" | asset_url }}" type="video/mp4">
+                            </video>
+                        {% endif %}   
+                    
+                </div>
+
+                <div class="detail-buy">
+                    <div class="other-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'block-0' %}
+                                <div class="block-other">
+                                    {% if block.settings.block_title != blank %}
+                                        <div class="text-label title">{{ block.settings.block_title }}</div>
+                                    {% endif %}
+                                    {% if block.settings.block_img != blank %}
+                                        <div class="block_img">
+                                            <img src="{{ block.settings.block_img | img_url }}" alt="{{ block.settings.block_img.alt }}">
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.block_subtitle != blank %}
+                                        <div class="block_subtitle">{{ block.settings.block_subtitle }}</div>
+                                    {% endif %}
+                                </div>
+                            {% else %}
+                                {{ null }}
+                            {% endif %}
+                        {% endfor %}
+                        <div class="serving">PER SERVING</div>
+                    </div>
+                </div>
+                
+
+                <div class="other-buy_now">
+                    <a href="#block-pay" class="btn-buy_now">Buy it now</a>
+                </div>
+
+                <div class="challenge">
+                    <span class="text-label">{{ section.settings.challenge_over_title }}</span>
+                    <h2 class="title">{{ section.settings.challenge_title }}</h2>
+                    <div class="description">{{ section.settings.challenge_desc }}</div>
+                </div>
+
+
+                <div class="swiper-container challenge-img">
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'block-2' %}
+                                {% if block.settings.slider_image != blank %}
+                                    <div class="swiper-slide">
+                                        <img src="{{ block.settings.slider_image| img_url: 'master' }}" alt="{{ section.settings.other_img_1.alt }}">
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="description problems">
+                    <span class="text-label">{{ section.settings.product_problems_title }}</span>
+                    {{ section.settings.product_problems_list }}
+                </div>
+                <div class="description problems plant">
+                    <span class="text-label">{{ section.settings.product_plant_title }}</span>
+                    {{ section.settings.product_plant_list }}
+                </div>
+
+                <div class="challenge-ingredients">
+                    <div class="product-gummy-ingredients">
+                        <div class="product-ingredients__content">
+                            <div class="product-ingredients__background"></div>
+                            <h1 class="product-ingredients__title new-ingredients__title">{{ section.settings.product_ingredients_title }}</h1>
+                            <div class="product-ingredients-box">
+                                {% for block in section.blocks %}
+                                    {% if block.type == 'block-1' %}
+                                        <div class="product-card-box">
+                                            {% if block.settings.ingredient_img != blank %}
+                                                <div class="product-card-box__image">
+                                                    <img alt="" src="{{ block.settings.ingredient_img | img_url: 'master' }}"> 
+                                                </div>
+                                            {% endif %}
+                                            <div class="product-card-box__heading">
+                                                {% if block.settings.ingredient_title != blank%}
+                                                    <p class="product-card-box__title">{{ block.settings.ingredient_title }}</p>
+                                                {% endif %}
+                                                {% if block.settings.ingredient_description != blank %}
+                                                    <p class="product-card-box__subtitle">{{ block.settings.ingredient_description }}</p>  
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+
+                            <a href="#" class="text-label facts-panel" title="Nutrition Facts">Nutrition Facts Panel</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offfield">
+                    <span class="text-label">{{ section.settings.offfield_over_title }}</span>
+                    <h2 class="title">{{ section.settings.offfield_title }}</h2>
+                    <div class="description">{{ section.settings.offfield_desc }}</div>
+                </div>
+                <a href="#" class="text-label text-more" title="Offfield Labs">{{ section.settings.text_more }}</a>
+
+            </li>
+
+            <li class="gummy-content content-product-image scroll-bound" id="bound-one">
+                <div class="content">
+                    <style>
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                        }
+
+                        .content .gummy-content-text {
+                            position: sticky;
+                            top: 200px;
+                        }
+                    </style>
+                {% if product.media != blank %}
+                    <video class="gummy-content-img" width="300" autoplay loop muted playsinline>
+                        <source src="{{ "gummy_new.mov" | asset_url }}" type="video/mp4">
+                    </video>
+    
+                {% endif %}   
+
+                <span class="gummy-content-text">{% render 'icon-arrow-down' %}</span>
+            </div>
+            </li>
+
+            <li class="gummy-content content-product-other">
+                <div class="other-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'block-0' %}
+                            <div class="block-other">
+                                {% if block.settings.block_title != blank %}
+                                    <div class="text-label title">{{ block.settings.block_title }}</div>
+                                {% endif %}
+                                {% if block.settings.block_img != blank %}
+                                    <div class="block_img">
+                                        <img src="{{ block.settings.block_img | img_url }}" alt="{{ block.settings.block_img.alt }}">
+                                    </div>
+                                {% endif %}
+                                {% if block.settings.block_subtitle != blank %}
+                                    <div class="block_subtitle">{{ block.settings.block_subtitle }}</div>
+                                {% endif %}
+                            </div>
+                        {% else %}
+                            {{ null }}
+                        {% endif %}
+                    {% endfor %}
+                    <div class="serving">PER SERVING</div>
+                </div>
+                
+                <div class="other-buy_now">
+                    <a href="#block-pay" class="btn-buy_now">Buy it now</a>
+                </div>
+
+                <div class="swiper-container other-image">
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'block-2' %}
+                                {% if block.settings.slider_image != blank %}
+                                    <div class="swiper-slide">
+                                        <img src="{{ block.settings.slider_image | img_url: 'master' }}" alt="{{ section.settings.other_img_1.alt }}">
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="product-gummy-ingredients">
+                    <div class="product-ingredients__content">
+                        <div class="product-ingredients__background"></div>
+                        <h1 class="product-ingredients__title new-ingredients__title">{{ section.settings.product_ingredients_title }}</h1>
+                        <div class="product-ingredients-box">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'block-1' %}
+                                    <div class="product-card-box">
+                                        {% if block.settings.ingredient_img != blank %}
+                                            <div class="product-card-box__image">
+                                                <img alt="" src="{{ block.settings.ingredient_img | img_url: 'master' }}"> 
+                                            </div>
+                                        {% endif %}
+                                        <div class="product-card-box__heading">
+                                            {% if block.settings.ingredient_title != blank%}
+                                                <p class="product-card-box__title">{{ block.settings.ingredient_title }}</p>
+                                            {% endif %}
+                                            {% if block.settings.ingredient_description != blank %}
+                                                <p class="product-card-box__subtitle">{{ block.settings.ingredient_description }}</p>  
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <a href="#" class="text-label facts-panel" title="Nutrition Facts">Nutrition Facts Panel</a>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+    <div id="block-pay" class="block-pay">
+
+        <div class="block-pay-img">
+            {% if product.media != blank %}
+                <img class="gummy-content-img" src="{{ product | img_url: 'master' }}" alt="{{ product.title }}"/>
+            {% endif %}
+        </div>
+
+        <p class="block-pay-product-quantity">
+            {% if product.variants.first.inventory_management == "shopify" %}
+               {% if product.variants.first.inventory_quantity > 0 %}
+                Limited Quantity: {{ product.variants.first.inventory_quantity }}
+               {% else %}
+                  The product is out of stock
+               {% endif %}
+            {% else %}
+               This product is available
+            {% endif %}
+        </p>
+
+
+        <form method="post" accept-charset="UTF-8" action="/cart/add" enctype="multipart/form-data" class="product__form" data-productid="{{product.id}}" data-product-form>
+            <ul class="product-pay-info">
+                <li class="productPrice" ><span>Retail price:</span>{{ product.price | plus: product.compare_at_price | minus: product.price | money_without_trailing_zeros }}</li>
+                <li class="discount">Labs discount <span>{{ product.compare_at_price | minus: product.price | money_without_trailing_zeros }}</span></li>
+                <li class="productShipping">Product Shipping <span>free</span></li> 
+                <li class="product-gummi-price">{{ 'gummies' }} <span>{{ product.price | money_without_trailing_zeros }}</span></li>
+            </ul>
+
+
+            <input type="hidden" name="form_type" value="product">
+            <input type="hidden" name="utf8" value="✓">
+          
+            {% comment %}RECHARGE{% endcomment %}
+            {% if product.type == 'Hydration' %}
+                {% include 'subscription-product' %}
+            {% endif %}
+  
+              <select name="id" class="" data-productid="{{product.id}}" data-product-select style="display: none;">
+                {% for variant in product.variants %}
+                  <option value="{{ variant.id }}">{{ variant.title }}</option>
+                {% endfor %}
+              </select>
+  
+            <div class="product__quantity">
+              <label for="Quantity" class="product-quantity__label">Quantity</label>
+              <div class="product-quantity__input-container">
+                <button class="js-qty__adjust js-qty__adjust--minus" data-qty="1"  data-adjust="minus" js-qty-adjust aria-label="Decrease Quantity">-</button>
+                <input type="text" class="js-qty__num" value="1" min="1" maxlength="3" aria-label="quantity" pattern="[0-9]*" name="quantity" id="Quantity" data-max="{{settings.product_limit}}" js-qty-num>
+                <button class="js-qty__adjust js-qty__adjust--plus" data-qty="1" data-adjust="plus" js-qty-adjust  aria-label="Increase Quantity">+</button>
+              </div>
+            </div>
+  
+            <div class="product__add-container">
+              <button
+                style="border-top: none;"  
+                      type="submit"
+                      name="add"
+                      class="btn product__atc"
+                      data-add-to-cart
+                      data-text="{%- if current_variant.available -%}ADD TO BAG{%- else -%}Sold Out{%- endif -%}"
+                      {% unless current_variant.available %}disabled="disabled"{% endunless %}>
+                {%- if current_variant.available -%}ADD TO BAG{%- else -%}Sold Out{%- endif -%}
+                </span>
+              </button>
+            </div>
+
+            <small class="block_taxes">*Excludes any applicable sales tax based on your location</small>
+        </form>
+
+    </div>
+
+    <div class="popup section-gummy-popup" id="offfieldlabs">
+        <div class="popup__body">
+            <a href="#header" class="popup__body-close">
+                {% include 'icon-close' %}
+            </a>
+
+            {% if section.settings.popup_labs_title != blank %}
+                <h2 class="popup__body-title">{{ section.settings.popup_labs_title }}</h2>
+            {% endif %}
+
+            {% if section.settings.popup_labs_description != blank %}
+                <div class="popup__body-text">
+                    {{ section.settings.popup_labs_description }}
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+    <div class="popup section-gummy-popup" id="nutritionfacts">
+        <div class="popup__body">
+            <a href="#header" class="popup__body-close">
+                {% include 'icon-close' %}
+            </a>
+
+            {% if section.settings.popup_nutrition_facts != blank %}
+                <div class="popup__body-img">
+                    <img src="{{ section.settings.popup_nutrition_facts | img_url: 'master' }}" alt="">
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+
+
+"use strict";
+
+document.addEventListener("DOMContentLoaded", () => {
+        const timeout = setTimeout(function() {
+        const popupOpenLink = document.querySelectorAll("a");
+        const body = document.querySelector("body");
+        const footer = document.querySelector('footer');
+
+
+        let unlock = true,
+            timeout = 800;
+
+        if (popupOpenLink.length > 0) {
+            popupOpenLink.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    if(link.getAttribute("title") === 'Offfield Labs' || link.getAttribute("title") === 'Nutrition Facts') {
+                        const popupName = link.getAttribute("title").replace(" ", "").toLowerCase();
+                        const currentPopup = document.getElementById(popupName);
+
+                        e.preventDefault();
+                        popupOpen(currentPopup);
+                    }
+                });
+            });
+        }
+
+        const popupCloseBtn = document.querySelectorAll(".popup__body-close");
+        if (popupCloseBtn.length > 0) {
+            popupCloseBtn.forEach((link) => {
+                link.addEventListener("click", () => {
+                    const popupActive = document.querySelector(".popup.open");
+
+                    popupClose(popupActive);
+                });
+            });
+        }
+
+        function popupOpen(currentPopup) {
+            if (currentPopup && unlock) {
+                const popupActive = document.querySelector(".popup.open");
+
+                if (popupActive) {
+                    popupClose(popupActive, false);
+                } else {
+                    bodyLock();
+                }
+
+                currentPopup.classList.add("open");
+                currentPopup.addEventListener("click", (e) => {
+
+                    if (!e.target.closest(".popup__body")) {
+                        popupClose(e.target.closest(".popup"));
+                    }
+                });
+
+            }
+        }
+
+        function popupClose(popupActive, doUnlock = true) {
+            if (unlock && popupActive) {
+                popupActive.classList.remove("open");
+
+                if (doUnlock) {
+                    bodyUnlock();
+                }
+
+            } else {
+                bodyUnlock();
+            }
+        }
+
+        function bodyLock() {
+            body.classList.add("lock");
+            footer.style.zIndex = '-1';
+
+            unlock = false;
+            setTimeout(function () {
+                unlock = true;
+            }, timeout);
+        }
+
+        function bodyUnlock() {
+            body.classList.remove("lock");
+            footer.style.zIndex = '';
+
+            setTimeout(function () {
+                unlock = true;
+            }, timeout);
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.code === "Escape") {
+                const popupActive = document.querySelector(".popup.open");
+
+                popupClose(popupActive);
+            }
+        });
+
+	    (function () {
+
+		    if (!Element.prototype.closest) {
+			    Element.prototype.closest = function (css) {
+				    let node = this;
+
+				    while (node) {
+					    if (node.matches(css)) return node;
+					else node = node.parentElement;
+				    }
+
+				    return null;
+			    };
+		    }
+	    })();
+
+	    (function () {
+
+		    if (!Element.prototype.matches) {
+
+			    Element.prototype.matches = Element.prototype.matchesSelector ||
+				Element.prototype.webkitMatchesSelector ||
+				Element.prototype.mozMatchesSelector ||
+				Element.prototype.msMatchesSelector;
+		    }
+	    })();
+    }, 2000)
+});
+
+
+</script>
+
+
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+  
+    const swiper = new Swiper('.other-image', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoHeight: true,
+    })
+
+    const mobileSwiper = new Swiper('.challenge-img', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoHeight: true,
+    })
+  </script>
+  
+{% schema %}
+
+{
+    "name": "Section Product Gummy",
+    "settings": [
+        {
+            "type": "text",
+            "id": "labs",
+            "label": "Offfield labs title",
+            "default": "Offfield Labs SS2021"
+        }, {
+            "type": "richtext",
+            "id": "product_detail",
+            "label": "Product detail"
+        }, {
+            "type": "text",
+            "id": "challenge_over_title",
+            "label": "Challenge over title",
+            "default": "The Challenge"
+        }, {
+            "type": "text",
+            "id": "challenge_title",
+            "label": "Challenge title",
+            "default": "building a better gummy"
+        }, {
+            "type": "textarea",
+            "id": "challenge_desc",
+            "label": "Challenge description"
+        }, {
+            "type": "text",
+            "id": "product_problems_title",
+            "label": "Product problems title",
+            "default": "The Problems With Current Gummies"
+        }, {
+            "type": "richtext",
+            "id": "product_problems_list",
+            "label": "Detail problems"
+        }, {
+            "type": "text",
+            "id": "product_plant_title",
+            "label": "Product plant title",
+            "default": "A Plant Enhanced Gummy For Athletes"
+        }, {
+            "type": "richtext",
+            "id": "product_plant_list",
+            "label": "Plant list"
+        }, {
+            "type": "text",
+            "id": "offfield_over_title",
+            "label": "Offfield over title",
+            "default": "Made in California. Developed Together"
+        }, {
+            "type": "text",
+            "id": "offfield_title",
+            "label": "Offfield title",
+            "default": "offfield labs"
+        }, {
+            "type": "richtext",
+            "id": "offfield_desc",
+            "label": "Offfield description"
+        }, {
+            "type": "text",
+            "id": "text_more",
+            "label": "Text more",
+            "default": "Learn more about what you're getting yourself into."
+        }, {
+            "type": "header",
+            "content": "Right container - 'Other'"
+        }, {
+            "type": "text",
+            "id": "product_ingredients_title",
+            "label": "Product ingredients title",
+            "default": "quality ingredients  for a quality experience"
+        }, {
+            "type": "header",
+            "content": "Popup labs"
+        }, {
+            "type": "text",
+            "id": "popup_labs_title",
+            "label": "Popup labs title",
+            "placeholder": "Popup labs title"
+        }, {
+            "type": "richtext",
+            "id": "popup_labs_description",
+            "label": "Popup labs description"
+        }, {
+            "type": "header",
+            "content": "Nutrition Facts Image "
+        }, {
+            "type": "image_picker",
+            "id": "popup_nutrition_facts",
+            "label": "Popup nutrition facts image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "block-0",
+            "name": "Block image",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "block_title",
+                    "label": "Title"
+                }, {
+                    "type": "image_picker",
+                    "id": "block_img",
+                    "label": "Image"
+                }, {
+                    "type": "text",
+                    "id": "block_subtitle",
+                    "label": "Subtitle"
+                }
+            ]
+        }, {
+            "type": "block-1",
+            "name": "Block ingredient",
+            "limit": 4,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "ingredient_img",
+                    "label": "Ingredient image"
+                }, {
+                    "type": "text",
+                    "id": "ingredient_title",
+                    "label": "Ingredient title"
+                }, {
+                    "type": "textarea",
+                    "id": "ingredient_description",
+                    "label": "Ingredient description"
+                }
+            ]
+        }, {
+            "type": "block-2",
+            "name": "Image for slider",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "slider_image",
+                    "label": "Slide"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}

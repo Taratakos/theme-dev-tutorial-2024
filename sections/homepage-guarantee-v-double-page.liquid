@@ -1,0 +1,138 @@
+{% if section.settings.checkbox == false %}
+  <section class="homepage-guarantee" style="background-color: {{section.settings.background_color}}; {% if section.settings.background_image != blank %}background-image: url('{{section.settings.background_image | img_url: 'master'}}'){% endif %}">
+    <div class="homepage-guarantee__container">
+      <div class="homepage-guarantee__content">
+        <h1 class="homepage-guarantee__title">{{section.settings.title}}</h1>
+        <ul class="homepage-guarantee__details">
+          {% for block in section.blocks %}
+            <li class="homepage-guarantee__detail">
+              <div class="homepage-guarantee-detail__icon">
+                {% render 'lazy-image', image: block.settings.image %}
+              </div>
+              <div class="homepage-guarantee-detail__content">
+                <h2 class="homepage-guarantee-detail__title">{{block.settings.title}}</h2>
+                <p class="homepage-guarantee-detail__description">{{block.settings.description}}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+        {% if section.settings.url != blank %}
+          <div class="homepage-guarantee__btn-container">
+            <a href="{{section.settings.url}}" class="btn {{section.settings.cta_style}} homepage-guarantee__btn" data-text="{{section.settings.cta}}">{{section.settings.cta}}</a>
+          </div>
+        {% endif %}
+      </div>
+      <div class="homepage-guarantee__figure-image">
+        {% render 'lazy-image', image: section.settings.figure_image %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% schema %}
+  {
+    "name": "Homepage - Guarantee V2",
+    "class": "homepage__section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "checkbox",
+        "label": "Check if you want hide section"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "figure_image",
+        "label": "Figure Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "header",
+        "content": "CTA"
+      },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "CTA Target"
+      },
+      {
+        "type": "text",
+        "id": "cta",
+        "label": "CTA Text"
+      },
+      {
+        "type": "select",
+        "id": "cta_style",
+        "label": "CTA Style",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          },
+          {
+            "value": "btn--blue",
+            "label": "Blue"
+          },
+          {
+            "value": "btn--red",
+            "label": "Red"
+          },
+          {
+            "value": "btn--green",
+            "label": "Green"
+          },
+          {
+            "value": "btn--offgold",
+            "label": "Off Gold"
+          },
+          {
+            "value": "btn--black",
+            "label": "Black"
+          },
+          {
+            "value": "btn--underline",
+            "label": "Underline"
+          }
+        ],
+        "default": "default"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "detail",
+        "name": "Detail",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Icon",
+            "info": "use .png for transparency"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          }
+        ]
+      }
+    ]
+  }
+
+{% endschema %}

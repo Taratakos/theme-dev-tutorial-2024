@@ -6,8 +6,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "<strong>Browse our<\/strong>",
+            "heading_size": "hxxl"
+          }
+        },
+        "text_NyR4yr": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details <strong>about the banner image(s)<\/strong> or content on the template.",
+            "text_style": "body"
           }
         },
         "button": {
@@ -24,10 +31,12 @@
       },
       "block_order": [
         "heading",
+        "text_NyR4yr",
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/theme_cover_image.jpg",
+        "image_overlay_opacity": 10,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -66,10 +75,38 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "promotions_group_FM97tH": {
+      "type": "promotions-group",
+      "blocks": {
+        "promotion_H4XHbH": {
+          "type": "promotion",
+          "settings": {
+            "title": "My promotion",
+            "image": "shopify:\/\/shop_images\/Main_5127218a-8f6c-498f-b489-09242c0fab0a.jpg"
+          }
+        },
+        "promotion_iDWn68": {
+          "type": "promotion",
+          "settings": {
+            "title": "My promotion2",
+            "image": "shopify:\/\/shop_images\/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "promotion_H4XHbH",
+        "promotion_iDWn68"
+      ],
+      "settings": {
+        "title": "Promotion 1",
+        "title_alignment": "center"
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "promotions_group_FM97tH"
   ]
 }

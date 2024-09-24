@@ -102,11 +102,23 @@
         "title": "Promotion 1",
         "title_alignment": "center"
       }
+    },
+    "sections_tutorial_bpenb3": {
+      "type": "sections-tutorial",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "text_setting": "some text for text-setting",
+        "textarea_setting": "some text for text-area\nseconfd row\nthird row",
+        "richtext_setting": "<p>Some rich text<br\/>second row of rich text<\/p><p>list:<\/p><ul><li>1-richtext litem<\/li><li>2-richtext litem<\/li><li>3-richtext litem<\/li><\/ul><h1>Heading 1 richtext<\/h1>"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "promotions_group_FM97tH"
+    "promotions_group_FM97tH",
+    "sections_tutorial_bpenb3"
   ]
 }

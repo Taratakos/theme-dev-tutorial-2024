@@ -1,0 +1,173 @@
+<p>HELLO WORLD!</p>
+
+<h2>Text Setting:</h2>
+<p>{{ section.settings.text_setting }}</p>
+
+<h2>TextArea Setting:</h2>
+<p>{{ section.settings.textarea_setting | newline_to_br }}</p>
+
+<h2>Richtext Setting:</h2>
+<div>{{ section.settings.richtext_setting }}</div>
+
+<h2>Inline Richtext Setting:</h2>
+<div>{{ section.settings.inline_richtext_setting }}</div>
+
+<h2>Number Setting:</h2>
+<p>{{ section.settings.number_setting }}</p>
+
+<h2>Range Setting:</h2>
+<p>{{ section.settings.range_setting }}</p>
+
+<h2>Select Setting:</h2>
+<p>{{ section.settings.select_setting }}</p>
+
+<h2>Image Picker Setting:</h2>
+{% if section.settings.image_picker_setting %}
+  <p>
+    {{
+      section.settings.image_picker_setting
+      | image_url: width: 400
+      | image_tag: style: 'height: 200px; object-fit: cover'
+    }}
+  </p>
+{% endif %}
+
+<h2>URL Setting:</h2>
+<p>{{ section.settings.url_setting }}</p>
+<a href="{{ section.settings.url_setting }}">my test url link</a>
+
+<h2>HTML Setting:</h2>
+<div>
+  {{ section.settings.html_setting }}
+</div>
+
+<h2>Liquid Setting:</h2>
+<div>
+  {{ section.settings.liquid_setting }}
+</div>
+
+<h2>URL Setting:</h2>
+<p>{{ section.settings.url_setting }}</p>
+
+<h2>Product Setting:</h2>
+<p>
+  {{ section.settings.product_setting }} | {{ section.settings.product_setting.title }} -
+  {{ section.settings.product_setting.variants[0].price | money }}
+</p>
+
+{% schema %}
+{
+  "name": "Sections Tutorial",
+  "tag": "section",
+  "class": "section-tutorial",
+  "limit": 2,
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_setting",
+      "label": "Text Setting",
+      "default": "default text",
+      "info": "some extra help text",
+      "placeholder": "TARKO"
+    },
+    {
+      "type": "textarea",
+      "id": "textarea_setting",
+      "label": "Text-area Setting",
+      "default": "defTextArea",
+      "info": "info help textarea",
+      "placeholder": "bam bam"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext_setting",
+      "label": "Richtext Setting"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "inline_richtext_setting",
+      "label": "Inline richtext Setting"
+    },
+    {
+      "type": "number",
+      "id": "number_setting",
+      "label": "Number Setting",
+      "default": 10,
+      "info": "some extra help text",
+      "placeholder": "number"
+    },
+    {
+      "type": "range",
+      "id": "range_setting",
+      "min": 50,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Range limits",
+      "default": 75
+    },
+    {
+      "type": "select",
+      "id": "select_setting",
+      "label": "Select setting",
+      "options": [
+        {
+          "value": "left",
+          "label": "Val1"
+        },
+        {
+          "value": "center",
+          "label": "Val2"
+        },
+        {
+          "value": "middle",
+          "label": "Val3"
+        },
+        {
+          "value": "right",
+          "label": "Val4"
+        },
+        {
+          "value": "five",
+          "label": "Val5"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image_picker_setting",
+      "label": "Image picker"
+    },
+    {
+      "type": "url",
+      "id": "url_setting",
+      "label": "URL Settings",
+      "info": "info about my URL"
+    },
+    {
+      "type": "html",
+      "id": "html_setting",
+      "label": "HTML setting",
+      "default": "<div></div>"
+    },
+    {
+      "type": "liquid",
+      "id": "liquid_setting",
+      "label": "LIQUID setting"
+    },
+    {
+      "type": "product",
+      "id": "product_setting",
+      "label": "Product Setting",
+      "info": "info product"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Sections Tutorial",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

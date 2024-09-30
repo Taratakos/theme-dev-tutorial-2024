@@ -1,0 +1,78 @@
+{{ 'section-promotions-group.css' | asset_url | stylesheet_tag }}
+
+<h2 style="text-align: {{ section.settings.title_alignment }}">{{ section.settings.title }}</h2>
+
+{% if settings.promotion_name.size > 0 %}
+  <p>Active promotion: {{ settings.promotion_name }}</p>
+{% endif %}
+
+<div class="promotion-card">
+  {% for block in section.blocks %}
+    {% if block.type == 'promotion' %}
+      <div class="promotion-title">
+        <h3>{{ block.settings.title }}</h3>
+        {{ block.settings.image | image_url: width: 500 | image_tag }}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "Promotions Group",
+  "class": "wrapper-prom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "write here your title"
+    },
+    {
+      "type": "select",
+      "id": "title_alignment",
+      "label": "Select title alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Midle"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "promotion",
+      "name": "Promotion",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "prom-title",
+          "info": "wtf",
+          "placeholder": "placeholder"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "select image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promotions Group"
+    }
+  ]
+}
+{% endschema %}

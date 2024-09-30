@@ -8,102 +8,9 @@
         "padding_bottom": 28
       }
     },
-    "image_with_text_ykD4pR": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_ckDL9y": {
-          "type": "heading",
-          "settings": {
-            "heading": "We believe an open mind and an active life is a better prescription for self-care.",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_ckDL9y"
-      ],
+    "main-page-goals": {
+      "type": "main-page-goals",
       "settings": {
-        "image": "shopify:\/\/shop_images\/goal_1_2.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_TMHKaY": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_wqtAQM": {
-          "type": "heading",
-          "settings": {
-            "heading": "peace of mind",
-            "heading_size": "h0"
-          }
-        },
-        "text_xNPCYY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We believe that honesty, compassion and empathy is good business. We’ve laid out a holistic vision for OFFFIELD that ensures that as we grow we create meaningful impact. Goals that will take a lifetime to accomplish but worth the journey. We fund these goals by allocating 1% of profits into initiatives for People, Places and Planet, and by growing our company in their service.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_wqtAQM",
-        "text_xNPCYY"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/goal-2.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_xizKcw": {
-      "type": "image-with-text",
-      "blocks": {
-        "text_QDpzzM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>For too long, the war on drugs has led to misinformation, the dismantling of communities, and the stigmatization of cannabis use. While cannabis has been a part of world cultures for thousands of years, it was taken away during an era of rapid technological innovation. We take it upon ourselves to apply new ideas and thinking, without forgetting the past. Through our reach and research, we champion a new perspective on health and wellness—one that focuses on empathy, enjoyment, and determination to help others.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "text_QDpzzM"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/goal-3.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_VcQGX4": {
@@ -158,9 +65,7 @@
   },
   "order": [
     "main",
-    "image_with_text_ykD4pR",
-    "image_with_text_TMHKaY",
-    "image_with_text_xizKcw",
+    "main-page-goals",
     "rich_text_VcQGX4",
     "promotions_group_BAnYDa"
   ]
